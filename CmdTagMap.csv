@@ -1,0 +1,1733 @@
+CmdID,Tag
+2,Linux
+2,Bash
+2,Text Manipulation
+3,Linux
+3,Bash
+3,Text Manipulation
+4,Linux
+4,Bash
+4,Text Manipulation
+5,Linux
+5,Bash
+5,Text Manipulation
+6,Linux
+6,Bash
+6,Text Manipulation
+7,Cisco
+8,Cisco
+8,Networking
+9,Bash
+9,Linux
+10,Linux
+10,Bash
+11,Linux
+11,Bash
+11,Loop
+12,Linux
+12,Bash
+13,Linux
+14,Linux
+14,Bash
+15,Linux
+15,Bash
+15,Networking
+15,Pivoting
+16,Linux
+16,Bash
+16,Networking
+16,Pivoting
+17,Linux
+17,Files
+17,Bash
+18,Linux
+18,Bash
+18,Passwords
+18,Enumeration
+18,User Information
+19,Linux
+19,Loop
+19,Bash
+19,Interesting
+20,Linux
+21,Linux
+21,Bash
+21,Networking
+22,Linux
+22,Bash
+22,Networking
+22,Scanning
+23,Linux
+23,Bash
+23,Networking
+23,Scanning
+24,Linux
+24,Bash
+24,Networking
+25,Linux
+25,Bash
+25,Networking
+26,Linux
+26,Bash
+26,Enumeration
+26,Networking
+27,Linux
+27,Bash
+27,Networking
+27,Scanning
+28,Linux
+28,Bash
+28,Networking
+29,Linux
+29,Bash
+29,Networking
+30,Linux
+30,Bash
+30,Networking
+30,Interesting
+31,Networking
+31,Hp
+32,Linux
+32,Bash
+33,Linux
+33,Brute Force
+33,Http
+34,Linux
+34,Bash
+35,Web App
+35,Xss
+35,Cookies
+36,Metasploit
+37,Networking
+37,Scanning
+38,Networking
+38,Scanning
+39,Networking
+39,Scanning
+40,Networking
+40,Scanning
+41,Networking
+41,Scanning
+42,Networking
+42,Scanning
+43,Linux
+43,Bash
+43,Certificates
+44,Linux
+44,Bash
+44,Certificates
+45,Linux
+45,Bash
+45,Certificates
+46,Linux
+46,Bash
+46,Networking
+46,Stealth
+47,Linux
+47,Bash
+47,Networking
+49,Web App
+49,Scanning
+50,Linux
+50,Bash
+50,Web App
+51,Linux
+51,Bash
+51,Web App
+52,Linux
+52,Smb
+52,Bash
+53,Linux
+53,Bash
+53,Brute Force
+53,Scanning
+54,Linux
+54,Networking
+54,Mitm
+55,Linux
+55,Networking
+55,Scanning
+55,Dns
+56,Linux
+56,Bash
+56,Interesting
+57,Linux
+57,Bash
+57,Package Management
+58,Linux
+58,Bash
+58,Text Manipulation
+59,Linux
+59,Bash
+59,Text Manipulation
+60,Linux
+60,Bash
+60,Text Manipulation
+61,Linux
+61,Bash
+61,Text Manipulation
+62,Linux
+62,Bash
+62,Reverse Shell
+63,Linux
+63,Windows
+63,Reverse Shell
+63,Perl
+64,Linux
+64,Windows
+64,Reverse Shell
+64,Python
+65,Linux
+65,Windows
+65,Reverse Shell
+65,Php
+66,Linux
+66,Windows
+66,Reverse Shell
+66,Ruby
+67,Linux
+67,Windows
+67,Reverse Shell
+68,Web App
+68,Sql Injection
+68,Mysql
+69,Web App
+69,Sql Injection
+69,Shell
+69,Mysql
+70,Web App
+70,Sql Injection
+70,Oracle
+71,Web App
+71,Sql Injection
+71,Mysql
+72,Web App
+72,Sql Injection
+72,Mysql
+73,Files
+73,Bash
+73,Interesting
+73,Text Manipulation
+74,Windows
+74,Enumeration
+75,Windows
+75,Enumeration
+76,Enumeration
+76,Windows
+76,Users
+77,Brute Force
+77,Wireless
+77,Wifi
+78,Web App
+78,Xss
+79,Xss
+79,Web App
+80,Web App
+80,Xss
+81,Linux
+81,Bash
+81,Interesting
+82,Linux
+82,Bash
+82,Interesting
+83,Linux
+83,Wireless
+83,Wifi
+83,Configuration
+84,Enumeration
+84,Wireless
+84,Wifi
+85,Linux
+85,Networking
+85,Wireless
+85,Wifi
+86,Windows
+86,Networking
+86,Scanning
+87,Bash
+87,Interesting
+87,Web App
+87,Text Manipulation
+88,Web App
+88,Xss
+89,Metasploit
+89,Av Evasion
+90,Windows
+91,Windows
+91,Enumeration
+92,Windows
+92,Powershell
+93,Windows
+93,Powershell
+94,Loop
+94,Smb
+94,Bash
+94,Linux
+94,Enumeration
+95,Windows
+95,Passwords
+95,Av Evasion
+95,Powershell
+96,Windows
+96,Memory
+97,Linux
+98,Loop
+98,Smb
+98,Enumeration
+98,User Information
+98,Impacket
+99,Windows
+99,Enumeration
+99,Powershell
+99,User Information
+100,Windows
+100,Dns
+100,Enumeration
+101,Linux
+101,Files
+101,Smb
+101,Filesystem
+102,Linux
+102,Smb
+102,Enumeration
+103,Loop
+103,Networking
+103,Enumeration
+103,Impacket
+104,Linux
+104,Loop
+104,Enumeration
+104,User Information
+104,Impacket
+105,Linux
+105,Loop
+105,Bash
+105,Interesting
+105,Text Manipulation
+105,User Information
+106,Linux
+106,Mysql
+107,Linux
+107,Mysql
+107,Impacket
+108,Windows
+108,Passwords
+108,Enumeration
+108,Iis
+109,Windows
+109,Enumeration
+110,Windows
+110,Networking
+111,Windows
+111,Networking
+111,Pivoting
+112,Windows
+112,Networking
+112,Pivoting
+113,Windows
+113,Enumeration
+114,Windows
+114,Enumeration
+115,Windows
+115,Enumeration
+115,Process Management
+115,Privilege Escalation
+116,Windows
+116,Process Management
+117,Windows
+117,Networking
+117,Enumeration
+118,Windows
+118,Files
+118,Enumeration
+119,Windows
+120,Linux
+120,Windows
+120,Bash
+121,Linux
+121,Loop
+121,Remote Command Shell
+121,Impacket
+122,Linux
+122,Remote Command Shell
+122,Hash
+122,Impacket
+123,Linux
+123,Smb
+123,Enumeration
+123,User Information
+124,Linux
+124,Bash
+124,Certificates
+125,Windows
+125,Enumeration
+125,Privilege Escalation
+126,Windows
+126,Enumeration
+126,Privilege Escalation
+127,Windows
+127,Enumeration
+127,Privilege Escalation
+128,Windows
+128,Enumeration
+128,Privilege Escalation
+129,Windows
+129,Enumeration
+130,Windows
+131,Windows
+131,Files
+131,Pivoting
+132,Windows
+132,Networking
+132,Passwords
+132,Enumeration
+132,Wireless
+132,Wifi
+133,Windows
+133,Networking
+133,Passwords
+133,Wireless
+133,Wifi
+134,Loop
+134,Bash
+134,Passwords
+134,Enumeration
+134,Wireless
+134,Wifi
+135,Metasploit
+135,Pivoting
+136,Metasploit
+136,Pivoting
+137,Metasploit
+137,Pivoting
+138,Metasploit
+138,Pivoting
+139,Metasploit
+139,Pivoting
+140,Windows
+140,Files
+141,Windows
+141,Enumeration
+141,User Information
+142,Linux
+142,Scanning
+142,User Information
+142,Recon
+143,Linux
+143,Scanning
+143,User Information
+143,Recon
+144,Linux
+144,Windows
+144,Passwords
+144,Cracking
+145,Linux
+145,Files
+146,Scanning
+146,Nessus
+147,Linux
+147,Certificates
+148,Linux
+148,Scanning
+149,Linux
+149,Cracking
+150,Windows
+150,Networking
+150,Enumeration
+151,Metasploit
+152,Metasploit
+153,Metasploit
+154,Metasploit
+155,Metasploit
+156,Metasploit
+157,Windows
+157,User Information
+157,Privilege Escalation
+158,Windows
+158,User Information
+158,Privilege Escalation
+159,Windows
+159,User Information
+159,Privilege Escalation
+160,Windows
+160,User Information
+160,Privilege Escalation
+161,Windows
+161,User Information
+161,Privilege Escalation
+162,Sql Injection
+163,Linux
+163,Networking
+163,Mitm
+164,Linux
+164,Networking
+164,Mitm
+165,Linux
+165,Networking
+165,Mitm
+165,Wifi
+166,Linux
+166,Networking
+166,Mitm
+166,Wifi
+167,Networking
+167,Subnets
+168,Networking
+168,Packet Capture
+169,Linux
+169,Networking
+169,Scanning
+170,Linux
+170,Loop
+170,Networking
+170,Scanning
+171,Linux
+171,Bash
+171,Networking
+171,Stealth
+172,Linux
+172,Wireless
+172,Wifi
+173,Linux
+173,Networking
+173,Wireless
+173,Wifi
+174,Linux
+174,Networking
+174,Wireless
+174,Wifi
+174,Packet Capture
+175,Linux
+175,Wireless
+175,Wifi
+175,Cracking
+176,Linux
+176,Wireless
+176,Wifi
+176,Cracking
+177,Linux
+177,Wireless
+177,Wifi
+177,Cracking
+178,Linux
+178,Wireless
+178,Wifi
+178,Cracking
+179,Linux
+179,Networking
+179,Wireless
+179,Wifi
+179,Cracking
+180,Linux
+180,Wireless
+180,Wifi
+180,Cracking
+181,Linux
+181,Wireless
+181,Wifi
+181,Cracking
+182,Linux
+182,Networking
+183,Linux
+183,Networking
+184,Linux
+184,Brute Force
+185,Linux
+185,Windows
+185,Passwords
+185,Cracking
+186,Linux
+186,Windows
+186,Cracking
+187,Linux
+187,Brute Force
+188,Linux
+188,Networking
+188,Dns
+189,Linux
+189,Smb
+189,Scanning
+190,Linux
+190,Loop
+190,Smb
+190,Scanning
+191,Loop
+191,Networking
+191,Scanning
+191,Dns
+192,Loop
+192,Networking
+192,Dns
+192,Enumeration
+193,Linux
+193,Networking
+193,Scanning
+194,Linux
+194,Networking
+194,Scanning
+195,Interesting
+195,Python
+195,Av Evasion
+195,Pivoting
+196,Linux
+196,Windows
+196,Smb
+196,Mitm
+196,Impacket
+196,Privilege Escalation
+197,Linux
+197,Windows
+197,Smb
+197,Mitm
+197,Impacket
+197,Privilege Escalation
+198,Linux
+198,Smb
+198,Passwords
+198,Mitm
+198,Privilege Escalation
+199,Linux
+199,Smb
+199,Enumeration
+200,Linux
+200,Files
+200,Bash
+201,Linux
+201,Networking
+201,Windows
+202,Networking
+203,Networking
+204,Networking
+205,Networking
+206,Networking
+207,Networking
+208,Networking
+209,Networking
+210,Networking
+211,Networking
+212,Linux
+212,Networking
+212,Web App
+212,Scanning
+213,Linux
+213,Smb
+213,Enumeration
+213,User Information
+214,Linux
+214,Smb
+214,Enumeration
+214,User Information
+215,Bash
+215,Networking
+215,Scanning
+216,Linux
+216,Bash
+216,Networking
+216,Configuration
+217,Linux
+217,Bash
+217,Networking
+217,Configuration
+218,Linux
+218,Bash
+218,Networking
+219,Linux
+219,Bash
+219,Networking
+220,Linux
+220,Bash
+220,Networking
+221,Linux
+221,Bash
+221,Networking
+221,Configuration
+222,Linux
+222,Bash
+222,Networking
+222,Configuration
+223,Linux
+223,Files
+223,Bash
+224,Linux
+224,Windows
+224,Cracking
+225,Linux
+225,Hash
+225,Cracking
+226,Hash
+226,Cracking
+226,Reference
+227,Hash
+227,Cracking
+227,Reference
+228,Hash
+228,Cracking
+228,Reference
+229,Hash
+229,Cracking
+229,Reference
+230,Hash
+230,Cracking
+230,Reference
+231,Linux
+231,Bash
+232,Linux
+232,Bash
+233,Web Address
+234,Linux
+234,Bash
+235,Linux
+235,Bash
+236,Loop
+236,Scanning
+236,Certificates
+237,Linux
+237,Certificates
+238,Linux
+238,Bash
+238,Certificates
+239,Linux
+239,Bash
+239,Certificates
+240,Linux
+240,Passwords
+241,Networking
+241,Pivoting
+242,Linux
+242,Networking
+242,Scanning
+243,Linux
+243,Networking
+243,Scanning
+244,Linux
+244,Smb
+244,Networking
+244,Scanning
+244,Mitm
+245,Linux
+245,Networking
+245,Scanning
+246,Linux
+246,Networking
+246,Scanning
+247,Linux
+247,Bash
+247,Networking
+247,Text Manipulation
+248,Loop
+248,Bash
+248,Text Manipulation
+249,Linux
+249,Bash
+249,Text Manipulation
+250,Linux
+250,Bash
+250,Enumeration
+250,User Information
+250,Recon
+251,Linux
+251,Bash
+251,Reverse Shell
+252,Linux
+252,Bash
+252,Reverse Shell
+253,Linux
+253,Bash
+253,Reverse Shell
+254,Windows
+254,Reverse Shell
+254,Perl
+255,Linux
+255,Reverse Shell
+255,Java
+256,Linux
+256,Networking
+256,Scanning
+257,Linux
+257,Filesystem
+258,Linux
+258,Filesystem
+259,Linux
+259,Filesystem
+260,Passwords
+260,Enumeration
+260,User Information
+260,Pivoting
+260,Cracking
+261,Linux
+261,Bash
+261,Networking
+262,Linux
+262,Bash
+262,Networking
+262,Passwords
+263,Linux
+263,Bash
+263,Networking
+263,Pivoting
+264,Linux
+264,Interesting
+265,Linux
+265,Networking
+265,Pivoting
+266,Enumeration
+266,User Information
+266,Solaris
+267,Process Management
+267,Solaris
+268,Process Management
+268,Solaris
+269,Windows
+269,Enumeration
+269,Privilege Escalation
+270,Linux
+270,Bash
+270,Interesting
+271,Linux
+271,Scanning
+271,Recon
+272,Linux
+272,Bash
+272,Scanning
+272,Pivoting
+273,Linux
+273,Packet Capture
+274,Windows
+274,Enumeration
+274,Privilege Escalation
+275,Windows
+275,Forensics
+276,Windows
+276,Enumeration
+276,Privilege Escalation
+276,Forensics
+277,Windows
+277,Enumeration
+277,Privilege Escalation
+278,Windows
+278,Networking
+278,Dns
+278,Enumeration
+278,Recon
+279,Windows
+279,Enumeration
+280,Windows
+280,Smb
+280,Enumeration
+281,Windows
+281,Files
+281,Smb
+282,Windows
+283,Windows
+283,Files
+284,Windows
+285,Windows
+285,Networking
+285,Dns
+285,Enumeration
+285,Forensics
+286,Windows
+286,Networking
+286,Enumeration
+287,Windows
+287,Files
+288,Windows
+288,Networking
+288,Enumeration
+289,Windows
+289,Networking
+289,Configuration
+290,Windows
+290,Networking
+290,Configuration
+291,Windows
+291,Networking
+291,Configuration
+292,Windows
+292,Files
+293,Windows
+293,Interesting
+294,Windows
+294,Interesting
+295,Windows
+295,Networking
+295,Configuration
+296,Windows
+296,Pivoting
+296,Configuration
+297,Windows
+297,Pivoting
+297,Remote Command Shell
+298,Windows
+298,Configuration
+299,Windows
+299,Configuration
+300,Windows
+301,Windows
+301,Process Management
+302,Windows
+302,Enumeration
+303,Windows
+303,Enumeration
+303,Privilege Escalation
+304,Windows
+305,Windows
+305,Process Management
+306,Windows
+306,Enumeration
+306,Filesystem
+307,Windows
+307,Smb
+307,Remote Command Shell
+308,Windows
+308,Enumeration
+308,User Information
+309,Windows
+309,Enumeration
+309,Process Management
+310,Windows
+310,Configuration
+311,Windows
+311,Enumeration
+311,User Information
+312,Windows
+312,Enumeration
+312,Privilege Escalation
+313,Windows
+313,Hash
+314,Windows
+314,Hash
+315,Windows
+315,Hash
+316,Windows
+316,Hash
+317,Windows
+317,Hash
+317,Impacket
+318,Windows
+318,Files
+318,Powershell
+319,Windows
+319,Files
+319,Powershell
+320,Windows
+320,Files
+320,Powershell
+321,Windows
+321,Files
+321,Powershell
+322,Windows
+322,Powershell
+322,Process Management
+323,Windows
+323,Interesting
+323,Enumeration
+323,Powershell
+323,Configuration
+324,Windows
+324,Powershell
+325,Windows
+325,Powershell
+326,Windows
+326,Dns
+326,Powershell
+327,Windows
+327,Enumeration
+327,Powershell
+328,Windows
+328,Files
+328,Smb
+328,Powershell
+329,Windows
+329,Files
+329,Powershell
+329,Forensics
+330,Windows
+330,Loop
+330,Networking
+330,Interesting
+330,Scanning
+330,Powershell
+331,Windows
+331,Networking
+331,Powershell
+332,Windows
+332,Passwords
+332,Powershell
+333,Windows
+333,Powershell
+334,Windows
+334,Interesting
+334,Powershell
+335,Windows
+335,Dns
+335,Enumeration
+335,Powershell
+336,Windows
+336,Files
+336,Networking
+336,Interesting
+336,Powershell
+337,Metasploit
+337,Av Evasion
+337,Powershell
+338,Windows
+338,Enumeration
+338,Forensics
+339,Windows
+339,Smb
+339,Enumeration
+339,Forensics
+340,Windows
+340,Forensics
+341,Windows
+341,Forensics
+342,Windows
+342,Configuration
+343,Windows
+343,Forensics
+344,Windows
+345,Windows
+345,Enumeration
+345,Forensics
+346,Windows
+346,Enumeration
+346,Forensics
+347,Windows
+347,Enumeration
+347,Forensics
+348,Windows
+348,Dns
+348,Enumeration
+348,Forensics
+349,Windows
+349,Enumeration
+349,User Information
+350,Windows
+350,Enumeration
+350,User Information
+351,Windows
+351,Enumeration
+351,User Information
+352,Windows
+352,Enumeration
+352,User Information
+353,Windows
+353,Enumeration
+353,User Information
+354,Windows
+354,Enumeration
+354,User Information
+355,Windows
+355,Enumeration
+356,Windows
+356,Enumeration
+357,Windows
+357,Networking
+357,Enumeration
+358,Windows
+358,Dns
+358,Enumeration
+359,Linux
+359,Dns
+359,Enumeration
+360,Hash
+360,Web Address
+361,Windows
+361,Loop
+361,Brute Force
+361,Powershell
+362,Linux
+362,Networking
+362,Interesting
+363,Networking
+363,Interesting
+364,Reference
+364,Networking
+364,Interesting
+365,Networking
+365,Interesting
+366,Reference
+366,Networking
+366,Subnets
+367,Linux
+367,Networking
+367,Subnets
+367,Reference
+368,Linux
+368,Pivoting
+368,Networking
+369,Cisco
+370,Cisco
+371,Cisco
+372,Cisco
+373,Cisco
+374,Cisco
+375,Cisco
+376,Cisco
+377,Cisco
+378,Cisco
+378,Interesting
+378,Web App
+378,Remote Command Shell
+379,Linux
+379,Networking
+379,Packet Capture
+380,Linux
+380,Scanning
+380,Dns
+381,Linux
+381,Scanning
+381,Dns
+382,Linux
+382,Networking
+382,Dns
+382,Enumeration
+383,Windows
+383,Files
+383,Interesting
+384,Linux
+384,Loop
+384,Bash
+384,Interesting
+385,Linux
+385,Loop
+385,Networking
+385,Dns
+386,Linux
+386,Loop
+386,Networking
+386,Interesting
+387,Windows
+387,Networking
+387,Pivoting
+388,Linux
+388,Pivoting
+388,Networking
+389,Linux
+389,Loop
+389,Bash
+389,Networking
+389,Interesting
+389,Scanning
+390,Linux
+390,Networking
+390,Pivoting
+391,Windows
+391,Networking
+391,Pivoting
+392,Linux
+392,Networking
+392,Pivoting
+393,Metasploit
+393,Av Evasion
+394,Linux
+394,Mitm
+395,Hash
+395,Reference
+396,Loop
+396,Interesting
+396,Enumeration
+396,User Information
+396,Recon
+397,Loop
+397,Networking
+397,Interesting
+398,Interesting
+398,Reference
+398,Web Address
+399,Windows
+399,Privilege Escalation
+400,Windows
+400,Privilege Escalation
+400,Enumeration
+401,Windows
+401,Privilege Escalation
+402,Windows
+402,Privilege Escalation
+403,Windows
+403,Privilege Escalation
+404,Smb
+404,Scanning
+404,Linux
+405,Linux
+405,Bash
+406,Linux
+406,Interesting
+407,Linux
+407,Networking
+408,Linux
+408,Networking
+408,Enumeration
+409,Enumeration
+409,Linux
+410,Windows
+410,Smb
+411,Enumeration
+411,Linux
+411,Impacket
+412,Linux
+413,Linux
+413,Enumeration
+414,Oracle
+414,Enumeration
+415,Oracle
+415,Enumeration
+416,Scanning
+416,Brute Force
+416,Cisco
+417,Linux
+417,Bash
+417,Text Manipulation
+418,Brute Force
+418,Scanning
+419,Linux
+420,Linux
+421,Pivoting
+421,Interesting
+422,Linux
+422,Privilege Escalation
+423,Perl
+423,Shell
+423,Privilege Escalation
+424,Python
+424,Shell
+424,Privilege Escalation
+425,Linux
+425,Shell
+425,Privilege Escalation
+426,Ruby
+426,Web App
+427,Enumeration
+427,User Information
+427,Windows
+427,Powershell
+428,Enumeration
+428,Windows
+428,Powershell
+428,User Information
+429,Enumeration
+429,Windows
+429,Powershell
+429,User Information
+430,Enumeration
+430,Windows
+430,Powershell
+430,User Information
+431,Enumeration
+431,Windows
+431,Powershell
+431,User Information
+432,Enumeration
+432,Windows
+432,Powershell
+432,User Information
+433,Ldap
+433,Enumeration
+433,User Information
+434,Brute Force
+434,Linux
+435,Java
+436,Java
+437,Brute Force
+437,Web App
+438,Brute Force
+438,Web App
+439,Java
+439,Web App
+440,Web App
+440,Sql Injection
+441,Web App
+441,Remote Command Shell
+441,Php
+442,Web App
+442,Remote Command Shell
+442,Php
+443,Web App
+443,Remote Command Shell
+443,Php
+444,Web App
+444,Remote Command Shell
+444,Php
+445,Web App
+445,Remote Command Shell
+445,Php
+446,Anti Virus
+446,Enumeration
+447,Reverse Shell
+448,Git
+448,Linux
+448,Interesting
+449,Linux
+449,Interesting
+449,Networking
+450,Linux
+450,Interesting
+450,Networking
+451,Web App
+451,Xss
+452,Cloud
+452,Web App
+453,Pivoting
+453,Linux
+453,Rdp
+454,Web App
+454,Xss
+455,Bash
+455,Linux
+455,Pivoting
+456,Linux
+456,Pivoting
+457,Linux
+457,Pivoting
+458,Linux
+458,Pivoting
+459,Linux
+459,Windows
+459,Pivoting
+460,Linux
+460,Pivoting
+461,Linux
+461,Bind Shell
+461,Pivoting
+462,Linux
+462,Reverse Shell
+462,Pivoting
+463,Linux
+463,Enumeration
+464,Web App
+464,Remote Command Shell
+465,Encryption
+465,Linux
+465,Bash
+466,Encryption
+466,Linux
+466,Bash
+467,Networking
+467,Reference
+468,Smb
+468,Hash
+468,Privilege Escalation
+469,Troll
+470,Linux
+470,Interesting
+470,Bash
+471,Hash
+471,Scanning
+472,Bash
+472,Loop
+472,Scanning
+473,Linux
+473,Interesting
+473,Bash
+474,Package Management
+475,Package Management
+476,Cracking
+477,Cracking
+478,Buffer Overflow
+478,Perl
+479,Buffer Overflow
+479,Metasploit
+480,Buffer Overflow
+480,Metasploit
+481,Buffer Overflow
+482,Buffer Overflow
+482,Mona
+483,Buffer Overflow
+483,Mona
+484,Buffer Overflow
+484,Metasploit
+485,Interesting
+485,Troll
+486,Linux
+486,Privilege Escalation
+487,Linux
+487,Privilege Escalation
+488,Xss
+488,Web App
+489,Cracking
+489,Brute Force
+490,Apple
+491,Reference
+491,Encoding
+491,Ascii
+491,Web App
+492,Cyber Essentials
+492,Tools
+493,Web App
+493,Code Execution
+493,Jsp
+494,Web App
+494,Code Execution
+494,Jsp
+495,Web App
+495,Code Execution
+495,Jsp
+496,Linux
+496,Networking
+496,Loop
+497,Nfs
+497,Fileshare
+498,Brute Force
+498,Oracle
+498,Database
+499,Brute Force
+499,Oracle
+499,Database
+500,Enumeration
+500,Ipv6
+501,Perl
+501,Snmp
+502,Ipv6
+502,Snmp
+503,Shellshock
+503,Curl
+504,Cookies
+504,Web App
+505,Linux
+506,Web App
+506,Groovy
+506,Windows
+506,Linux
+506,Code Execution
+507,Web App
+507,Dns
+507,Recon
+508,Passwords
+508,Brute Force
+508,Windows
+508,Kerberos
+508,Kerbrute
+509,Passwords
+509,Brute Force
+509,Windows
+509,Kerberos
+509,Kerbrute
+510,Passwords
+510,Brute Force
+510,Windows
+510,Kerberos
+510,Kerbrute
+511,Passwords
+511,Enumeration
+511,Brute Force
+511,Windows
+511,Kerberos
+511,Kerbrute
+512,Passwords
+512,Hash
+512,Name-That-Hash
+513,Passwords
+513,Hash
+513,Name-That-Hash
+514,Enumeration
+514,Nmap
+515,Web App
+515,Nikto
+516,Enumeration
+516,Smb
+517,Brute Force
+517,Web App
+517,Hydra
+518,Enumeration
+518,Smb
+518,Web Address
+519,Enumeration
+519,Wpscan
+520,Enumeration
+520,Wpscan
+521,Windows
+521,Shell
+521,Powershell
+522,Enumeration
+522,OSINT
+523,Reverse Shell
+523,Shell
+523,Bind Shell
+523,Netcat
+524,Reverse Shell
+524,Shell
+524,Bind Shell
+524,Netcat
+525,Enumeration
+525,Web App
+526,Enumeration
+526,Web App
+526,Sqlmap
+526,Sql
+527,Passwords
+527,Brute Force
+527,Hash
+528,Passwords
+528,Brute Force
+528,Hash
+529,Linux
+529,Passwords
+529,Hash
+530,Passwords
+530,Hash
+530,Ldap
+531,Web Address
+531,Enum4Linux
+532,Smb
+532,Shell
+532,Smbclient
+533,Shell
+533,Bind Shell
+533,Netcat
+534,Reverse Shell
+534,Shell
+534,Netcat
+535,Reverse Shell
+535,Shell
+535,Netcat
+536,Linux
+537,Enumeration
+537,Sqlmap
+538,Crackmapexec
+539,Crackmapexec
+540,Crackmapexec
+541,Crackmapexec
+542,Crackmapexec
+543,Crackmapexec
+544,Crackmapexec
+545,Brute Force
+545,Ike-Scan
+546,Ike-Scan
+547,Enumeration
+547,Ike-Scan
+548,Passwords
+548,Brute Force
+548,Hash
+549,Enumeration
+549,Nmap
+550,Linux
+551,Windows
+551,Shell
+551,Powershell
+552,Windows
+552,Shell
+552,Powershell
+553,Brute Force
+553,Psk-Crack
+554,Brute Force
+554,Psk-Crack
+555,Web App
+555,Sqlmap
+556,Enumeration
+556,Sql Injection
+556,Sqlmap
+558,Linux
+558,Brute Force
+558,Http
+558,Web App
+559,Linux
+559,Brute Force
+559,Http
+559,Web App
+560,Linux
+560,Brute Force
+560,Rdp
+560,Windows
+561,Linux
+561,Brute Force
+561,Rdp
+561,Windows
+562,Powershell
+562,Windows
+562,Files
+562,Cmd
+563,Powershell
+563,Windows
+563,Files
+563,Cmd
+637,Ticket
+637,Hash
+637,Password
+637,Luid
+637,Kerberos
+638,Kerberos
+639,Kerberos
+640,Kerberos
+641,Brute Force
+641,Password
+641,Kerberos
+642,Kerberos
+643,Kerberos
+644,Kerberos
+645,Kerberos
+646,Kerberos
+647,Kerberos
+648,Ticket
+648,Kerberos
+649,Ticket
+649,Kerberos
+650,Ticket
+650,Kerberos
+651,Ticket
+651,Kerberos
+652,Ticket
+652,Kerberos
+653,Ticket
+653,Kerberos
+654,Kerberoasting
+654,Kerberos
+655,Kerberoasting
+655,Kerberos
+656,Kerberoasting
+656,Kerberos
+657,Kerberoasting
+657,Kerberos
+658,Kerberoasting
+658,Kerberos
+659,Kerberoasting
+659,Kerberos
+660,Kerberoasting
+660,Kerberos
+661,Kerberoasting
+661,Kerberos
+662,Kerberoasting
+662,Kerberos
+663,Kerberoasting
+663,Kerberos
+664,Kerberoasting
+664,Kerberos
+664,Ldap
+665,Kerberoasting
+665,Kerberos
+666,Kerberoasting
+666,Kerberos
+666,Aes
+667,Kerberoasting
+667,Kerberos
+667,As-Rep
+668,Kerberoasting
+668,Kerberos
+668,As-Rep
+669,Kerberoasting
+669,Kerberos
+669,As-Rep
+671,Password
+671,Kerberos
+672,Hashes
+672,Utility
+672,Kerberos
+673,Kerberos
+674,Kerberos
+675,Luid
+675,Kerberos
+653,Hash
+653,Kerberos
+653,Luid
+653,Password
+653,Ticket
+654,Hash
+654,Kerberos
+654,Luid
+654,Password
+654,Ticket
+655,Hash
+655,Kerberos
+655,Luid
+655,Password
+655,Ticket
+656,Hash
+656,Kerberos
+656,Luid
+656,Password
+656,Ticket
+657,Hash
+657,Kerberos
+657,Luid
+657,Password
+657,Ticket
+658,Hash
+658,Kerberos
+658,Luid
+658,Password
+658,Ticket
+659,Hash
+659,Kerberos
+659,Luid
+659,Password
+659,Ticket
+660,Hash
+660,Kerberos
+660,Luid
+660,Password
+660,Ticket
+661,Hash
+661,Kerberos
+661,Luid
+661,Password
+661,Ticket
+662,Hash
+662,Kerberos
+662,Luid
+662,Password
+662,Ticket
+663,Hash
+663,Kerberos
+663,Luid
+663,Password
+663,Ticket
+664,Hash
+664,Kerberos
+664,Luid
+664,Password
+664,Ticket
+665,Hash
+665,Kerberos
+665,Luid
+665,Password
+665,Ticket
+666,Hash
+666,Kerberos
+666,Luid
+666,Password
+666,Ticket
+667,Hash
+667,Kerberos
+667,Luid
+667,Password
+667,Ticket
+668,Hash
+668,Kerberos
+668,Luid
+668,Password
+668,Ticket
+669,Hash
+669,Kerberos
+669,Luid
+669,Password
+669,Ticket
+670,Hash
+670,Kerberos
+670,Luid
+670,Password
+670,Ticket
+671,Hash
+671,Kerberos
+671,Luid
+671,Password
+671,Ticket
+672,Hash
+672,Kerberos
+672,Luid
+672,Password
+672,Ticket
+673,Hash
+673,Kerberos
+673,Luid
+673,Password
+673,Ticket
+674,Hash
+674,Kerberos
+674,Luid
+674,Password
+674,Ticket
+675,Hash
+675,Kerberos
+675,Luid
+675,Password
+675,Ticket
