@@ -25,14 +25,14 @@ headers = {
 
 array = []
 
-df = pd.read_csv("NH-scripts\\kali-list.csv", usecols=[1])
+df = pd.read_csv("kali-links.csv", usecols=[0])
 url_list = df.values.tolist()
 
 for i in range(1,len(url_list)):
     if i%5 == 0:
         print('saving to csv')
         array = np.array(array)
-        pd.DataFrame(array).to_csv("NH-scripts\\kali-list copy.csv", mode='a', header=False, index=False) # ({'description': array})
+        pd.DataFrame(array).to_csv("kali-list copy.csv", mode='a', header=False, index=False) # ({'description': array})
         # df2 = df2.astype({'description': object})
         # df2.to_csv("NH-scripts\\kali-list copy.csv", mode='a', header=False, index=False)
         array = []
@@ -52,7 +52,7 @@ for i in range(1,len(url_list)):
         array.append([url.rsplit('/', 1)[-1], 'request failed'])
     i+=1
 
-pd.DataFrame(array).to_csv("NH-scripts\\kali-list copy.csv", mode='a', header=False, index=False)
+pd.DataFrame(array).to_csv("kali-list copy.csv", mode='a', header=False, index=False)
 # df = pd.DataFrame({'description': array})
 # df = df.astype({'description': object})
 # df.to_csv("NH-scripts\\kali-list copy.csv", mode='a', header=False, index=False)
