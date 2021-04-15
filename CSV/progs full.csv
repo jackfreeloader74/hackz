@@ -8,13 +8,13 @@ ProgramID,Name,Target,Description,Tag
 7,abcd,,ActionScript ByteCode Disassembler.,disassembler
 8,abuse-ssl-bypass-waf,,Bypassing WAF by abusing SSL/TLS Ciphers.,web-app
 9,acccheck,,A password dictionary attack tool that targets windows authentication via the SMB protocol.,cracker
-10,Accesschk,Windows,"Used to check permmissions on a windows machine, part of the sysinternals package",
+10,Accesschk,Windows,"Used to check permissions on a windows machine, part of the sysinternals package",windows
 11,ace,,Automated Corporate Enumerator. A simple yet powerful VoIP Corporate Directory enumeration tool that mimics the behavior of an IP Phone in order to download the name and extension entries that a given phone can display on its screen interface,voip
 12,ace-voip,,ACE (Automated Corporate Enumerator) is a simple yet powerful VoIP Corporate Directory enumeration tool that mimics the behavior of an IP Phone in order to download the name and extension entries that a given phone can display on its screen interface.,recon
 13,aclpwn,,Active Directory ACL exploitation with BloodHound.,exploitation
 14,activedirectoryenum,,Enumerate AD through LDAP.,recon
 15,adape-script,,Active Directory Assessment and Privilege Escalation Script.,windows
-16,addcomputer.py,SMB,Allows to add a computer to a domain using LDAP or SAMR (SMB).,
+16,addcomputer.py,SMB,Allows to add a computer to a domain using LDAP or SAMR (SMB).,exploitation
 17,adfind,,"Simple admin panel finder for php,js,cgi,asp and aspx admin panels.",web-app
 18,ad-ldap-enum,,An LDAP based Active Directory user and group enumeration tool.,recon
 19,admid-pack,,ADM DNS spoofing tools - Uses a variety of active and passive methods to spoof DNS packets. Very powerful.,spoof
@@ -102,7 +102,7 @@ It also identifies non-ascii based applications. This is achieved by sending tri
 99,armor,,A simple Bash script designed to create encrypted macOS payloads capable of evading antivirus scanners.,exploitation
 100,armscgen,,ARM Shellcode Generator (Mostly Thumb Mode).,exploitation
 101,arpalert,,Monitor ARP changes in ethernet networks.,networking
-102,ARPing,Network,tool for discovering and probing hosts on a computer network,
+102,ARPing,Network,tool for discovering and probing hosts on a computer network,recon
 103,arpoison,,The UNIX arp cache update utility,exploitation
 104,arpon,,"A portable handler daemon that make ARP protocol secure in order to avoid the Man In The Middle (MITM) attack through ARP Spoofing, ARP Cache Poisoning or ARP Poison Routing (APR) attacks.",defensive
 105,arp-scan,,arp-scan is used to�scan�the network of a certain interface for alive hosts. It shows the ip address and mac addresses of all the hosts/nodes found.,recon
@@ -112,12 +112,12 @@ It also identifies non-ascii based applications. This is achieved by sending tri
 109,artillery,,"A combination of a honeypot, file-system monitoring, system hardening, and overall health of a server to create a comprehensive way to secure a system.",defensive
 110,artlas,,Apache Real Time Logs Analyzer System.,defensive
 111,arybo,,"Manipulation, canonicalization and identification of mixed boolean-arithmetic symbolic expressions.",misc
-112,Asleap,,,
+112,Asleap,,"exploits a deficency in cisco LEAP networks, Asleap can also be used to attack the Point-to-Point Tunneling Protocol (PPTP), and any MS-CHAPv2 exchange where you can specify the challenge and response values on the command line.",network
 113,asp-audit,,An ASP fingerprinting tool and vulnerability scanner.,fingerprint
 114,assetfinder,,Find domains and subdomains potentially related to a given domain.,scanner
 115,astra,,Automated Security Testing For REST API's.,web-app
 116,atear,,"Wireless Hacking, WiFi Security, Vulnerability Analyzer, Pentestration.",wireless
-117,atexec.py,Windows,This example executes a command on the target machine through the Task Scheduler service and returns the output of the executed command.,
+117,atexec.py,Windows,This example executes a command on the target machine through the Task Scheduler service and returns the output of the executed command.,windows
 118,atftp,,"Client/server implementation of the TFTP protocol that implements RFCs 1350, 2090, 2347, 2348, and 2349",networking
 119,athena-ssl-scanner,,A SSL cipher scanner that checks all cipher codes. It can identify about 150 different ciphers.,scanner
 120,atlas,,Open source tool that can suggest sqlmap tampers to bypass WAF/IDS/IPS.,web-app
@@ -141,7 +141,7 @@ It also identifies non-ascii based applications. This is achieved by sending tri
 138,avaloniailspy,,.NET Decompiler (port of ILSpy),decompiler
 139,avet,,AntiVirus Evasion Tool,binary
 140,avml,,A portable volatile memory acquisition tool for Linux.,misc
-141,Awk,Text,"used for text processing and typically used as a data extraction and reporting tool, unix based",
+141,Awk,Text,"used for text processing and typically used as a data extraction and reporting tool, unix based",misc
 142,awsbucketdump,,A tool to quickly enumerate AWS S3 buckets to look for loot.,automation
 143,aws-extender-cli,,Script to test S3 buckets as well as Google Storage buckets and Azure Storage containers for common misconfiguration issues.,scanner
 144,aws-inventory,,Discover resources created in an AWS account.,recon
@@ -168,7 +168,7 @@ It also identifies non-ascii based applications. This is achieved by sending tri
 165,barq,,An AWS Cloud Post Exploitation framework.,exploitation
 166,base64dump,,Extract and decode base64 strings from files.,misc
 167,basedomainname,,"Tool that can extract TLD (Top Level Domain), domain extensions (Second Level Domain + TLD), domain name, and hostname from fully qualified domain names.",recon
-168,Bash,Utility,"Programing language used by shells, used for basic scripting",
+168,Bash,Utility,"Programing language used by shells, used for basic scripting",misc
 169,bashfuscator,,Fully configurable and extendable Bash obfuscation framework.,automation
 170,batctl,,B.A.T.M.A.N. advanced control and management tool,wireless
 171,batman-adv,,"Batman kernel module, (included upstream since .38)",wireless
@@ -179,7 +179,7 @@ It also identifies non-ascii based applications. This is achieved by sending tri
 176,bdlogparser,,"This is a utility to parse a Bit Defender log file, in order to sort them into a malware archive for easier maintenance of your malware collection.",malware
 177,bed,,"BED stands for Bruteforce Exploit Detector. It is designed to check daemons for potential buffer overflows, format strings et. al.",vulnerability-analysis
 178,beebug,,A tool for checking exploitability.,decompiler
-179,BeEF,Web,BeEF is short for The Browser Exploitation Framework,
+179,BeEF,Web,BeEF is short for The Browser Exploitation Framework,web-app
 180,beef-xss,,BeEF is short for The Browser Exploitation Framework. It is a penetration testing tool that focuses on the web browser.,exploitation
 181,beeswarm,,Honeypot deployment made easy http://www.beeswarm-ids.org/,honeypot
 182,beholder,,A wireless intrusion detection tool that looks for anomalies in a wifi environment.,wireless
@@ -190,7 +190,7 @@ It also identifies non-ascii based applications. This is achieved by sending tri
 187,bettercap-ui,,Official Bettercap's Web UI.,misc
 188,bfac,,An automated tool that checks for backup artifacts that may disclose the web-app's source code.,recon
 189,bfbtester,,Performs checks of single and multiple argument command line overflows and environment variable overflows,exploitation
-190,BFDomain.py,Network,,
+190,BFDomain.py,Network,used for brute forcing domain names,network
 191,bfuzz,,Input based fuzzer tool for browsers.,fuzzer
 192,bgp-md5crack,,RFC2385 password cracker,cracker
 193,bgrep,,Binary grep.,binary
@@ -226,7 +226,7 @@ It also identifies non-ascii based applications. This is achieved by sending tri
 223,blind-sql-bitshifting,,A blind SQL injection module that uses bitshfting to calculate characters.,exploitation
 224,blindy,,Simple script to automate brutforcing blind sql injection vulnerabilities.,scanner
 225,blisqy,,Exploit Time-based blind-SQL injection in HTTP-Headers (MySQL/MariaDB).,web-app
-226,Bloodhound,Utility,Network mapping tool,
+226,Bloodhound,Utility,Network mapping tool,network
 227,bloodhound-python,,Bloodhound python data collector,recon
 228,bluebox-ng,,A GPL VoIP/UC vulnerability scanner.,voip
 229,bluebugger,,An implementation of the bluebug technique which was discovered by Martin Herfurt.,bluetooth
@@ -281,7 +281,7 @@ It also identifies non-ascii based applications. This is achieved by sending tri
 278,bulk-extractor,,"bulk_extractor is a program that extracts features such as email addresses, credit card numbers, URLs, and other types of information from digital evidence files. It is a useful forensic investigation tool for many tasks such as malware and intrusion investigations, identity investigations and cyber investigations, as well as analyzing imagery and pass-word cracking.",forensics
 279,bully,,"Bully is a new implementation of the WPS brute force attack, written in C. It is conceptually identical to other programs, in that it exploits the (now well known) design flaw in the WPS specification. It has several advantages over the original reaver code. These include fewer dependencies, improved memory and cpu performance, correct handling of endianness, and a more robust set of options. It runs on Linux, and was specifically developed to run on embedded Linux systems (OpenWrt, etc) regardless of architecture.",wireless
 280,bunny,,"A closed loop, high-performance, general purpose protocol-blind fuzzer for C programs.",fuzzer
-281,Burpsuit,Web,"A program for manipulating HTTP requests, enumeration and Exploit",
+281,Burpsuit,Web,"A program for manipulating HTTP requests, enumeration and Exploit",web-app
 282,burpsuite,,"Burp Suite is an integrated platform for performing security testing of web applications. Its various tools work seamlessly together to support the entire testing process, from initial mapping and analysis of an application’s attack surface, through to finding and exploiting security vulnerabilities.",web-app
 283,buster,,Find emails of a person and return info associated with them.,social
 284,buttinsky,,Provide an open source framework for automated botnet monitoring.,networking
@@ -315,7 +315,7 @@ It provides all the information a “show cdp neighbors detail” command would 
 311,cecster,,A tool to perform security testing against the HDMI CEC (Consumer Electronics Control) and HEC (HDMI Ethernet Channel) protocols.,scanner
 312,centry,,Cold boot & DMA protection,misc
 313,certgraph,,Crawl the graph of certificate Alternate Names.,recon
-314,CeWL,Web,spiders a given url returning a wordlist that is intednded for cracking passwords,
+314,CeWL,Web,spiders a given url returning a wordlist that is intednded for cracking passwords,web-app
 315,cflow,,A C program flow analyzer.,code-audit
 316,cfr,,Another Java decompiler.,decompiler
 317,chameleon,,A tool for evading Proxy categorisation.,networking
@@ -377,7 +377,7 @@ It provides all the information a “show cdp neighbors detail” command would 
 373,cloudsploit,,AWS security scanning checks.,scanner
 374,cloudunflare,,Reconnaissance Real IP address for Cloudflare Bypass.,recon
 375,clusterd,,"Automates the fingerprinting, reconnaissance, and exploitation phases of an application server attack.",automation
-376,Cmd,Utility,Windows Command line,
+376,Cmd,Utility,Windows Command line,misc
 377,cminer,,A tool for enumerating the code caves in PE files.,binary
 378,cmospwd,,CmosPwd is a cross-platform tool to decrypt password stored in CMOS used to access a computer’s BIOS setup.,cracker
 379,cmseek,,CMS (Content Management Systems) Detection and Exploitation suite.,web-app
@@ -391,7 +391,7 @@ It provides all the information a “show cdp neighbors detail” command would 
 387,cntlm,,"An NTLM, NTLM2SR, and NTLMv2 authenticating HTTP proxy.",proxy
 388,codeql,,The CLI tool for GitHub CodeQL,automation
 389,codetective,,A tool to determine the crypto/encoding algorithm used according to traces of its representation.,crypto
-390,coly,,This captures Enhances interior gateway routing protocol (EIGRP) and can inject packets into a network,
+390,coly,,This captures Enhances interior gateway routing protocol (EIGRP) and can inject packets into a network,networking
 391,comission,,WhiteBox CMS analysis.,web-app
 392,commix,,"Commix (short for [comm]and [i]njection e[x]ploiter) has a simple environment and it can be used, from web developers, penetration testers or even security researchers to test web applications with the view to find bugs, errors or vulnerabilities related to command injection attacks. By using this tool, it is very easy to find and exploit a command injection vulnerability in a certain vulnerable parameter or string. Commix is written in Python programming language.",exploitation
 393,commonspeak,,Leverages publicly available datasets from Google BigQuery to generate wordlists.,automation
@@ -414,7 +414,7 @@ It provides all the information a “show cdp neighbors detail” command would 
 410,crabstick,,Automatic remote/local file inclusion vulnerability analysis and exploit tool.,web-app
 411,crackhor,,A Password cracking utility.,cracker
 412,crackle,,"crackle exploits a flaw in the BLE pairing process that allows an attacker to guess or very quickly brute force the TK (Temporary Key). With the TK and other data collected from the pairing process, the STK (Short Term Key) and later the LTK (Long Term Key) can be collected.",wireless
-413,CrackMapExec,Network,Swis army knife of network testing,
+413,CrackMapExec,Network,Swis army knife of network testing,network
 414,crackq,,Hashcrack.org GPU-accelerated password cracker.,cracker
 415,crackserver,,An XMLRPC server for password cracking.,cracker
 416,crawlic,,"Web recon tool (find temporary files, parse robots.txt, search folders, google dorks and search domains hosted on same server).",web-app
@@ -448,7 +448,7 @@ It provides all the information a “show cdp neighbors detail” command would 
 444,cve-api,,Unofficial api for cve.mitre.org.,misc
 445,cvechecker,,"The goal of cvechecker is to report about possible vulnerabilities on your system, by scanning the installed software and matching the results with the CVE database.",scanner
 446,cve-search,,A tool to perform local searches for known vulnerabilities.,exploitation
-447,Cvs,Utility, Concurrent Versions System and is a tool that allows developers to keep track of their projects,
+447,Cvs,Utility, Concurrent Versions System and is a tool that allows developers to keep track of their projects,misc
 448,cybercrowl,,A Python Web path scanner tool.,web-app
 449,cyberscan,,A Network Pentesting Tool,networking
 450,cymothoa,,"Cymothoa is a stealth backdooring tool, that inject backdoor’s shellcode into an existing process. The tool uses the ptrace library (available on nearly all * nix), to manipulate processes and infect them.",persistence
@@ -477,7 +477,7 @@ It provides all the information a “show cdp neighbors detail” command would 
 473,dbusmap,,"Simple utility for enumerating D-Bus endpoints, an nmap for D-Bus.",scanner
 474,dc3dd,,dc3dd is a patched version of GNU dd with added features for computer forensics:,forensics
 475,dcfldd,,DCFL (DoD Computer Forensics Lab) dd replacement with hashing.,forensics
-476,dcomexec.py,Windows,"A semi-interactive shell similar to wmiexec.py, but using different DCOM endpoints.",
+476,dcomexec.py,Windows,"A semi-interactive shell similar to wmiexec.py, but using different DCOM endpoints.",windows
 477,dcrawl,,"Simple, but smart, multi-threaded web crawler for randomly gathering huge lists of unique domain names.",scanner
 478,ddrescue,,"Like dd, dd_rescue does copy data from one file or block device to another. You can specify file positions (called seek and Skip in dd). There are several differences:",forensics
 479,de4dot,,.NET deobfuscator and unpacker.,windows
@@ -507,11 +507,11 @@ It provides all the information a “show cdp neighbors detail” command would 
 503,dga-detection,,DGA Domain Detection using Bigram Frequency Analysis.,recon
 504,dharma,,"Generation-based, context-free grammar fuzzer.",fuzzer
 505,dhcdrop,,Remove illegal dhcp servers with IP-pool underflow.,misc
-506,DHCP.py,,part of the responder package (/usr/share/responder/dhcp.py),
+506,DHCP.py,,part of the responder package (/usr/share/responder/dhcp.py),network
 507,dhcpf,,Passive DHCP fingerprinting implementation.,fingerprint
 508,dhcpig,,"DHCPig initiates an advanced DHCP exhaustion attack. It will consume all IPs on the LAN, stop new users from obtaining IPs, release any IPs in use, then for good measure send gratuitous ARP and knock all windows hosts offline. It requires scapy >=2.1 library and admin privileges to execute. No configuration necessary, just pass the interface as a parameter. It has been tested on multiple Linux distributions and multiple DHCP servers (ISC, Windows 2k3/2k8).",stress-testing
 509,dhcpoptinj,,DHCP option injector.,networking
-510,didier-stevens-suite,,Didier Stevens Suite.,
+510,didier-stevens-suite,,A collection of pentest tools,misc
 511,dinouml,,"A network simulation tool, based on UML (User Mode Linux) that can simulate big Linux networks on a single PC",networking
 512,dirb,,DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the response.,web-app
 513,dirble,,Fast directory scanning and scraping tool.,web-app
@@ -523,7 +523,7 @@ It provides all the information a “show cdp neighbors detail” command would 
 519,dirscraper,,OSINT Scanning tool which discovers and maps directories found in javascript files hosted on a website.,web-app
 520,dirsearch,,HTTP(S) directory/file brute forcer.,web-app
 521,dirstalk,,Modern alternative to dirbuster/dirb.,scanner
-522,Discover,,auto enumeration on linux (more info needed),
+522,Discover,,auto enumeration on linux (more info needed),post-recon
 523,disitool,,Tool to work with Windows executables digital signatures.,forensics
 524,dislocker,,Read BitLocker encrypted volumes under Linux.,crypto
 525,dissector,,This code dissects the internal data structures in ELF files. It supports x86 and x86_64 archs and runs under Linux.,binary
@@ -543,19 +543,19 @@ It provides all the information a “show cdp neighbors detail” command would 
 539,dnschef,,"DNSChef is a highly configurable DNS proxy for Penetration Testers and Malware Analysts. A DNS proxy (aka “Fake DNS”) is a tool used for application network traffic analysis among other uses. For example, a DNS proxy can be used to fake requests for “badguy.com” to point to a local machine for termination or interception instead of a real host somewhere on the Internet.",network
 540,dnscobra,,DNS subdomain bruteforcing tool with Tor support through torsocks,recon
 541,dnsdiag,,DNS Diagnostics and Performance Measurement Tools.,networking
-542,DNSDict6,Network,,
+542,DNSDict6,Network,,network
 543,dnsdrdos,,Proof of concept code for distributed DNS reflection DoS.,dos
-544,DNSenum,Network,,
+544,DNSenum,Network,,network
 545,dnsfilexfer,,File transfer via DNS.,networking
 546,dnsgoblin,,Nasty creature constantly searching for DNS servers. It uses standard dns querys and waits for the replies.,scanner
 547,dnsgrep,,A utility for quickly searching presorted DNS names.,recon
-548,DNSMap,Network,,
+548,DNSMap,Network,,network
 549,dns-parallel-prober,,PoC for an adaptive parallelised DNS prober.,recon
 550,dnspredict,,DNS prediction.,scanner
 551,dnsprobe,,Allows you to perform multiple dns queries of your choice with a list of user supplied resolvers.,recon
 552,dnspy,,.NET debugger and assembly editor.,windows
-553,DNSRecon,Network,A powerful DNS enumeration script,
-554,Dnsrevenum6,Network,,
+553,DNSRecon,Network,A powerful DNS enumeration script,network
+554,Dnsrevenum6,Network,,network
 555,dns-reverse-proxy,,A reverse DNS proxy written in Go.,proxy
 556,dnssearch,,A subdomain enumeration tool.,recon
 557,dnsspider,,A fast multithreaded bruteforcer of subdomains that leverages a wordlist and/or character permutation.,recon
@@ -582,8 +582,8 @@ Doona is Australian for duvet. It adds a significant number of features/changes 
 577,dorkbot,,Command-line tool to scan Google search results for vulnerabilities.,scanner
 578,dorkme,,"Tool designed with the purpose of making easier the searching of vulnerabilities with Google Dorks, such as SQL Injection vulnerabilities.",scanner
 579,dorknet,,Selenium powered Python script to automate searching for vulnerable web apps.,web-app
-580,dos2unix,Utility,convets files with dos line endings to line endings readable by unix,
-581,Dotdotpwn,Web,A very flexible intelligent fuzzer to discover traversal directory vulnerabilities in software such as HTTP/FTP/TFTP servers,
+580,dos2unix,Utility,convets files with dos line endings to line endings readable by unix,misc
+581,Dotdotpwn,Web,A very flexible intelligent fuzzer to discover traversal directory vulnerabilities in software such as HTTP/FTP/TFTP servers,web-app
 582,dotpeek,,Free .NET Decompiler and Assembly Browser.,windows
 583,dpeparser,,Default password enumeration project,cracker
 584,dpscan,,Drupal Vulnerability Scanner.,scanner
@@ -609,12 +609,12 @@ Dradis is a self-contained web application that provides a centralized repositor
 603,dshell,,A network forensic analysis framework.,forensics
 604,dsjs,,A fully functional JavaScript library vulnerability scanner written in under 100 lines of code.,web-app
 605,dsniff,,Collection of tools for network auditing and penetration testing,sniffer
-606,Dsquery,Utility,"For windows, Queries the directory by using search criteria that you specify",
+606,Dsquery,Utility,"For windows, Queries the directory by using search criteria that you specify",windows
 607,dsss,,A fully functional SQL injection vulnerability scanner (supporting GET and POST parameters) written in under 100 lines of code.,web-app
 608,dsstore-crawler,,A parser + crawler for .DS_Store files exposed publically.,web-app
 609,dsxs,,A fully functional Cross-site scripting vulnerability scanner (supporting GET and POST parameters) written in under 100 lines of code.,web-app
 610,d-tect,,Pentesting the Modern Web.,scanner
-611,dtpscan.sh,,enumerats dynamic trunking,
+611,dtpscan.sh,,enumerats dynamic trunking,network
 612,dtp-spoof,,Python script/security tool to test Dynamic Trunking Protocol configuration on a switch.,networking
 613,dublin-traceroute,,NAT-aware multipath tracerouting tool.,networking
 614,ducktoolkit,,Encoding Tools for Rubber Ducky.,exploitation
@@ -630,9 +630,9 @@ Dradis is a self-contained web application that provides a centralized repositor
 624,dynamorio,,A dynamic binary instrumentation framework.,binary
 625,eapeak,,Analysis Suite For EAP Enabled Wireless Networks.,wireless
 626,eaphammer,,Targeted evil twin attacks against WPA2-Enterprise networks. Indirect wireless pivots using hostile portal attacks.,wireless
-627,Eapmd5pass,,,
+627,Eapmd5pass,,"This tool reads from a live network interface in monitor-mode, or from a stored libpcap capture file, and extracts the portions of the EAP-MD5 authentication exchange. Once the challenge and response portions have been collected from this exchange, eapmd5pass will mount an offline dictionary attack against the user�s password.",network
 628,easside-ng,,"Easside-ng is an auto-magic tool which allows you to communicate via an WEP-encrypted access point (AP) without knowing the WEP key. It first identifies a network, then proceeds to associate with it, obtain PRGA (pseudo random generation algorithm) xor data, determine the network IP scheme and then setup a TAP interface so that you can communicate with the AP without requiring the WEP key. All this is done without your intervention.",wireless
-629,Easy-Creds,,can be used to glean credentials,
+629,Easy-Creds,,"screen, freeradius (with wpe patches), hamster, ferret, sslstrip, dsniff, urlsnarf, metasploit, airbase-ng, airodump-ng, hostapd, mdk3, ipcalc and asleap to automate the collection of credentials thought a various number of tools",post-recon
 630,easyda,,Easy Windows Domain Access Script.,automation
 631,easyfuzzer,,"A flexible fuzzer, not only for web, has a CSV output for efficient output analysis (platform independent).",fuzzer
 632,eazy,,"This is a small python tool that scans websites to look for PHP shells, backups, admin panels, and more.",scanner
@@ -655,10 +655,10 @@ Dradis is a self-contained web application that provides a centralized repositor
 649,empire,,A PowerShell and Python post-exploitation agent.,automation
 650,enabler,,Attempts to find the enable password on a cisco system via brute force.,cracker
 651,encodeshellcode,,This is an encoding tool for 32-bit x86 shellcode that assists a researcher when dealing with character filter or byte restrictions in a buffer overflow vulnerability or some kind of IDS/IPS/AV blocking your code.,exploitation
-652,ent,,used to get the enthropy of a file (~4.5 is normaly ASCII and >6 is encrypted.,
+652,ent,,used to get the enthropy of a file (~4.5 is normaly ASCII and >6 is encrypted.,misc
 653,enteletaor,,"Message Queue & Broker Injection tool that implements attacks to Redis, RabbitMQ and ZeroMQ.",exploitation
 654,entropy,,A set of tools to exploit Netwave and GoAhead IP Webcams.,exploitation
-655,Enum4Linux,Linux,for Enumerating Windows and Samba hosts,
+655,Enum4Linux,Linux,for Enumerating Windows and Samba hosts,recon
 656,enum4linux-ng,,A next generation version of enum4linux.,recon
 657,enumerate-iam,,Enumerate the permissions associated with an AWS credential set.,recon
 658,enumerid,,Enumerate RIDs using pure Python.,recon
@@ -671,26 +671,26 @@ Dradis is a self-contained web application that provides a centralized repositor
 665,erase-registrations,,An IAX flooder.,voip
 666,eresi,,The ERESI Reverse Engineering Software Interface.,binary
 667,erl-matter,,"Tool to exploit epmd related services such ass rabbitmp, ejabberd and couchdb by bruteforcing the cookie and gaining RCE afterwards.",exploitation
-668,esentutl.py,Windows,"An Extensibe Storage Engine format implementation. Allows dumping catalog, pages and tables of ESE databases (e.g. NTDS.dit)",
+668,esentutl.py,Windows,"An Extensibe Storage Engine format implementation. Allows dumping catalog, pages and tables of ESE databases (e.g. NTDS.dit)",windows
 669,espionage,,A Network Packet and Traffic Interceptor For Linux. Sniff All Data Sent Through a Network.,sniffer
 670,eternal-scanner,,An internet scanner for exploit CVE-0144 (Eternal Blue).,scanner
 671,etherape,,Graphical network monitor for various OSI layers and protocols,networking
 672,etherchange,,Can change the Ethernet address of the network adapters in Windows.,windows
 673,etherflood,,Floods a switched network with Ethernet frames with random hardware addresses.,windows
-674,Ettercap,Network,Ettercap is a comprehensive suite for man in the middle attacks. It supports active and passive dissection of many protocols and includes many features for network and host analysis.,
+674,Ettercap,Network,Ettercap is a comprehensive suite for man in the middle attacks. It supports active and passive dissection of many protocols and includes many features for network and host analysis.,network
 675,evilclippy,,A cross-platform assistant for creating malicious MS Office documents.,exploitation
 676,evilginx,,Man-in-the-middle attack framework used for phishing login credentials,social
-677,Evilgrade,Human,to serve malicious content to victims by service impersonation,
+677,Evilgrade,Human,to serve malicious content to victims by service impersonation,spoof
 678,evilize,,Tool to create MD5 colliding binaries.,cracker
 679,evillimiter,,Tool that limits bandwidth of devices on the same network without access.,networking
 680,evilmaid,,TrueCrypt loader backdoor to sniff volume password,cracker
 681,evilpdf,,Embedding executable files in PDF Documents.,backdoor
 682,evil-ssdp,,Spoof SSDP replies to phish for NetNTLM challenge/response on a network.,spoof
-683,Evil-WinRM,Windows,Malware exuivilent of WinRM and used to exploit windows systems,
+683,Evil-WinRM,Windows,Malware exuivilent of WinRM and used to exploit windows systems,exploitation
 684,evine,,Interactive CLI Web Crawler.,web-app
 685,evtkit,,Fix acquired .evt - Windows Event Log files (Forensics).,forensics
 686,exabgp,,The BGP swiss army knife of networking.,networking
-687,exchanger.py,SMB,A tool for connecting to MS Exchange via RPC over HTTP v2.,
+687,exchanger.py,SMB,A tool for connecting to MS Exchange via RPC over HTTP v2.,misc
 688,exe2image,,A simple utility to convert EXE files to JPEG images and vice versa.,backdoor
 689,exescan,,A tool to detect anomalies in PE (Portable Executable) files.,binary
 690,exitmap,,A fast and modular scanner for Tor exit relays.,recon
@@ -713,7 +713,7 @@ Dradis is a self-contained web application that provides a centralized repositor
 707,facebrok,,Social Engineering Tool Oriented to facebook.,social
 708,facebrute,,This script tries to guess passwords for a given facebook account using a list of passwords (dictionary).,cracker
 709,factordb-pycli,,CLI for factordb and Python API Client.,crypto
-710,fake_router6,,advertises a new default gateway,
+710,fake_router6,,advertises a new default gateway,spoof
 711,fakeap,,Black Alchemy's Fake AP generates thousands of counterfeit 802.11b access points. Hide in plain sight amongst Fake AP's cacophony of beacon frames.,honeypot
 712,fakedns,,"A regular-expression based python MITM DNS server with correct DNS request passthrough and ""Not Found"" responses.",proxy
 713,fakemail,,Fake mail server that captures e-mails as files for acceptance testing.,misc
@@ -739,7 +739,7 @@ Dradis is a self-contained web application that provides a centralized repositor
 733,fgscanner,,"An advanced, opensource URL scanner.",scanner
 734,fhttp,,"This is a framework for HTTP related attacks. It is written in Perl with a GTK interface, has a proxy for debugging and manipulation, proxy chaining, evasion rules, and more.",web-app
 735,fi6s,,IPv6 network scanner designed to be fast.,scanner
-736,Fierce,Network,This is for identifying likely targets inside and outside a coperate network,
+736,Fierce,Network,This is for identifying likely targets inside and outside a coperate network,recon
 737,fiked,,"FakeIKEd, or fiked for short, is a fake IKE daemon supporting just enough of the standards and Cisco extensions to attack commonly found insecure Cisco VPN PSK+XAUTH based IPsec authentication setups in what could be described as a semi MitM attack. Fiked can impersonate a VPN gateway’s IKE responder in order to capture XAUTH login credentials; it doesn’t currently do the client part of full MitM.",network
 738,filebuster,,An extremely fast and flexible web fuzzer.,web-app
 739,filefuzz,,A binary file fuzzer for Windows with several options.,windows
@@ -748,7 +748,7 @@ Dradis is a self-contained web application that provides a centralized repositor
 742,filibuster,,A Egress filter mapping application with additional functionality.,networking
 743,fimap,,"fimap is a little python tool which can find, prepare, audit, exploit and even google automatically for local and remote file inclusion bugs in web-app. fimap should be something like sqlmap just for LFI/RFI bugs instead of SQL injection. It’s currently under heavy development but it’s usable.",web-app
 744,finalrecon,,OSINT Tool for All-In-One Web Reconnaissance.,recon
-745,findDelegation.py,Windows,"Simple script to quickly list all delegation relationships (unconstrained, constrained, resource-based constrained) in an AD environment.",
+745,findDelegation.py,Windows,"Simple script to quickly list all delegation relationships (unconstrained, constrained, resource-based constrained) in an AD environment.",recon
 746,find-dns,,A tool that scans networks looking for DNS servers.,scanner
 747,findmyhash,,Accepted algorithms are:,cracker
 748,findmyiphone,,Locates all devices associated with an iCloud account,mobile
@@ -814,7 +814,7 @@ Dradis is a self-contained web application that provides a centralized repositor
 808,ftpscout,,Scans ftps for anonymous access.,scanner
 809,ftp-spider,,"FTP investigation tool - Scans ftp server for the following: reveal entire directory tree structures, detect anonymous access, detect directories with write permissions, find user specified data within repository.",scanner
 810,fuddly,,Fuzzing and Data Manipulation Framework (for GNU/Linux).,fuzzer
-811,fuff,Web,extensive fussing tool ,
+811,fuff,Web,extensive fussing tool ,fuzzer
 812,funkload,,"FunkLoad is a functional and load web tester, written in Python, whose main use cases are:",web-app
 813,fusil,,A Python library used to write fuzzing programs.,fuzzer
 814,fuxploider,,Tool that automates the process of detecting and exploiting file upload forms flaws.,web-app
@@ -847,16 +847,16 @@ Dradis is a self-contained web application that provides a centralized repositor
 841,geoip,,Non-DNS IP-to-country resolver C library & utils,networking
 842,geoipgen,,GeoIPgen is a country to IP addresses generator.,misc
 843,gerix-wifi-cracker,,A graphical user interface for aircrack-ng and pyrit.,wireless
-844,GetADUsers.py,Windows,This script will gather data about the domain’s users and their corresponding email addresses. It will also include some extra information about last logon and last password set attributes.,
-845,getArch.py,SMB,This script will connect against a target (or list of targets) machine/s and gather the OS architecture type installed by (ab)using a documented MSRPC feature.,
+844,GetADUsers.py,Windows,This script will gather data about the domain’s users and their corresponding email addresses. It will also include some extra information about last logon and last password set attributes.,recon
+845,getArch.py,SMB,This script will connect against a target (or list of targets) machine/s and gather the OS architecture type installed by (ab)using a documented MSRPC feature.,recon
 846,gethsploit,,Finding Ethereum nodes which are vulnerable to RPC-attacks.,scanner
-847,GetNPUsers.py,Kerberos,This example will attempt to list and get TGTs for those users that have the property ‘Do not require Kerberos preauthentication’ set (UF_DONT_REQUIRE_PREAUTH),
-848,GetPac.py,Kerberos,This script will get the PAC (Privilege Attribute Certificate) structure of the specified target user just having a normal authenticated user credentials.,
+847,GetNPUsers.py,Kerberos,This example will attempt to list and get TGTs for those users that have the property ‘Do not require Kerberos preauthentication’ set (UF_DONT_REQUIRE_PREAUTH),kerberos
+848,GetPac.py,Kerberos,This script will get the PAC (Privilege Attribute Certificate) structure of the specified target user just having a normal authenticated user credentials.,kerberos
 849,getsids,,Getsids tries to enumerate Oracle Sids by sending the services command to the Oracle TNS listener. Like doing ‘lsnrctl service’.,database
 850,getsploit,,Command line utility for searching and downloading exploits.,exploitation
-851,GetST.py,Kerberos,"Given a password, hash, aesKey or TGT in ccache, this script will request a Service Ticket and save it as ccache. Can be used to impersonate user for request",
-852,GetTGT.py,Kerberos,"Given a password, hash or aesKey, this script will request a TGT and save it as cache.",
-853,GetUserSPNs.py,Kerberos,will try to find and fetch Service Principal Names that are associated with normal user accounts,
+851,GetST.py,Kerberos,"Given a password, hash, aesKey or TGT in ccache, this script will request a Service Ticket and save it as ccache. Can be used to impersonate user for request",kerberos
+852,GetTGT.py,Kerberos,"Given a password, hash or aesKey, this script will request a TGT and save it as cache.",kerberos
+853,GetUserSPNs.py,Kerberos,will try to find and fetch Service Principal Names that are associated with normal user accounts,kerberos
 854,gggooglescan,,A Google scraper which performs automated searches and returns results of search queries in the form of URLs or hostnames.,scanner
 855,ghettotooth,,Ghettodriving for bluetooth,bluetooth
 856,ghidra,,Software reverse engineering framework,reverse-eng
@@ -886,10 +886,10 @@ Dradis is a self-contained web application that provides a centralized repositor
 880,gnuradio,,General purpose DSP and SDR toolkit. With drivers for usrp and fcd.,wireless
 881,gnutls2,,A library which provides a secure layer over a reliable transport layer (Version 2),crypto
 882,gobd,,A Golang covert backdoor.,backdoor
-883,GoBuster,Web,A fuzzer for websites,
+883,GoBuster,Web,A fuzzer for websites,web-app
 884,goddi,,Dumps Active Directory domain information.,recon
 885,goldeneye,,A HTTP DoS test tool. Attack Vector exploited: HTTP Keep Alive + NoCache.,dos
-886,goldenPac.py,Kerberos,Exploit for MS14-068. Saves the golden ticket and also launches a PSEXEC session at the target.,
+886,goldenPac.py,Kerberos,Exploit for MS14-068. Saves the golden ticket and also launches a PSEXEC session at the target.,kerberos
 887,golismero,,"GoLismero is an open source framework for security testing. It’s currently geared towards web security, but it can easily be expanded to other kinds of scans.",recon
 888,goodork,,A python script designed to allow you to leverage the power of google dorking straight from the comfort of your command line.,recon
 889,goofile,,Use this tool to search for a specific file type in a given domain.,recon
@@ -964,7 +964,7 @@ Dradis is a self-contained web application that provides a centralized repositor
 958,harpoon,,CLI tool for open source and threat intelligence.,automation
 959,hasere,,Discover the vhosts using google and bing.,recon
 960,hash-buster,,A python script which scraps online hash crackers to find cleartext of a hash.,crypto
-961,Hashcat,Hash,A password bruteforces,
+961,Hashcat,Hash,A password bruteforces,cracker
 962,hashcatch,,Capture handshakes of nearby WiFi networks automatically.,wireless
 963,hashcat-utils,,Set of small utilities that are useful in advanced password cracking,misc
 964,hashdb,,A block hash toolkit.,crypto
@@ -973,7 +973,7 @@ Dradis is a self-contained web application that provides a centralized repositor
 967,hash-extender,,A hash length extension attack tool.,crypto
 968,hashfind,,A tool to search files for matching password hash types and other interesting data.,crypto
 969,hashid,,Software to identify the different types of hashes used to encrypt data.,crypto
-970,Hash-Identifier,Hash,(superseeded by Name-That-Hash)A simple python program for identifying hashes,
+970,Hash-Identifier,Hash,(superseeded by Name-That-Hash)A simple python program for identifying hashes,cracker
 971,hashpump,,A tool to exploit the hash length extension attack in various hashing algorithms.,crypto
 972,hashtag,,A python script written to parse and identify password hashes.,cracker
 973,hatcloud,,Bypass CloudFlare with Ruby.,recon
@@ -1013,7 +1013,7 @@ Dradis is a self-contained web application that provides a centralized repositor
 1007,hoper,,Trace URL's jumps across the rel links to obtain the last URL.,recon
 1008,hopper,,"Reverse engineering tool that lets you disassemble, decompile and debug your applications.",reverse-eng
 1009,hoppy,,A python script which tests http methods for configuration issues leaking information or just to see if they are enabled.,scanner
-1010,Hostapd-wpe,,"It implements IEEE 802.1x Authenticator and Authentication Server impersonation attacks to obtain client credentials, establish connectivity to the client, and launch other attacks where applicable.",
+1010,Hostapd-wpe,,"It implements IEEE 802.1x Authenticator and Authentication Server impersonation attacks to obtain client credentials, establish connectivity to the client, and launch other attacks where applicable.",spoof
 1011,hostbox-ssh,,A ssh password/account scanner.,cracker
 1012,host-extract,,Ruby script tries to extract all IP/Host patterns in page response of a given URL and JavaScript/CSS files of that URL.,scanner
 1013,hosthunter,,A recon tool for discovering hostnames using OSINT techniques.,recon
@@ -1021,7 +1021,7 @@ Dradis is a self-contained web application that provides a centralized repositor
 1015,hotspotter,,"Hotspotter passively monitors the network for probe request frames to identify the preferred networks of Windows XP clients, and will compare it to a supplied list of common hotspot network names.",wireless
 1016,howmanypeoplearearound,,Count the number of people around you by monitoring wifi signals.,recon
 1017,hpfeeds,,Honeynet Project generic authenticated datafeed protocol.,honeypot
-1018,Hping,All,"Ping command on steroids, used to enumerating firewalls",
+1018,Hping,All,"Ping command on steroids, used to enumerating firewalls",recon
 1019,hping3,,"hping is a command-line oriented TCP/IP packet assembler/analyzer. The interface is inspired to the ping(8) unix command, but hping isn’t only able to send ICMP echo requests. It supports TCP, UDP, ICMP and RAW-IP protocols, has a traceroute mode, the ability to send files between a covered channel, and many other features.",recon
 1020,hqlmap,,A tool to exploit HQL Injections.,exploitation
 1021,hsecscan,,A security scanner for HTTP response headers.,scanner
@@ -1057,7 +1057,7 @@ Dradis is a self-contained web application that provides a centralized repositor
 1051,hwk,,Collection of packet crafting and wireless network flooding tools,dos
 1052,hxd,,Freeware Hex Editor and Disk Editor.,misc
 1053,hyde,,Just another tool in C to do DDoS (with spoofing).,networking
-1054,Hydra,Web,Brutforcer for wesite passwords,
+1054,Hydra,Web,Brutforcer for wesite passwords,cracker
 1055,hyenae,,Flexible platform independent packet generator.,networking
 1056,hyperfox,,A security tool for proxying and recording HTTP and HTTPs traffic.,networking
 1057,hyperion-crypter,,A runtime encrypter for 32-bit and 64-bit portable executables.,windows
@@ -1076,7 +1076,7 @@ This can help to prioritise target service during a pentest (you might want to a
 1069,identywaf,,Blind WAF identification tool.,web-app
 1070,idswakeup,,A collection of tools that allows to test network intrusion detection systems.,recon
 1071,ifchk,,A network interface promiscuous mode detection tool.,defensive
-1072,ifmap.py,Windows,Ifmap scripts initially bind to the MGMT interface of the Target machine. Then it fetches a list of interface IDs. Then it adds those IDs to another large list of UUIDs it already has in its database. Then it tries to bind each of the interfaces and reports the status of the interface.,
+1072,ifmap.py,Windows,Ifmap scripts initially bind to the MGMT interface of the Target machine. Then it fetches a list of interface IDs. Then it adds those IDs to another large list of UUIDs it already has in its database. Then it tries to bind each of the interfaces and reports the status of the interface.,windows
 1073,ifuzz,,A binary file fuzzer with several options.,fuzzer
 1074,iheartxor,,A tool for bruteforcing encoded strings within a boundary defined by a regular expression. It will bruteforce the key value range of 0x1 through 0x255.,cracker
 1075,iisbruteforcer,,HTTP authentication cracker. It's a tool that launchs an online dictionary attack to test for weak or simple passwords against protected areas on an IIS Web server.,cracker
@@ -1085,14 +1085,14 @@ This can help to prioritise target service during a pentest (you might want to a
 1078,ikeforce,,A command line IPSEC VPN brute forcing tool for Linux that allows group name/ID enumeration and XAUTH brute forcing capabilities.,cracker
 1079,ikeprobe,,Determine vulnerabilities in the PSK implementation of the VPN server.,windows
 1080,ikeprober,,"Tool crafting IKE initiator packets and allowing many options to be manually set. Useful to find overflows, error conditions and identifiyng vendors",fuzzer
-1081,IKE-Scan,VPN,"Used to dicover, fingerprint and test IPsec VPN systems",
+1081,IKE-Scan,VPN,"Used to dicover, fingerprint and test IPsec VPN systems",recon
 1082,ilo4-toolbox,,Toolbox for HPE iLO4 analysis.,scanner
 1083,ilty,,An interception phone system for VoIP network.,voip
 1084,imagegrep,,Grep word in pdf or image based on OCR.,misc
 1085,imagejs,,Small tool to package javascript into a valid image file.,binary
 1086,imagemounter,,Command line utility and Python package to ease the (un)mounting of forensic disk images.,forensics
 1087,imhex,,"A Hex Editor for Reverse Engineers, Programmers and people that value their eye sight when working at 3 AM.",misc
-1088,Impacket,Windows,The fascilitator of python bassed script that uses modules for attacking windows,
+1088,Impacket,Windows,The fascilitator of python bassed script that uses modules for attacking windows,windows
 1089,impulse,,Modern Denial-of-service ToolKit.,dos
 1090,inception,,A FireWire physical memory manipulation and hacking tool exploiting IEEE 1394 SBP DMA.,exploitation
 1091,indx2csv,,An advanced parser for INDX records.,forensics
@@ -1136,10 +1136,10 @@ import their own features, among other new functionality. ",persistence
 1127,iphone-backup-analyzer,,"iPhone Backup Analyzer is an utility designed to easily browse through the backup folder of an iPhone (or any other iOS device). Read configuration files, browse archives, lurk into databases, and so on.",forensics
 1128,ip-https-tools,,Tools for the IP over HTTPS (IP-HTTPS) Tunneling Protocol.,tunnel
 1129,ipmipwn,,IPMI cipher 0 attack tool.,cracker
-1130,ipmitool,,IPMI zero ciphher authentication bypass,
+1130,ipmitool,,IPMI zero ciphher authentication bypass,exploitation
 1131,ipobfuscator,,A simple tool to convert the IP to a DWORD IP.,misc
 1132,ipscan,,A very fast IP address and port scanner.,scanner
-1133,IPTables,Network,"Iptables is a firewall, installed by default on all official Ubuntu distributions",
+1133,IPTables,Network,"Iptables is a firewall, installed by default on all official Ubuntu distributions",misc
 1134,iptodomain,,This tool extract domains from IP address based in the information saved in virustotal.,recon
 1135,ip-tracer,,Track and retrieve any ip address information.,recon
 1136,iptv,,Search and brute force illegal iptv server.,scanner
@@ -1188,7 +1188,7 @@ import their own features, among other new functionality. ",persistence
 1179,jhead,,EXIF JPEG info parser and thumbnail remover,defensive
 1180,jnetmap,,A network monitor of sorts.,networking
 1181,john,,"John the Ripper is designed to be both feature-rich and fast. It combines several cracking modes in one program and is fully configurable for your particular needs (you can even define a custom cracking mode using the built-in compiler supporting a subset of C). Also, John is available for several different platforms which enables you to use the same cracker everywhere (you can even continue a cracking session which you started on another platform).",cracker
-1182,John the Ripper,Hash,a password bruteforcer,
+1182,John the Ripper,Hash,a password bruteforcer,cracker
 1183,johnny,,Johnny provides a GUI for the John the Ripper password cracking tool.,cracker
 1184,jok3r,,Network and Web Pentest Framework.,web-app
 1185,jomplug,,This php script fingerprints a given Joomla system and then uses Packet Storm's archive to check for bugs related to the installed components.,web-app
@@ -1205,16 +1205,15 @@ import their own features, among other new functionality. ",persistence
 1196,jsonbee,,A ready to use JSONP endpoints/payloads to help bypass content security policy (CSP).,web-app
 1197,jsparser,,Parse javascript using Tornado and JSBeautifier to discover interesting enpoints.,web-app
 1198,jsql,,"jSQL Injection is a lightweight application used to find database information from a distant server. jSQL Injection is free, open source and cross-platform (Windows, Linux, Mac OS X, Solaris).",vulnerability-analysis
-1199,jSQLInjection,SQL,used for gathering SQL databse information form a distant source,
+1199,jSQLInjection,SQL,used for gathering SQL databse information form a distant source,database
 1200,jsql-injection,,A Java application for automatic SQL database injection.,web-app
 1201,jstillery,,Advanced JavaScript Deobfuscation via Partial Evaluation.,web-app
 1202,juicy-potato,,"A sugared version of RottenPotatoNG, with a bit of juice.",windows
 1203,junkie,,A modular packet sniffer and analyzer.,sniffer
 1204,justdecompile,,The decompilation engine of JustDecompile.,windows
 1205,jwscan,,"Scanner for Jar to EXE wrapper like Launch4j, Exe4j, JSmooth, Jar2Exe.",reverse-eng
-1206,JWT Cracker,Web,,
 1207,jwtcat,,Script performs offline brute-force attacks against JSON Web Token (JWT),cracker
-1208,Jwt-Cracker,Web,Brute forcer for JWT,
+1208,Jwt-Cracker,Web,Brute forcer for JWT,wev
 1209,jwt-tool,,"Toolkit for validating, forging and cracking JWTs (JSON Web Tokens).",cracker
 1210,jynx2,,An expansion of the original Jynx LD_PRELOAD rootkit,backdoor
 1211,k55,,Linux x86_64 Process Injection Utility.,backdoor
@@ -1222,16 +1221,16 @@ import their own features, among other new functionality. ",persistence
 1213,kadimus,,LFI Scan & Exploit Tool.,web-app
 1214,kalibrate-rtl,,"Kalibrate, or kal, can scan for GSM base stations in a given frequency band and can use those GSM base stations to calculate the local oscillator frequency offset.",wireless
 1215,kamerka,,Build interactive map of cameras from Shodan.,recon
-1216,karmaSMB.py,SMB,A SMB Server that answers specific file contents regardless of the SMB share and pathname specified.,
+1216,karmaSMB.py,SMB,A SMB Server that answers specific file contents regardless of the SMB share and pathname specified.,spoof
 1217,katana,,"A framework that seekss to unite general auditing tools, which are general pentesting tools (Network,Web,Desktop and others).",exploitation
 1218,katsnoop,,Utility that sniffs HTTP Basic Authentication information and prints the base64 decoded form.,sniffer
 1219,kautilya,,Pwnage with Human Interface Devices using Teensy++2.0 and Teensy 3.0 devices.,hardware
 1220,kcptun,,A Secure Tunnel Based On KCP with N:M Multiplexing,tunnel
-1221,KEETheif,Windows,"Allows for the extraction of KeePass 2.X key material from memory, as well as the backdooring and enumeration of the KeePass trigger system",
+1221,KEETheif,Windows,"Allows for the extraction of KeePass 2.X key material from memory, as well as the backdooring and enumeration of the KeePass trigger system",cracker
 1222,keimpx,,"keimpx is an open source tool, released under a modified version of Apache License 1.1.",cracker
 1223,kekeo,,A little toolbox to play with Microsoft Kerberos in C.,windows
-1224,kerbcrack,,,
-1225,Kerbrute,Windows,quickly enumerate and brutforce active directory accounts through kerberos pre-authentication,
+1224,kerbcrack,,,kerberos
+1225,Kerbrute,Windows,quickly enumerate and brutforce active directory accounts through kerberos pre-authentication,kerberos
 1226,kernelpop,,Kernel privilege escalation enumeration and exploitation framework.,exploitation
 1227,keye,,Recon tool detecting changes of websites based on content-length differences.,recon
 1228,khc,,A small tool designed to recover hashed known_hosts fiels back to their plain-text equivalents.,cracker
@@ -1249,7 +1248,7 @@ import their own features, among other new functionality. ",persistence
 1240,klar,,Integration of Clair and Docker Registry.,exploitation
 1241,klee,,A symbolic virtual machine built on top of the LLVM compiler infrastructure.,binary
 1242,klogger,,A keystroke logger for the NT-series of Windows.,windows
-1243,Knock,SSH,This is used for port knocking,
+1243,Knock,SSH,This is used for port knocking,misc
 1244,knxmap,,KNXnet/IP scanning and auditing tool for KNX home automation installations.,scanner
 1245,koadic,,A Windows post-exploitation rootkit similar to other penetration testing tools such as Meterpreter and Powershell Empire.,automation
 1246,kolkata,,A web application fingerprinting engine written in Perl that combines cryptography with IDS evasion.,web-app
@@ -1314,10 +1313,10 @@ import their own features, among other new functionality. ",persistence
 1305,linikatz,,Tool to attack AD on UNIX.,automation
 1306,linkedin2username,,OSINT Tool: Generate username lists for companies on LinkedIn.,social
 1307,linkfinder,,Discovers endpoint and their parameters in JavaScript files.,web-app
-1308,LinPeas,Linux,For Enumerating Linux computers,
+1308,LinPeas,Linux,For Enumerating Linux computers,post-recon
 1309,linset,,Evil Twin Attack Bash script - An automated WPA/WPA2 hacker.,automation
-1310,Linux commands,Linux,Linux commands used for Priv esc,
-1311,Linux Exploit Suggester,Linux,keeps track of vulnerabilities and suggests exploits to gain root access,
+1310,Linux commands,Linux,Linux commands used for Priv esc,post-recon
+1311,Linux Exploit Suggester,Linux,keeps track of vulnerabilities and suggests exploits to gain root access,post-recon
 1312,linux-exploit-suggester,,"just a simple script to keep track of vulnerabilities and suggest possible exploits to use to gain �root� on a legitimate penetration test, or governing examining body",exploitation
 1313,linux-exploit-suggester.sh,,Linux privilege escalation auditing tool.,recon
 1314,linux-inject,,Tool for injecting a shared object into a Linux process.,backdoor
@@ -1329,7 +1328,7 @@ import their own features, among other new functionality. ",persistence
 1320,lldb,,"Next generation, high-performance debugger",debugger
 1321,loadlibrary,,Porting Windows Dynamic Link Libraries to Linux.,binary
 1322,locasploit,,Local enumeration and exploitation framework.,scanner
-1323,Lockless,Windows,LockLess is a C# tool that allows for the enumeration of open file handles and the copying of locked files,
+1323,Lockless,Windows,LockLess is a C# tool that allows for the enumeration of open file handles and the copying of locked files,exploitation
 1324,lodowep,,Lodowep is a tool for analyzing password strength of accounts on a Lotus Domino webserver system.,cracker
 1325,log-file-parser,,Parser for $LogFile on NTFS.,forensics
 1326,logkeys,,A GNU/Linux keylogger that worked.,keylogger
@@ -1337,7 +1336,7 @@ import their own features, among other new functionality. ",persistence
 1328,Loki,,,
 1329,loki-scanner,,Simple IOC and Incident Response Scanner.,forensics
 1330,lolbas,,Living Off The Land Binaries And Scripts - (LOLBins and LOLScripts).,windows
-1331,lookupsid.py,SMB,"A Windows SID brute forcer example through [MS-LSAT] MSRPC Interface, aiming at finding remote users/groups.",
+1331,lookupsid.py,SMB,"A Windows SID brute forcer example through [MS-LSAT] MSRPC Interface, aiming at finding remote users/groups.",cracker
 1332,loot,,Sensitive information extraction tool.,recon
 1333,lorcon,,Generic library for injecting 802.11 frames,wireless
 1334,lorg,,Apache Logfile Security Analyzer.,defensive
@@ -1355,7 +1354,7 @@ import their own features, among other new functionality. ",persistence
 1346,macchanger,,A small utility to change your NIC's MAC address,networking
 1347,machinae,,A tool for collecting intelligence from public sites/feeds about various security-related pieces of data.,recon
 1348,maclookup,,Lookup MAC addresses in the IEEE MA-L/OUI public listing.,networking
-1349,Macof,,"Part of dsniff package, used for cam table overflow",
+1349,Macof,,"Part of dsniff package, used for cam table overflow",sniffer
 1350,mac-robber,,A digital investigation tool that collects data from allocated files in a mounted file system.,forensics
 1351,magescan,,Scan a Magento site for information.,web-app
 1352,magicrescue,,Find and recover deleted files on block devices,forensics
@@ -1408,7 +1407,7 @@ import their own features, among other new functionality. ",persistence
 1399,mdk4,,Proof-of-Concept tool to exploit common IEEE 802.11 protocol weaknesses.,wireless
 1400,mdns-recon,,An mDNS recon tool written in Python.,recon
 1401,meanalyzer,,Intel Engine Firmware Analysis Tool.,firmware
-1402,Medusa,Web,Web brute forcer,
+1402,Medusa,Web,Web brute forcer,web-app
 1403,meg,,Fetch many paths for many hosts - without killing the hosts.,web-app
 1404,melkor,,"An ELF fuzzer that mutates the existing data in an ELF sample given to create orcs (malformed ELFs), however, it does not change values randomly (dumb fuzzing), instead, it fuzzes certain metadata with semi-valid values through the use of fuzzing rules (knowledge base).",fuzzer
 1405,memdump,,"Dumps system memory to stdout, skipping over holes in memory maps.",forensics
@@ -1419,9 +1418,9 @@ import their own features, among other new functionality. ",persistence
 1410,metabigor,,Intelligence Tool but without API key.,recon
 1411,metacoretex,,MetaCoretex is an entirely JAVA vulnerability scanning framework for databases.,database
 1412,metagoofil,,"Metagoofil is an information gathering tool designed for extracting metadata of public documents (pdf,doc,xls,ppt,docx,pptx,xlsx) belonging to a target company.",recon
-1413,Metagoofli,Utility,This uses google to search for a target company and identifies and downloads publicly avalable data and extracts metadata using various libraries. ,
+1413,Metagoofli,Utility,This uses google to search for a target company and identifies and downloads publicly avalable data and extracts metadata using various libraries. ,recon
 1414,metame,,A simple metamorphic code engine for arbitrary executables.,binary
-1415,Metasploit,All,Powerfull swiss-army-knife of hacking,
+1415,Metasploit,All,Powerfull swiss-army-knife of hacking,exploitation
 1416,metasploit-autopwn,,db_autopwn plugin of metasploit.,automation
 1417,metasploit-framework,,"Metasploit is a penetration testing platform that enables you to find, exploit, and validate vulnerabilities.  It provides the infrastructure, content, and tools to perform penetration tests and extensive security auditing and thanks to the open source community and Rapid7’s own hard working content team, new modules are added on a regular basis, which means that the latest exploit is available to you as soon as it’s published.",exploitation
 1418,meterssh,,"A way to take shellcode, inject it into memory then tunnel whatever port you want to over SSH to mask any type of communications as a normal SSH connection.",backdoor
@@ -1440,8 +1439,8 @@ This program allow to recover authentication keys from MIFARE Classic card.",wir
 1430,middler,,A Man in the Middle tool to demonstrate protocol middling attacks.,networking
 1431,mikrotik-npk,,Python tools for manipulating Mikrotik NPK format.,reverse-eng
 1432,mildew,,Dotmil subdomain discovery tool that scrapes domains from official DoD website directories and certificate transparency logs.,recon
-1433,Mimikatz,Windows,Used to exploit kerberos,
-1434,mimikatz.py,Windows,Mini shell to control a remote mimikatz RPC server,
+1433,Mimikatz,Windows,Used to exploit kerberos,kerberos
+1434,mimikatz.py,Windows,Mini shell to control a remote mimikatz RPC server,kerberos
 1435,mimipenguin,,A tool to dump the login password from the current linux user.,forensics
 1436,mingsweeper,,"A network reconnaissance tool designed to facilitate large address space,high speed node discovery and identification.",windows
 1437,minimodem,,"A command-line program which decodes (or generates) audio modem tones at any specified baud rate, using various framing protocols.",misc
@@ -1485,16 +1484,16 @@ This program allow to recover authentication keys from MIFARE Classic card.",wir
 1475,mp3nema,,"A tool aimed at analyzing and capturing data that is hidden between frames in an MP3 file or stream, otherwise noted as ""out of band"" data.",forensics
 1476,mptcp,,A tool for manipulation of raw packets that allows a large number of options.,networking
 1477,mptcp-abuse,,A collection of tools and resources to explore MPTCP on your network. Initially released at Black Hat USA 2014.,networking
-1478,mqtt_check.py,Windows,Simple MQTT example aimed at playing with different login options. Can be converted into a account/password brute forcer quite easily.,
+1478,mqtt_check.py,Windows,Simple MQTT example aimed at playing with different login options. Can be converted into a account/password brute forcer quite easily.,cracker
 1479,mrsip,,SIP-Based Audit and Attack Tool.,voip
 1480,mrtparse,,A module to read and analyze the MRT format data.,misc
 1481,msfdb,,Manage the metasploit framework database.,misc
 1482,msfenum,,A Metasploit auto auxiliary script.,automation
 1483,msf-mpc,,Msfvenom payload creator.,automation
 1484,msfpc,,"MSFvenom Payload Creator (MSFPC) is a wrapper that generates multiple types of payloads, based on user-selected options. The idea is to be as simple as possible (using as few as one option) to produce a payload.",exploitation
-1485,MSFVenom,OS,Designed for creating payloads,
-1486,mssqlclient.py,SQL,"An MSSQL client, supporting SQL and Windows Authentications (hashes too). It also supports TLS.",
-1487,mssqlinstance.py,SQL,Retrieves the MSSQL instances names from the target host.,
+1485,MSFVenom,OS,Designed for creating payloads,exploitation
+1486,mssqlclient.py,SQL,"An MSSQL client, supporting SQL and Windows Authentications (hashes too). It also supports TLS.",database
+1487,mssqlinstance.py,SQL,Retrieves the MSSQL instances names from the target host.,database
 1488,mssqlscan,,A small multi-threaded tool that scans for Microsoft SQL Servers.,scanner
 1489,ms-sys,,A tool to write Win9x-.. master boot records (mbr) under linux - RTM!,backdoor
 1490,msvpwn,,Bypass Windows' authentication via binary patching.,windows
@@ -1515,19 +1514,19 @@ This program allow to recover authentication keys from MIFARE Classic card.",wir
 1505,mybff,,A Brute Force Framework.,cracker
 1506,myjwt,,"This cli is for pentesters, CTF players, or dev. You can modify your jwt, sign, inject, etc.",exploitation
 1507,mylg,,Network Diagnostic Tool.,networking
-1508,MySQL,SQL,Used for interaction with SQL database,
+1508,MySQL,SQL,Used for interaction with SQL database,database
 1509,mysql2sqlite,,Converts a mysqldump file into a Sqlite 3 compatible file.,database
 1510,n1qlmap,,An N1QL exploitation tool.,exploitation
 1511,naabu,,A fast port scanner written in go with focus on reliability and simplicity.,scanner
 1512,nacker,,A tool to circumvent 802.1x Network Access Control on a wired LAN.,networking
 1513,naft,,Network Appliance Forensic Toolkit.,forensics
-1514,Name-That-Hash,Hash,Hash-identifier with more deatils and command line based,
+1514,Name-That-Hash,Hash,Hash-identifier with more deatils and command line based,cracker
 1515,nasnum,,Script to enumerate network attached storages.,recon
 1516,nbname,,Decodes and displays all NetBIOS name packets it receives on UDP port 137 and more!,windows
 1517,nbnspoof,,NetBIOS Name Service Spoofer,spoof
 1518,nbtenum,,A utility for Windows that can be used to enumerate NetBIOS information from one host or a range of hosts.,windows
 1519,nbtool,,"Some tools for NetBIOS and DNS investigation, attacks, and communication.",networking
-1520,NBTScan,Network,,
+1520,NBTScan,Network,,network
 1521,nbtscan-unixwiz,,"This is a command-line tool that scans for open NETBIOS nameservers on a local or remote TCP/IP network, and this is a first step in finding of open shares. It is based on the functionality of the standard Windows tool nbtstat, but it operates on a range of addresses instead of just one.",recon
 1522,ncpfs,,Allows you to mount volumes of NetWare servers under Linux.,networking
 1523,ncrack,,"Ncrack is a high-speed network authentication cracking tool. It was built to help companies secure their networks by proactively testing all their hosts and networking devices for poor passwords. Security professionals also rely on Ncrack when auditing their clients. Ncrack was designed using a modular approach, a command-line syntax similar to Nmap and a dynamic engine that can adapt its behaviour based on network feedback. It allows for rapid, yet reliable large-scale auditing of multiple hosts.",cracker
@@ -1537,12 +1536,12 @@ This program allow to recover authentication keys from MIFARE Classic card.",wir
 1527,neighbor-cache-fingerprinter,,An ARP based Operating System version scanner.,fingerprint
 1528,Nemesis,,,
 1529,neo-regeorg,,"Improved version of reGeorg, HTTP tunneling pivot tool",tunnel
-1530,Nessus,Web,Extensive vulnerability scanner,
+1530,Nessus,Web,Extensive vulnerability scanner,recon
 1531,netactview,,A graphical network connections viewer similar in functionality to netstat.,networking
 1532,netattack,,Python script to scan and attack wireless networks.,wireless
 1533,netbios-share-scanner,,This tool could be used to check windows workstations and servers if they have accessible shared resources.,scanner
 1534,netbus,,NetBus remote administration tool,windows
-1535,Netcat,Utility,used for connecting 2 computers,
+1535,Netcat,Utility,used for connecting 2 computers,misc
 1536,netcommander,,An easy-to-use arp spoofing tool.,spoof
 1537,netcon,,A network connection establishment and management script.,networking
 1538,net-creds,,Sniffs sensitive data from interface or pcap.,sniffer
@@ -1557,10 +1556,10 @@ This program allow to recover authentication keys from MIFARE Classic card.",wir
 1547,netscan,,"Tcp/Udp/Tor port scanner with: synpacket, connect TCP/UDP and socks5 (tor connection).",scanner
 1548,netscan2,,Active / passive network scanner.,scanner
 1549,netsed,,Small and handful utility design to alter the contents of packets forwarded thru network in real time.,networking
-1550,Netsh,Utility,Netsh is a command-line scripting utility that allows you to display or modify the network configuration of a computer that is currently running. run form cmd.exe,
+1550,Netsh,Utility,Netsh is a command-line scripting utility that allows you to display or modify the network configuration of a computer that is currently running. run form cmd.exe,networking
 1551,netsniff-ng,,High performance Linux network sniffer for packet inspection,sniffer
 1552,netstumbler,,Well-known wireless AP scanner and sniffer.,windows
-1553,netview.py,Windows,Gets a list of the sessions opened at the remote hosts and keep track of them looping over the hosts found and keeping track of who logged in/out from remote servers,
+1553,netview.py,Windows,Gets a list of the sessions opened at the remote hosts and keep track of them looping over the hosts found and keeping track of who logged in/out from remote servers,windows
 1554,network-app-stress-tester,,Network Application Stress Testing Yammer.,dos
 1555,networkmap,,Post-exploitation network mapper.,networking
 1556,networkminer,,"A Network Forensic Analysis Tool for advanced Network Traffic Analysis, sniffer and packet analyzer.",forensics
@@ -1574,7 +1573,7 @@ This program allow to recover authentication keys from MIFARE Classic card.",wir
 1564,ngrep,,A grep-like utility that allows you to search for network packets on an interface.,networking
 1565,ngrok,,"A tunneling, reverse proxy for developing and understanding networked, HTTP services.",tunnel
 1566,nield,,"A tool to receive notifications from kernel through netlink socket, and generate logs related to interfaces, neighbor cache(ARP,NDP), IP address(IPv4,IPv6), routing, FIB rules, traffic control.",networking
-1567,Nikto,Web,For full enumeration on websites,
+1567,Nikto,Web,For full enumeration on websites,web-app
 1568,nili,,"Tool for Network Scan, Man in the Middle, Protocol Reverse Engineering and Fuzzing.",scanner
 1569,nimbostratus,,Tools for fingerprintinging and exploiting Amazon cloud infrastructures.,fingerprint
 1570,nipe,,A script to make Tor Network your default gateway.,defensive
@@ -1584,7 +1583,7 @@ This program allow to recover authentication keys from MIFARE Classic card.",wir
 1574,nishang,,Nishang is a framework and collection of scripts and payloads which enables usage of PowerShell for offensive security and post exploitation during Penetraion Tests. The scripts are written on the basis of requirement by the author during real Penetration Tests.,persistence
 1575,njsscan,,A static application testing (SAST) tool that can find insecure code patterns in your node.js applications.,code-audit
 1576,nkiller2,,A TCP exhaustion/stressing tool.,dos
-1577,Nmap,All,Used for scanning a network/host to gather more information,
+1577,Nmap,All,Used for scanning a network/host to gather more information,recon
 1578,nmap-parse-output,,Converts/manipulates/extracts data from a nmap scan output.,misc
 1579,nmbscan,,"Tool to scan the shares of a SMB/NetBIOS network, using the NMB/SMB/NetBIOS protocols.",scanner
 1580,nohidy,,"The system admins best friend, multi platform auditing tool.",recon
@@ -1608,10 +1607,10 @@ This program allow to recover authentication keys from MIFARE Classic card.",wir
 1598,ntdsxtract,,Active Directory forensic framework.,forensics
 1599,ntfs-file-extractor,,Extract files off NTFS.,forensics
 1600,ntfs-log-tracker,,"This tool can parse $LogFile, $UsnJrnl of NTFS.",forensics
-1601,ntfs-read.py,Windows,"NTFS format implementation. This script provides a mini shell for browsing and extracting an NTFS volume, including hidden/locked contents.",
+1601,ntfs-read.py,Windows,"NTFS format implementation. This script provides a mini shell for browsing and extracting an NTFS volume, including hidden/locked contents.",windows
 1602,ntlm-challenger,,Parse NTLM over HTTP challenge messages.,scanner
 1603,ntlmrecon,,A tool to enumerate information from NTLM authentication enabled web endpoints.,scanner
-1604,ntlmrelayx.py,SMB,"This script performs NTLM Relay Attacks, setting an SMB and HTTP Server and relaying credentials to many different protocols (SMB, HTTP, MSSQL, LDAP, IMAP, POP3, etc.) By default, it dumps the SAM database",
+1604,ntlmrelayx.py,SMB,"This script performs NTLM Relay Attacks, setting an SMB and HTTP Server and relaying credentials to many different protocols (SMB, HTTP, MSSQL, LDAP, IMAP, POP3, etc.) By default, it dumps the SAM database",network
 1605,ntlm-scanner,,A simple python tool based on Impacket that tests servers for various known NTLM vulnerabilities.,scanner
 1606,ntlm-theft,,A tool for generating multiple types of NTLMv2 hash theft files.,exploitation
 1607,ntop,,"ntop is a tool that shows the network usage, similar to what the popular top Unix command does. ntop is based on pcapture (ftp://ftp.ee.lbl.gov/pcapture.tar.Z) and it has been written in a portable way in order to virtually run on every Unix platform.",recon
@@ -1649,12 +1648,12 @@ This program allow to recover authentication keys from MIFARE Classic card.",wir
 1639,onionscan,,Scan Onion Services for Security Issues.,scanner
 1640,onionsearch,,"Script that scrapes urls on different "".onion"" search engines.",web-app
 1641,onionshare,,Share a file over Tor Hidden Services anonymously and securely,defensive
-1642,opdump.py,Windows,"This script binds to the given hostname:port and connects to the DCERPC (Distributed Computing Environment/ Remote Procedure Calls) interface. After connecting, it tries to call each of the first 256 operation numbers in turn and reports the outcome of each call. This generates a burst of TCP connections to the given host:port!",
+1642,opdump.py,Windows,"This script binds to the given hostname:port and connects to the DCERPC (Distributed Computing Environment/ Remote Procedure Calls) interface. After connecting, it tries to call each of the first 256 operation numbers in turn and reports the outcome of each call. This generates a burst of TCP connections to the given host:port!",recon
 1643,opendoor,,OWASP WEB Directory Scanner.,web-app
 1644,open-iscsi,,iSCSI userland tools,misc
 1645,openpuff,,Yet not another steganography SW.,stego
 1646,openscap,,Open Source Security Compliance Solution.,automation
-1647,OpenSSL,Utility,OpenSSL is a general purpose cryptography library that provides an open source implementation of the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols,
+1647,OpenSSL,Utility,OpenSSL is a general purpose cryptography library that provides an open source implementation of the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols,misc
 1648,openstego,,"A tool implemented in Java for generic steganography, with support for password-based encryption of the data.",crypto
 1649,opensvp,,"A security tool implementing ""attacks"" to be able to the resistance of firewall to protocol level attack.",exploitation
 1650,openvas,,OpenVAS is a framework of several services and tools offering a comprehensive and powerful vulnerability scanning and vulnerability management solution. The framework is part of Greenbone Networks’ commercial vulnerability management solution from which developments are contributed to the Open Source community since 2009.,vulnerability-analysis
@@ -1702,7 +1701,7 @@ Some of p0f’s capabilities include:",recon
 1691,parameth,,This tool can be used to brute discover GET and POST parameters.,web-app
 1692,parampampam,,This tool for brute discover GET and POST parameters.,web-app
 1693,paranoic,,A simple vulnerability scanner written in Perl.,scanner
-1694,parasite6,,impersonates an IPv6 node,
+1694,parasite6,,impersonates an IPv6 node,spoof
 1695,paros,,"A Java based HTTP/HTTPS proxy for assessing web application vulnerability. It supports editing/viewing HTTP messages on-the-fly. Other featuers include spiders, client certificate, proxy-chaining, intelligent scanning for XSS and SQL injections etc.",web-app
 1696,parse-evtx,,A tool to parse the Windows XML Event Log (EVTX) format.,forensics
 1697,parsero,,Parsero is a free script written in Python which reads the Robots.txt file of a web server and looks at the Disallow entries. The Disallow entries tell the search engines what directories or files hosted on a web server mustn�t be indexed.,recon
@@ -1756,7 +1755,7 @@ Some of p0f’s capabilities include:",recon
 1745,pepe,,Collect information about email addresses from Pastebin.,social
 1746,pepper,,An open source script to perform malware static analysis on Portable Executable.,malware
 1747,periscope,,A PE file inspection tool.,windows
-1748,Perl,Utility,"Perl is a family of two high-level, general-purpose, interpreted, dynamic programming languages",
+1748,Perl,Utility,"Perl is a family of two high-level, general-purpose, interpreted, dynamic programming languages",misc
 1749,perl-image-exiftool,,Reader and rewriter of EXIF informations that supports raw files,forensics
 1750,pe-sieve,,"Scans a given process. Recognizes and dumps a variety of potentially malicious implants (replaced/injected PEs, shellcodes, hooks, in-memory patches).",windows
 1751,petools,,Portable executable (PE) manipulation toolkit.,windows
@@ -1774,7 +1773,7 @@ Some of p0f’s capabilities include:",recon
 1763,phonia,,Advanced toolkits to scan phone numbers using only free resources.,social
 1764,phoss,,"Sniffer designed to find HTTP, FTP, LDAP, Telnet, IMAP4, VNC and POP3 logins.",cracker
 1765,photon,,"Incredibly fast crawler which extracts urls, emails, files, website accounts and much more.",web-app
-1766,Php,Utility,Common website programming language,
+1766,Php,Utility,Common website programming language,misc
 1767,php-findsock-shell,,A Findsock Shell implementation in PHP + C.,web-app
 1768,phpggc,,"A library of PHP unserialize() payloads along with a tool to generate them, from command line or programmatically.",web-app
 1769,php-mt-seed,,PHP mt_rand() seed cracker.,cracker
@@ -1786,8 +1785,8 @@ Some of p0f’s capabilities include:",recon
 1775,phrasendrescher,,phrasen|drescher (p|d) is a modular and multi processing pass phrase cracking tool. It comes with a number of plugins but a simple plugin API allows an easy development of new plugins. The main features of p|d are:,cracker
 1776,pidense,,Monitor illegal wireless network activities. (Fake Access Points),wireless
 1777,pin,,A dynamic binary instrumentation tool.,automation
-1778,ping.py,Windows,"Simple ICMP ping that uses the ICMP echo and echo-reply packets to check the status of a host. If the remote host is up, it should reply to the echo probe with an echo-reply packet.",
-1779,ping6.py,Windows,Simple IPv6 ICMP ping that uses the ICMP echo and echo-reply packets to check the status of a host.,
+1778,ping.py,Windows,"Simple ICMP ping that uses the ICMP echo and echo-reply packets to check the status of a host. If the remote host is up, it should reply to the echo probe with an echo-reply packet.",recon
+1779,ping6.py,Windows,Simple IPv6 ICMP ping that uses the ICMP echo and echo-reply packets to check the status of a host.,recon
 1780,pingcastle,,Active Directory scanning tool.,windows
 1781,pintool,,This tool can be useful for solving some reverse-eng challenges in CTFs events.,reverse-eng
 1782,pintool2,,Improved version of pintool.,reverse-eng
@@ -1804,7 +1803,7 @@ Some of p0f’s capabilities include:",recon
 1793,plasma,,An interactive disassembler for x86/ARM/MIPS. It can generates indented pseudo-code with colored syntax.,disassembler
 1794,plcscan,,This is a tool written in Python that will scan for PLC devices over s7comm or modbus protocols.,scanner
 1795,plecost,,"WordPress finger printer tool, plecost search and retrieve information about the plugins versions installed in WordPress systems. It can analyze a single URL or perform an analysis based on the results indexed by Google. Additionally displays CVE code associated with each plugin, if there. Plecost retrieves the information contained on Web sites supported by WordPress, and also allows a search on the results indexed by Google.",web-app
-1796,Plink.exe,SSH,"windows command line version of putty ssh client, care with out of date version it MUST but up to date to work.",
+1796,Plink.exe,SSH,"windows command line version of putty ssh client, care with out of date version it MUST but up to date to work.",misc
 1797,plown,,A security scanner for Plone CMS.,web-app
 1798,plumber,,A python implementation of a grep friendly ftrace wrapper.,misc
 1799,plutil,,Converts .plist files between binary and UTF (editable) text formats.,misc
@@ -1833,7 +1832,7 @@ Some of p0f’s capabilities include:",recon
 1822,powermft,,Powerful commandline $MFT record editor.,forensics
 1823,powerops,,"PowerShell Runspace Portable Post Exploitation Tool aimed at making Penetration Testing with PowerShell ""easier"".",windows
 1824,powershdll,,Run PowerShell with rundll32. Bypass software restrictions.,windows
-1825,PowerShell,Windows,Powerfull comand line for Windows,
+1825,PowerShell,Windows,Powerfull comand line for Windows,misc
 1826,powersploit,,PowerSploit is a series of Microsoft PowerShell scripts that can be used in post-exploitation scenarios during authorized penetration tests.,persistence
 1827,powerstager,,A payload stager using PowerShell.,binary
 1828,pown,,Security testing and exploitation toolkit built on top of Node.js and NPM.,web-app
@@ -1857,8 +1856,7 @@ Some of p0f’s capabilities include:",recon
 1846,proxenet,,THE REAL hacker friendly proxy for web application pentests.,web-app
 1847,proxify,,"Swiss Army knife Proxy tool for HTTP/HTTPS traffic capture, manipulation, and replay on the go.",proxy
 1848,proxmark,,"A powerful general purpose RFID tool, the size of a deck of cards, designed to snoop, listen and emulate everything from Low Frequency (125kHz) to High Frequency (13.56MHz) tags.",radio
-1849,Proxychains,Utility,"used to map web traffic thorugh proxies
-its best to copy the config file to the working directory or .proxychains in the home directory as these will be checked before the /etc folder config and can be usd to findavidual engagements.",
+1849,Proxychains,Utility,used to map web traffic thorugh proxies its best to copy the config file to the working directory or .proxychains in the home directory as these will be checked before the /etc folder config and can be usd to findavidual engagements.,proxy
 1850,proxychains-ng,,A hook preloader that allows to redirect TCP traffic of existing dynamically linked programs through one or more SOCKS or HTTP proxies,proxy
 1851,proxycheck,,This is a simple proxy tool that checks for the HTTP CONNECT method and grabs verbose output from a webserver.,scanner
 1852,proxyp,,"Small multithreaded Perl script written to enumerate latency, port numbers, server names, & geolocations of proxy IP addresses.",proxy
@@ -1867,9 +1865,9 @@ its best to copy the config file to the working directory or .proxychains in the
 1855,proxytunnel,,"a program that connects stdin and stdout to a server somewhere on the network, through a standard HTTPS proxy",tunnel
 1856,ps1encode,,A tool to generate and encode a PowerShell based Metasploit payloads.,exploitation
 1857,pscan,,A limited problem scanner for C source files,code-audit
-1858,psexec.py,Windows,"Grants Remote code execution, and can be used for pass the hash. uses RemComSvc utility on a writable share",
+1858,psexec.py,Windows,"Grants Remote code execution, and can be used for pass the hash. uses RemComSvc utility on a writable share",windows
 1859,pshitt,,A lightweight fake SSH server designed to collect authentication data sent by intruders.,honeypot
-1860,PSK-Crack,Wifi,attempts to crack IKE Aggressive Mode pre-shared keys that have previously been gathered using ike-scan with the --pskcrack option,
+1860,PSK-Crack,Wifi,attempts to crack IKE Aggressive Mode pre-shared keys that have previously been gathered using ike-scan with the --pskcrack option,wifi
 1861,pspy,,Monitor linux processes without root permissions.,misc
 1862,pstoreview,,Lists the contents of the Protected Storage.,windows
 1863,ptf,,The Penetration Testers Framework: Way for modular support for up-to-date tools.,exploitation
@@ -1880,7 +1878,7 @@ its best to copy the config file to the working directory or .proxychains in the
 1868,punter,,"Hunt domain names using DNSDumpster, WHOIS, Reverse WHOIS, Shodan, Crimeflare.",recon
 1869,pupy,,"Opensource, cross-platform (Windows, Linux, OSX, Android) remote administration and post-exploitation tool mainly written in python.",automation
 1870,pureblood,,A Penetration Testing Framework created for Hackers / Pentester / Bug Hunter.,automation
-1871,Puttygen,SSH,this is used to convert ssh-keygen keys to ones that windows will recognise,
+1871,Puttygen,SSH,this is used to convert ssh-keygen keys to ones that windows will recognise,misc
 1872,pwd-hash,,A password hashing tool that use the crypt function to generate the hash of a string given on standard input.,crypto
 1873,pwdlogy,,A target specific wordlist generating tool for social engineers and security researchers.,misc
 1874,pwdlyser,,Python-based CLI Password Analyser (Reporting Tool).,crypto
@@ -1913,7 +1911,7 @@ its best to copy the config file to the working directory or .proxychains in the
 1901,pytacle,,Automates the task of sniffing GSM frames,sniffer
 1902,pytbull,,A python based flexible IDS/IPS testing framework shipped with more than 300 tests.,scanner
 1903,pythem,,Python2 penetration testing framework.,scanner
-1904,Python,Utility,"Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation",
+1904,Python,Utility,"Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation",misc
 1905,python2-api-dnsdumpster,,Unofficial Python API for http://dnsdumpster.com/.,recon
 1906,python2-capstone,,A disassembly framework with the target of becoming the ultimate disasm engine for binary analysis and reverse-eng in the security community.,disassembler
 1907,python2-cymruwhois,,Python client for the whois.cymru.com service,networking
@@ -1948,14 +1946,14 @@ its best to copy the config file to the working directory or .proxychains in the
 1936,python-mmbot,,Powerful malicious file triage tool for cyber responders.,malware
 1937,python-oletools,,Tools to analyze Microsoft OLE2 files.,binary
 1938,python-pcodedmp,,A VBA p-code disassembler.,disassembler
-1939,python-search-engine-parser,,"Scrapes search engine pages for query titles, descriptions and links.",
+1939,python-search-engine-parser,,"Scrapes search engine pages for query titles, descriptions and links.",recon
 1940,python-shodan,,Python library and command-line utility for Shodan (https://developer.shodan.io).,recon
 1941,python-ssh-mitm,,"SSH mitm server for security audits supporting public key authentication, session hijacking and file manipulation.",exploitation
 1942,python-trackerjacker,,Finds and tracks wifi devices through raw 802.11 monitoring.,wireless
 1943,python-uncompyle6,,A Python cross-version decompiler.,decompiler
 1944,python-utidylib,,Python bindings for Tidy HTML parser/cleaner.,misc
 1945,python-witnessme,,"Web Inventory tool, takes screenshots of webpages using Pyppeteer.",web-app
-1946,python-yara-rednaga,,The Python interface for YARA.,
+1946,python-yara-rednaga,,The Python interface for YARA.,misc
 1947,qark,,Tool to look for several security related Android application vulnerabilities.,mobile
 1948,qrgen,,Simple script for generating Malformed QRCodes.,misc
 1949,qrljacker,,"QRLJacker is a highly customizable exploitation framework to demonstrate ""QRLJacking Attack Vector"".",social
@@ -1967,12 +1965,12 @@ its best to copy the config file to the working directory or .proxychains in the
 1955,rabid,,A CLI tool and library allowing to simply decode all kind of BigIP cookies,web-app
 1956,raccoon,,A high performance offensive security tool for reconnaissance and vulnerability scanning.,recon
 1957,radamsa,,General purpose mutation based fuzzer,fuzzer
-1958,Radare2,Rev Eng,A tool used to reverse engineer programs,
+1958,Radare2,Rev Eng,A tool used to reverse engineer programs,reverse-eng
 1959,radare2-keystone,,Keystone assembler plugins for radare2.,reverse-eng
 1960,radare2-unicorn,,Unicorn Emulator Plugin for radare2.,disassembler
 1961,radiography,,A forensic tool which grabs as much information as possible from a Windows system.,windows
 1962,rainbowcrack,,RainbowCrack uses time-memory tradeoff algorithm to crack hashes. It differs from brute force hash cracker.,cracker
-1963,raiseChild.py,Kerberos,This script implements a child-domain to forest privilege escalation by (ab)using the concept of Golden Tickets and ExtraSids.,
+1963,raiseChild.py,Kerberos,This script implements a child-domain to forest privilege escalation by (ab)using the concept of Golden Tickets and ExtraSids.,kerberos
 1964,ranger-scanner,,A tool to support security professionals to access and interact with remote Microsoft Windows based systems.,scanner
 1965,rapidscan,,The Multi-Tool Web Vulnerability Scanner.,web-app
 1966,rarcrack,,"This program uses bruteforce algorithm to find correct password (rar, 7z, zip).",cracker
@@ -1986,11 +1984,11 @@ its best to copy the config file to the working directory or .proxychains in the
 1974,rcracki-mt,,"rcracki_mt is a modified version of rcrack which supports hybrid and indexed tables. In addition to that, it also adds multi-core support.",cracker
 1975,rcrdcarver,,Carve RCRD records ($LogFile) from a chunk of data..,forensics
 1976,rdesktop-brute,,It connects to windows terminal servers - Bruteforce patch included.,cracker
-1977,rdp_check.py,Windows,[MS-RDPBCGR] and [MS-CREDSSP] partial implementation just to reach CredSSP auth. This example tests whether an account is valid on the target host.,
+1977,rdp_check.py,Windows,[MS-RDPBCGR] and [MS-CREDSSP] partial implementation just to reach CredSSP auth. This example tests whether an account is valid on the target host.,widows
 1978,rdpassspray,,Python3 tool to perform password spraying using RDP.,cracker
 1979,rdp-sec-check,,Script to enumerate security settings of an RDP Service.,scanner
 1980,rdpy,,"RDPY is a pure Python implementation of the Microsoft RDP (Remote Desktop Protocol) protocol (client and server side). RDPY is built over the event driven network engine Twisted. RDPY support standard RDP security layer, RDP over SSL and NLA authentication (through ntlmv2 authentication protocol).",reporting-tools
-1981,Reaver,Wifi,Reaver implements a brute force attack against Wifi Protected Setup (WPS) registrar PINs in order to recover WPA/WPA2 passphrases,
+1981,Reaver,Wifi,Reaver implements a brute force attack against Wifi Protected Setup (WPS) registrar PINs in order to recover WPA/WPA2 passphrases,wifi
 1982,rebind,,"Rebind is a tool that implements the multiple A record DNS rebinding attack. Although this tool was originally written to target home routers, it can be used to target any public (non RFC1918) IP address. Rebind provides an external attacker access to a target router’s internal Web interface. This tool works on routers that implement the weak end system model in their IP stack, have specifically configured firewall rules, and who bind their Web service to the router’s WAN interface. Note that remote administration does not need to be enabled for this attack to work. All that is required is that a user inside the target network surf to a Web site that is controlled, or has been compromised, by the attacker.",network
 1983,recaf,,Modern Java bytecode editor.,decompiler
 1984,recentfilecache-parser,,Python parser for the RecentFileCache.bcf on Windows.,forensics
@@ -2005,16 +2003,16 @@ its best to copy the config file to the working directory or .proxychains in the
 1993,redasm,,"Interactive, multiarchitecture disassembler written in C++ using Qt5 as UI Framework.",disassembler
 1994,redfang,,RedFang is a small proof-of-concept application to find non discoverable Bluetooth devices. This is done by brute forcing the last six (6) bytes of the Bluetooth address of the device and doing a read_remote_name().,wireless
 1995,red-hawk,,"All in one tool for Information Gathering, Vulnerability Scanning and Crawling.",recon
-1996,redir6,,redirect spoofing by inject a router between victim and target,
+1996,redir6,,redirect spoofing by inject a router between victim and target,spoof
 1997,redirectpoison,,A tool to poison a targeted issuer of SIP INVITE requests with 301 (i.e. Moved Permanently) redirection responses.,voip
-1998,Redis-Cli,SQL,used for interacting and exploiting reddis-cli on port 6379,
+1998,Redis-Cli,SQL,used for interacting and exploiting reddis-cli on port 6379,database
 1999,redpoint,,Digital Bond's ICS Enumeration Tools.,misc
 2000,redsocks,,Transparent redirector of any TCP connection to proxy.,proxy
 2001,reelphish,,A Real-Time Two-Factor Phishing Tool.,social
-2002,reg.py,SMB,Remote registry manipulation tool through the [MS-RRP] MSRPC Interface. The idea is to provide similar functionality as the REG.EXE Windows utility.,
+2002,reg.py,SMB,Remote registry manipulation tool through the [MS-RRP] MSRPC Interface. The idea is to provide similar functionality as the REG.EXE Windows utility.,windows
 2003,regeorg,,"The successor to reDuh, pwn a bastion webserver and create SOCKS proxies through the DMZ. Pivot and pwn.",tunnel
 2004,regipy,,Library for parsing offline registry hives.,forensics
-2005,registry-read.py,Windows,A Windwows Registry file format implementation. It allows to parse offline registry hives.,
+2005,registry-read.py,Windows,A Windows Registry file format implementation. It allows to parse offline registry hives.,windows
 2006,reglookup,,Command line utility for reading and querying Windows NT registries,forensics
 2007,regreport,,Windows registry forensic analysis tool.,windows
 2008,regripper,,"RegRipper is an open source tool, written in Perl, for extracting/parsing information (keys, values, data) from the Registry and presenting it for analysis.",forensics
@@ -2025,7 +2023,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2013,remot3d,,An Simple Exploit for PHP Language.,web-app
 2014,replayproxy,,Forensic tool to replay web-based attacks (and also general HTTP traffic) that were captured in a pcap file.,forensics
 2015,resourcehacker,,Resource compiler and decompiler for Windows® applications.,windows
-2016,responder,Network,,
+2016,responder,Network,,network
 2017,restler-fuzzer,,First stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services.,web-app
 2018,retdec,,Retargetable machine-code decompiler based on LLVM.,decompiler
 2019,retire,,Scanner detecting the use of JavaScript libraries with known vulnerabilities.,scanner
@@ -2061,8 +2059,8 @@ its best to copy the config file to the working directory or .proxychains in the
 2049,routersploit,,The RouterSploit Framework is an open-source exploitation framework dedicated to embedded devices. It consists of various modules that aids penetration testing operations:,exploitation
 2050,rp,,A full-cpp written tool that aims to find ROP sequences in PE/Elf/Mach-O x86/x64 binaries.,exploitation
 2051,rpak,,A collection of tools that can be useful for doing attacks on routing protocols.,windows
-2052,rpcdump.py,SMB,This script will dump the list of RPC endpoints and string bindings registered at the target. It will also try to match them with a list of well known endpoints.,
-2053,rpcmap.py,SMB,"Scan for listening DCE/RPC interfaces. This binds to the MGMT interface and gets a list of interface UUIDs. If the MGMT interface is not available, it takes a list of interface UUIDs seen in the wild and tries to bind to each interface.",
+2052,rpcdump.py,SMB,This script will dump the list of RPC endpoints and string bindings registered at the target. It will also try to match them with a list of well known endpoints.,recon
+2053,rpcmap.py,SMB,"Scan for listening DCE/RPC interfaces. This binds to the MGMT interface and gets a list of interface UUIDs. If the MGMT interface is not available, it takes a list of interface UUIDs seen in the wild and tries to bind to each interface.",recon
 2054,rpcsniffer,,Sniffs WINDOWS RPC messages in a given RPC server process.,windows
 2055,rpctools,,Contains three separate tools for obtaining information from a system that is running RPC services,windows
 2056,rpdscan,,Remmina Password Decoder and scanner.,cracker
@@ -2085,7 +2083,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2073,rtp-flood,,RTP flooder,voip
 2074,rtpinsertsound,,"A tool to insert audio into a specified audio (i.e. RTP) stream was created in the August – September 2006 timeframe. The tool is named rtpinsertsound. It was tested on a Linux Red Hat Fedora Core 4 platform (Pentium IV, 2.5 GHz), but it is expected this tool will successfully build and execute on a variety of Linux distributions.",network
 2075,rtpmixsound,,A tool to mix pre-recorded audio in real-time with the audio (i.e. RTP) in the specified target audio stream.,network
-2076,Rubeus,Windows,Used for kerberos interaction and abuse,
+2076,Rubeus,Windows,Used for kerberos interaction and abuse,kerberos
 2077,rubilyn,,64bit Mac OS-X kernel rootkit that uses no hardcoded address to hook the BSD subsystem in all OS-X Lion & below. It uses a combination of syscall hooking and DKOM to hide activity on a host.,backdoor
 2078,ruler,,A tool to abuse Exchange services.,web-app
 2079,rulesfinder,,Machine-learn password mangling rules.,misc
@@ -2098,15 +2096,15 @@ its best to copy the config file to the working directory or .proxychains in the
 2086,s3-fuzzer,,"A concurrent, command-line AWS S3 Fuzzer.",fuzzer
 2087,s3scanner,,Scan for open S3 buckets and dump.,scanner
 2088,safecopy,,A disk data recovery tool to extract data from damaged media.,forensics
-2089,sagan,,A snort-like log analysis engine.,ids
+2089,sagan,,A snort-like log analysis engine.,forensics
 2090,sakis3g,,"Sakis3G is a tweaked shell script which is supposed to work out-of-the-box for establishing a 3G connection with any combination of modem or operator. It automagically setups your USB or Bluetooth™ modem, and may even detect operator settings. You should try it when anything else fails.",hardware
 2091,saleae-logic,,Debug happy.,debugger
-2092,sambaPipe.py,SMB,"This script will exploit CVE-2017-7494, uploading and executing the shared library specified by the user through the -so parameter.",
+2092,sambaPipe.py,SMB,"This script will exploit CVE-2017-7494, uploading and executing the shared library specified by the user through the -so parameter.",exploitation
 2093,sambascan,,Allows you to search an entire network or a number of hosts for SMB shares. It will also list the contents of all public shares that it finds.,scanner
 2094,samdump2,,Dump password hashes from a Windows NT/2k/XP installation,cracker
 2095,samesame,,Command line tool to generate crafty homograph strings.,fuzzer
 2096,samplicator,,"Send copies of (UDP) datagrams to multiple receivers, with optional sampling and spoofing.",networking
-2097,samrdump.py,SMB,"An application that communicates with the Security Account Manager Remote interface from the MSRPC suite. It lists system user accounts, available resource shares and other sensitive information exported through this service.",
+2097,samrdump.py,SMB,"An application that communicates with the Security Account Manager Remote interface from the MSRPC suite. It lists system user accounts, available resource shares and other sensitive information exported through this service.",post-recon
 2098,samydeluxe,,Automatic samdump creation script.,cracker
 2099,sandcastle,,A Python script for AWS S3 bucket enumeration.,scanner
 2100,sandmap,,"Simple CLI with the ability to run pure Nmap engine, 31 modules with 459 scan profiles.",scanner
@@ -2133,7 +2131,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2121,sc-make,,Tool for automating shellcode creation.,exploitation
 2122,scout2,,Security auditing tool for AWS environments.,scanner
 2123,scoutsuite,,Multi-Cloud Security Auditing Tool.,scanner
-2124,Scp,Utility,For transfering files over SSH connection,
+2124,Scp,Utility,For transfering files over SSH connection,misc
 2125,scrape-dns,,Searches for interesting cached DNS entries.,scanner
 2126,scrapy,,A fast high-level scraping and web crawling framework.,web-app
 2127,scratchabit,,Easily retargetable and hackable interactive disassembler with IDAPython-compatible plugin API.,disassembler
@@ -2143,13 +2141,13 @@ its best to copy the config file to the working directory or .proxychains in the
 2131,sdn-toolkit,,"Discover, Identify, and Manipulate SDN-Based Networks",networking
 2132,sea,,A tool to help to create exploits of binary programs.,malware
 2133,search1337,,1337Day Online Exploit Scanner.,automation
-2134,Searchsploit,All,Local version of ExploitDB,
+2134,Searchsploit,All,Local version of ExploitDB,exploitation
 2135,seat,,"Next generation information digging application geared toward the needs of security professionals. It uses information stored in search engine databases, cache repositories, and other public resources to scan web sites for potential vulnerabilities.",scanner
-2136,Seatbelt,Windows,"Seatbelt is a C# project that performs a number of security oriented host-survey ""safety checks"" relevant from both offensive and defensive security perspectives",
+2136,Seatbelt,Windows,"Seatbelt is a C# project that performs a number of security oriented host-survey ""safety checks"" relevant from both offensive and defensive security perspectives",recon
 2137,seclists,,"SecLists is the security tester’s companion. It’s a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more. The goal is to enable a security tester to pull this repo onto a new testing box and have access to every type of list that may be needed.",cracker
 2138,secretfinder,,"A python script to find sensitive data (apikeys, accesstoken, jwt,..) in javascript files.",web-app
-2139,SecretsDump,Windows,"Secretsdump is a script used to extract credentials and secrets from a system, similar to 'hashdump' of metasploit",
-2140,secretsdump.py,Windows,dump secrets from the remote machine without executing any agent there. Then we try to read as much as we can from the registry and then we save the hives in the target system (%SYSTEMROOT%\Temp directory) and read the rest of the data from there. This script iniciates and closes service needed for this script,
+2139,SecretsDump,Windows,"Secretsdump is a script used to extract credentials and secrets from a system, similar to 'hashdump' of metasploit",windows
+2140,secretsdump.py,Windows,dump secrets from the remote machine without executing any agent there. Then we try to read as much as we can from the registry and then we save the hives in the target system (%SYSTEMROOT%\Temp directory) and read the rest of the data from there. This script iniciates and closes service needed for this script,windows
 2141,secscan,,Web Apps Scanner and Much more utilities.,web-app
 2142,secure2csv,,Decode security descriptors in $Secure on NTFS.,forensics
 2143,secure-delete,,"Secure file, disk, swap, memory erasure utilities.",anti-forensics
@@ -2160,7 +2158,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2148,serialbrute,,Java serialization brute force attack tool.,exploitation
 2149,serializationdumper,,A tool to dump Java serialization streams in a more human readable form.,web-app
 2150,server-status-pwn,,A script that monitors and extracts requested URLs and clients connected to the service by exploiting publicly accessible Apache server-status instances.,recon
-2151,services.py,SMB,"This script can be used to manipulate Windows services through the [MS-SCMR] MSRPC Interface. It supports start, stop, delete, status, config, list, create and change.",
+2151,services.py,SMB,"This script can be used to manipulate Windows services through the [MS-SCMR] MSRPC Interface. It supports start, stop, delete, status, config, list, create and change.",windows
 2152,sessionlist,,Sniffer that intents to sniff HTTP packets and attempts to reconstruct interesting authentication data from websites that do not employ proper secure cookie auth.,networking
 2153,set,,The Social-Engineer Toolkit is an open-source penetration testing framework designed for Social-Engineering. SET has a number of custom attack vectors that allow you to make a believable attack in a fraction of the time.,recon
 2154,seth,,Perform a MitM attack and extract clear text credentials from RDP connections.,networking
@@ -2175,7 +2173,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2163,shareenum,,Tool to enumerate shares from Windows hosts.,scanner
 2164,sharesniffer,,Network share sniffer and auto-mounter for crawling remote file systems.,scanner
 2165,shed,,.NET runtime inspector.,windows
-2166,Shell,Utility,Program used to interact with linux computers,
+2166,Shell,Utility,Program used to interact with linux computers,misc
 2167,shellcheck,,Shell script analysis tool,code-audit
 2168,shellcode-compiler,,"Compiles C/C++ style code into a small, position-independent and NULL-free shellcode for Windows & Linux.",exploitation
 2169,shellcodecs,,"A collection of shellcode, loaders, sources, and generators provided with documentation designed to ease the exploitation and shellcode programming process.",exploitation
@@ -2230,7 +2228,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2218,sitadel,,Web Application Security Scanner.,web-app
 2219,sitediff,,Fingerprint a web app using local files as the fingerprint sources.,web-app
 2220,sjet,,Siberas JMX exploitation toolkit.,exploitation
-2221,Skipfish,Web,It prepares an interactive sitemap for the targeted site by carrying out a recursive crawl and dictionary-based probes. The resulting map is then annotated with the output from a number of active (but hopefully non-disruptive) security checks,
+2221,Skipfish,Web,It prepares an interactive sitemap for the targeted site by carrying out a recursive crawl and dictionary-based probes. The resulting map is then annotated with the output from a number of active (but hopefully non-disruptive) security checks,web-app
 2222,skiptracer,,OSINT python2 webscraping framework. Skipping the needs of API keys.,social
 2223,skul,,A PoC to bruteforce the Cryptsetup implementation of Linux Unified Key Setup (LUKS).,cracker
 2224,skyjack,,"Takes over Parrot drones, deauthenticating their true owner and taking over control, turning them into zombie drones under your own control.",drone
@@ -2251,21 +2249,21 @@ its best to copy the config file to the working directory or .proxychains in the
 2239,smap,,Shellcode mapper - Handy tool for shellcode analysis.,exploitation
 2240,smartphone-pentest-framework,,Repository for the Smartphone Pentest Framework (SPF).,mobile
 2241,smbbf,,SMB password bruteforcer.,cracker
-2242,SMBClient,SMB,"Used to connect to SMB file shares, can be used to enumerate shares",
-2243,smbclient.py,SMB,"A generic SMB client that will let you list shares and files, rename, upload and download files and create and delete directories, all using either username and password or username and hashes combination.",
+2242,SMBClient,SMB,"Used to connect to SMB file shares, can be used to enumerate shares",misc
+2243,smbclient.py,SMB,"A generic SMB client that will let you list shares and files, rename, upload and download files and create and delete directories, all using either username and password or username and hashes combination.",exploitation
 2244,smbcrunch,,3 tools that work together to simplify reconnaissance of Windows File Shares.,recon
 2245,smbexec,,A rapid psexec style attack with samba tools.,scanner
-2246,smbexec.py,SMB,"executes similar to psexec w/o RemComSvc. This generates a local smb server to reveive output of commands, this is useful if the machine doesn’t have a writable share",
-2247,SMBMap,SMB,enumerate shares over a domin,
+2246,smbexec.py,SMB,"executes similar to psexec w/o RemComSvc. This generates a local smb server to reveive output of commands, this is useful if the machine doesn’t have a writable share",exploitation
+2247,SMBMap,SMB,enumerate shares over a domin,recon
 2248,smbrelay,,SMB / HTTP to SMB replay attack toolkit.,windows
-2249,smbrelayx.py,Windows," Exploit for CVE-2015-0005 using a SMB Relay Attack. If the target system is enforcing signing and a machine account was provided, the module will try to gather the SMB session key through NETLOGON.",
-2250,smbserver.py,SMB,A Python implementation of an SMB server. Allows to quickly set up shares and user accounts.,
+2249,smbrelayx.py,Windows," Exploit for CVE-2015-0005 using a SMB Relay Attack. If the target system is enforcing signing and a machine account was provided, the module will try to gather the SMB session key through NETLOGON.",exploitation
+2250,smbserver.py,SMB,A Python implementation of an SMB server. Allows to quickly set up shares and user accounts.,exploitation
 2251,smbspider,,A lightweight python utility for searching SMB/CIFS/Samba file shares.,scanner
 2252,smikims-arpspoof,,Performs an ARP spoofing attack using the Linux kernel's raw sockets.,spoof
-2253,SMNPWalk,SMNP,retrieve a subtree of management values using SNMP GETNEXT requests,
+2253,SMNPWalk,SMNP,retrieve a subtree of management values using SNMP GETNEXT requests,recon
 2254,smod,,A modular framework with every kind of diagnostic and offensive feature you could need in order to pentest modbus protocol.,scanner
 2255,smplshllctrlr,,PHP Command Injection exploitation tool.,web-app
-2256,smpv3enum,,expses useful information by reading snmp data,
+2256,smpv3enum,,exposes useful information by reading snmp data,recon
 2257,smtp-fuzz,,Simple smtp fuzzer.,fuzzer
 2258,smtpmap,,Tool to identify the running smtp software on a given host.,fingerprint
 2259,smtpscan,,An SMTP scanner,fingerprint
@@ -2282,9 +2280,9 @@ its best to copy the config file to the working directory or .proxychains in the
 2270,snapception,,Intercept and decrypt all snapchats received over your network.,sniffer
 2271,snare,,Super Next generation Advanced Reactive honEypot,honeypot
 2272,snarf-mitm,,SMB Man in the Middle Attack Engine / relay suite.,exploitation
-2273,sniff.py,Windows,Simple packet sniffer that uses the pcapy library to listen for packets in # transit over the specified interface.,
+2273,sniff.py,Windows,Simple packet sniffer that uses the pcapy library to listen for packets in # transit over the specified interface.,sniffer
 2274,sniffer,,"Packet Trace Parser for TCP, SMTP Emails, and HTTP Cookies.",networking
-2275,sniffer.py,Windows,Simple packet sniffer that uses a raw socket to listen for packets in transit corresponding to the specified protocols.,
+2275,sniffer.py,Windows,Simple packet sniffer that uses a raw socket to listen for packets in transit corresponding to the specified protocols.,sniffer
 2276,sniffglue,,Secure multithreaded packet sniffer,sniffer
 2277,sniffjoke,,IDS and IPS evasion,
 2278,sniffles,,A Packet Capture Generator for IDS and Regular Expression Evaluation.,networking
@@ -2297,17 +2295,17 @@ its best to copy the config file to the working directory or .proxychains in the
 2285,snmpenum,,An snmp enumerator.,scanner
 2286,snmp-fuzzer,,SNMP fuzzer uses Protos test cases with an entirely new engine written in Perl.,fuzzer
 2287,snmpscan,,"A free, multi-processes SNMP scanner.",scanner
-2288,snmpwalk,,exposing useful informaiton thought readin SNMP data,
+2288,snmpwalk,,exposing useful informaiton thought readin SNMP data,recon
 2289,snoopbrute,,Multithreaded DNS recursive host brute-force tool.,scanner
 2290,snoopy-ng,,"A distributed, sensor, data collection, interception, analysis, and visualization framework.",drone
-2291,Snort,Utility,Packet sniffer,
+2291,Snort,Utility,Packet sniffer,sniffer
 2292,snow,,Steganography program for concealing messages in text files.,crypto
 2293,snowman,,"A native code to C/C++ decompiler, see the examples of generated code.",windows
 2294,snscan,,A Windows based SNMP detection utility that can quickly and accurately identify SNMP enabled devices on a network.,windows
 2295,snuck,,Automatic XSS filter bypass.,web-app
 2296,snyk,,CLI and build-time tool to find and fix known vulnerabilities in open-source dependencies.,code-audit
 2297,soapui,,The Swiss-Army Knife for SOAP Testing.,proxy
-2298,Socat,Utility,"This tool is regarded as the advanced version of netcat. They do similar things, but socat has more additional functionality, such as permitting multiple clients to listen on a port, or reusing connections.",
+2298,Socat,Utility,"This tool is regarded as the advanced version of netcat. They do similar things, but socat has more additional functionality, such as permitting multiple clients to listen on a port, or reusing connections.",misc
 2299,socialfish,,Ultimate phishing tool with Ngrok integrated.,social
 2300,social-mapper,,A social media enumeration and correlation tool.,social
 2301,socialscan,,Check email address and username availability on online platforms.,recon
@@ -2325,7 +2323,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2313,speedpwn,,"An active WPA/2 Bruteforcer, original created to prove weak standard key generation in different ISP labeled routers without a client is connected.",cracker
 2314,spf,,A python tool designed to allow for quick recon and deployment of simple social engineering phishing exercises.,social
 2315,spfmap,,A program to map out SPF and DKIM records for a large number of domains.,recon
-2316,SpiderFoot,,auto enumeration on linux and windows (more info needed),
+2316,SpiderFoot,,auto enumeration on linux and windows (more info needed),recon
 2317,spiderpig-pdffuzzer,,A javascript pdf fuzzer,fuzzer
 2318,spiga,,Configurable web resource scanner.,web-app
 2319,spike-fuzzer,,IMMUNITYsec's fuzzer creation kit in C.,fuzzer
@@ -2347,7 +2345,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2335,sqlbrute,,Brute forces data out of databases using blind SQL injection.,fuzzer
 2336,sqldict,,SQLdict is a dictionary attack tool for SQL Server.,cracker
 2337,sqlivulscan,,This will give you the SQLi Vulnerable Website Just by Adding the Dork.,scanner
-2338,SQLMap,SQL,Automates the process of detecting and exploiting SQL injection flaws and taking over of database servers,
+2338,SQLMap,SQL,Automates the process of detecting and exploiting SQL injection flaws and taking over of database servers,database
 2339,sqlninja,,"Fancy going from a SQL Injection on Microsoft SQL Server to a full GUI access on the DB? Take a few new SQL Injection tricks, add a couple of remote shots in the registry to disable Data Execution Prevention, mix with a little Perl that automatically generates a debug script, put all this in a shaker with a Metasploit wrapper, shake well and you have just one of the attack modules of sqlninja!",vulnerability-analysis
 2340,sqlpat,,This tool should be used to audit the strength of Microsoft SQL Server passwords offline.,cracker
 2341,sqlping,,SQL Server scanning tool that also checks for weak passwords using wordlists.,windows
@@ -2355,7 +2353,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2343,sqlsus,,"sqlsus is an open source MySQL injection and takeover tool, written in perl.",vulnerability-analysis
 2344,ssdeep,,A program for computing context triggered piecewise hashes,crypto
 2345,ssdp-scanner,,SSDP amplification scanner written in Python. Makes use of Scapy.,scanner
-2346,SSH,Utility,Used to connect between machines,
+2346,SSH,Utility,Used to connect between machines,misc
 2347,sshatter,,Password bruteforcer for SSH.,cracker
 2348,ssh-audit,,"SSH server auditing (banner, key exchange, encryption, mac, compression, compatbility, etc).",scanner
 2349,sshfuzz,,A SSH Fuzzing utility written in Perl that uses Net::SSH2.,fuzzer
@@ -2367,7 +2365,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2355,sshtrix,,A very fast multithreaded SSH login cracker.,cracker
 2356,sshtunnel,,Pure python SSH tunnels (CLI),tunnel
 2357,ssh-user-enum,,SSH User Enumeration Script in Python Using The Timing Attack.,scanner
-2358,sshuttle,SSH,used to proxy through a computer,
+2358,sshuttle,SSH,used to proxy through a computer,proxy
 2359,sslcat,,SSLCat is a simple Unix utility that reads and writes data across an SSL enable network connection.,misc
 2360,sslcaudit,,"The goal of sslcaudit project is to develop a utility to automate testing SSL/TLS clients for resistance against MITM attacks. It might be useful for testing a thick client, a mobile application, an appliance, pretty much anything communicating over SSL/TLS over TCP.",recon
 2361,ssldump,,An SSLv3/TLS network protocol analyzer.,sniffer
@@ -2377,14 +2375,14 @@ its best to copy the config file to the working directory or .proxychains in the
 2365,sslmap,,A lightweight TLS/SSL cipher suite scanner.,scanner
 2366,sslnuke,,Transparent proxy that decrypts SSL traffic and prints out IRC messages.,cracker
 2367,ssl-phuck3r,,All in one script for Man-In-The-Middle attacks.,sniffer
-2368,SSLScan,Web,"SSLScan is a fast SSL port scanner. It connects to SSL ports and determines what ciphers are supported, which are the servers preferred ciphers, which SSL protocols are supported and returns the SSL certificate. Client certificates / private key can be configured and output is to text / XML",
+2368,SSLScan,Web,"SSLScan is a fast SSL port scanner. It connects to SSL ports and determines what ciphers are supported, which are the servers preferred ciphers, which SSL protocols are supported and returns the SSL certificate. Client certificates / private key can be configured and output is to text / XML",recon
 2369,sslscan2,,Tests SSL/TLS enabled services to discover supported cipher suites.,scanner
 2370,sslsniff,,A tool to MITM all SSL connections on a LAN and dynamically generate certs for the domains that are being accessed on the fly,sniffer
 2371,sslsplit,,"SSLsplit is a tool for man-in-the-middle attacks against SSL/TLS encrypted network connections. Connections are transparently intercepted through a network address translation engine and redirected to SSLsplit. SSLsplit terminates SSL/TLS and initiates a new SSL/TLS connection to the original destination address, while logging all data transmitted. SSLsplit is intended to be useful for network forensics and penetration testing.",recon
-2372,SSLStrip,,arp poisioning tool,
+2372,SSLStrip,,arp poisioning tool,network
 2373,sslyze,,"SSLyze is a Python tool that can analyze the SSL configuration of a server by connecting to it. It is designed to be fast and comprehensive, and should help organizations and testers identify mis-configurations affecting their SSL servers.",recon
 2374,ssma,,Simple Static Malware Analyzer.,malware
-2375,SSRFMap,Web,Server side request forgery enumeration,
+2375,SSRFMap,Web,Server side request forgery enumeration,web-app
 2376,ssrf-proxy,,Facilitates tunneling HTTP communications through servers vulnerable to Server-Side Request Forgery.,proxy
 2377,ssrf-sheriff,,A simple SSRF-testing sheriff written in Go.,web-app
 2378,stackflow,,Universal stack-based buffer overfow exploitation tool.,exploitation
@@ -2462,7 +2460,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2450,tcpcontrol-fuzzer,,2^6 TCP control bit fuzzer (no ECN or CWR).,fuzzer
 2451,tcpcopy,,A TCP stream replay tool to support real testing of Internet server applications.,networking
 2452,tcpdstat,,Get protocol statistics from tcpdump pcap files.,networking
-2453,TCPDump,Network,dump traffic on a network  ,
+2453,TCPDump,Network,dump traffic on a network  ,network
 2454,tcpextract,,Extracts files from captured TCP sessions. Support live streams and pcap files.,networking
 2455,tcpflow,,Captures data transmitted as part of TCP connections then stores the data conveniently,networking
 2456,tcpick,,TCP stream sniffer and connection tracker,sniffer
@@ -2491,13 +2489,13 @@ its best to copy the config file to the working directory or .proxychains in the
 2479,thedorkbox,,Comprehensive collection of Google Dorks & OSINT techniques to find Confidential Data.,recon
 2480,thefatrat,,TheFatRat a massive exploiting tool: easy tool to generate backdoor and easy tool to post exploitation attack.,automation
 2481,thefuzz,,CLI fuzzing tool.,fuzzer
-2482,TheHarvester,N/A,"The objective of this program is to gather emails, subdomains, hosts, employee names, open ports and banners from different public sources like search engines, PGP key servers and SHODAN computer database",
+2482,TheHarvester,N/A,"The objective of this program is to gather emails, subdomains, hosts, employee names, open ports and banners from different public sources like search engines, PGP key servers and SHODAN computer database",recon
 2483,themole,,Automatic SQL injection exploitation tool.,web-app
 2484,thezoo,,A project created to make the possibility of malware analysis open and available to the public.,malware
 2485,threatspec,,Project to integrate threat modelling into development process.,defensive
 2486,thumbcacheviewer,,Extract Windows thumbcache database files.,forensics
-2487,ticketConverter.py,Kerberos,"This script will convert kirbi files, commonly used by mimikatz, into ccache files used by Impacket, and vice versa.",
-2488,ticketer.py,Kerberos,"This script will create Golden/Silver tickets from scratch or based on a template (legally requested from the KDC) allowing you to customize some of the parameters set inside the PAC_LOGON_INFO structure, in particular the groups, ExtraSids, duration, etc.",
+2487,ticketConverter.py,Kerberos,"This script will convert kirbi files, commonly used by mimikatz, into ccache files used by Impacket, and vice versa.",kerberos
+2488,ticketer.py,Kerberos,"This script will create Golden/Silver tickets from scratch or based on a template (legally requested from the KDC) allowing you to customize some of the parameters set inside the PAC_LOGON_INFO structure, in particular the groups, ExtraSids, duration, etc.",kerberos
 2489,tiger,,"A security scanner, that checks computer for known problems. Can also use tripwire, aide and chkrootkit.",automation
 2490,tilt,,"An easy and simple tool implemented in Python for ip reconnaissance, with reverse ip lookup.",recon
 2491,timegen,,"This program generates a *.wav file to ""send"" an own time signal to DCF77 compatible devices.",wireless
@@ -2527,7 +2525,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2515,torshammer,,A slow POST Denial of Service testing tool written in Python.,dos
 2516,torsocks,,Wrapper to safely torify applications,proxy
 2517,tpcat,,Tool based upon pcapdiff by the EFF. It will analyze two packet captures (taken on each side of the firewall as an example) and report any packets that were seen on the source capture but didn’t make it to the dest.,misc
-2518,TPLMap,Web,SSTI tool,
+2518,TPLMap,Web,SSTI tool,web-app
 2519,traceroute,,Tracks the route taken by packets over an IP network,recon
 2520,trape,,People tracker on the Internet: OSINT analysis and research tool by Jose Pino.,social
 2521,traxss,,Automated XSS Vulnerability Scanner.,scanner
@@ -2578,13 +2576,13 @@ its best to copy the config file to the working directory or .proxychains in the
 2566,unhide,,"A forensic tool to find processes hidden by rootkits, LKMs or by other techniques.",forensics
 2567,unibrute,,Multithreaded SQL union bruteforcer.,exploitation
 2568,unicorn-powershell,,A simple tool for using a PowerShell downgrade attack and inject shellcode straight into memory.,backdoor
-2569,unicornscan,,nmap UDP alternative,
+2569,unicornscan,,nmap UDP alternative,recon
 2570,unifuzzer,,A fuzzing tool for closed-source binaries based on Unicorn and LibFuzzer.,fuzzer
 2571,uniofuzz,,"The universal fuzzing tool for browsers, web services, files, programs and network services/ports",fuzzer
 2572,uniscan,,"Uniscan is a simple Remote File Include, Local File Include and Remote Command Execution vulnerability scanner.",web-app
-2573,Unix-PrivEsc-Check,Linux,"It tries to find misconfigurations that could allow local unprivileged users to escalate privileges to other users or to access local apps, written in a single shell script so is easy to upload",
+2573,Unix-PrivEsc-Check,Linux,"It tries to find misconfigurations that could allow local unprivileged users to escalate privileges to other users or to access local apps, written in a single shell script so is easy to upload",post-recon
 2574,unsecure,,Bruteforces network login masks.,windows
-2575,Unshadow,Hash,Combining passwd and shadow files into 1,
+2575,Unshadow,Hash,Combining passwd and shadow files into 1,cracker
 2576,unstrip,,ELF Unstrip Tool.,disassembler
 2577,untwister,,Seed recovery tool for PRNGs.,crypto
 2578,upnp-pentest-toolkit,,UPnP Pentest Toolkit for Windows.,windows
@@ -2631,7 +2629,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2619,vfeed,,Open Source Cross Linked and Aggregated Local Vulnerability Database main repository.,misc
 2620,vhostscan,,"A virtual host scanner that can be used with pivot tools, detect catch-all scenarios, aliases and dynamic default pages.",scanner
 2621,videosnarf,,A new security assessment tool for pcap analysis,scanner
-2622,Vim,Utility,Text editor,
+2622,Vim,Utility,Text editor,misc
 2623,vinetto,,A forensics tool to examine Thumbs.db files,forensics
 2624,viper,,A Binary analysis framework.,disassembler
 2625,vipermonkey,,A VBA parser and emulation engine to analyze malicious macros.,forensics
@@ -2700,7 +2698,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2688,websockify,,WebSocket to TCP proxy/bridge.,networking
 2689,web-soul,,A plugin based scanner for attacking and data mining web sites written in Perl.,web-app
 2690,webspa,,"A web knocking tool, sending a single HTTP/S to run O/S commands.",backdoor
-2691,Websploit,Web,Swiss-army-knife of web exploits ranging from social engineering to honeypots and everything in between,
+2691,Websploit,Web,Swiss-army-knife of web exploits ranging from social engineering to honeypots and everything in between,web-app
 2692,webtech,,Identify technologies used on websites.,web-app
 2693,webxploiter,,An OWASP Top 10 Security scanner.,web-app
 2694,weebdns,,DNS Enumeration with Asynchronicity.,recon
@@ -2737,7 +2735,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2725,wildpwn,,Unix wildcard attacks.,exploitation
 2726,windapsearch,,"Script to enumerate users, groups and computers from a Windows domain through LDAP queries.",recon
 2727,windivert,,A user-mode packet capture-and-divert package for Windows.,windows
-2728,Windows Exploit Suggester,Windows,checks for priv esc opportunities on windows targets,
+2728,Windows Exploit Suggester,Windows,checks for priv esc opportunities on windows targets,post-recon
 2729,windows-binaries,,A colleciton of pentesting Windows binaries.,windows
 2730,windows-exploit-suggester,,This tool compares a targets patch levels against the Microsoft vulnerability database in order to detect potential missing patches on the target.,recon
 2731,windows-prefetch-parser,,Parse Windows Prefetch files.,forensics
@@ -2746,12 +2744,12 @@ its best to copy the config file to the working directory or .proxychains in the
 2734,winexe,,Winexe remotely executes commands on Windows NT/2000/XP/2003 systems from GNU/Linux (and possibly also from other Unices capable of building the Samba 4 software package).,persistence
 2735,winfo,,"Uses null sessions to remotely try to retrieve lists of and information about user accounts, workstation/interdomain/server trust accounts, shares (also hidden), sessions, logged in users, and password/lockout policy, from Windows NT/2000/XP.",windows
 2736,winhex,,Hex Editor and Disk Editor.,windows
-2737,WinPeas,Windows,For full enumeration of windows host (internal),
+2737,WinPeas,Windows,For full enumeration of windows host (internal),post-recon
 2738,winpwn,,Automation for internal Windows Penetrationtest / AD-Security.,windows
 2739,winregfs,,Windows Registry FUSE filesystem.,misc
 2740,winrelay,,A TCP/UDP forwarder/redirector that works with both IPv4 and IPv6.,windows
 2741,wireless-ids,,Ability to detect suspicious activity such as (WEP/WPA/WPS) attack by sniffing the air for wireless packets.,wireless
-2742,Wireshark,Utility,Packet sniffer,
+2742,Wireshark,Utility,Packet sniffer,sniffer
 2743,wireshark-cli,,Network traffic and protocol analyzer/sniffer - CLI tools and data files,sniffer
 2744,wireshark-qt,,Network traffic and protocol analyzer/sniffer - Qt GUI,sniffer
 2745,wirouter-keyrec,,A platform independent software to recover the default WPA passphrases of the supported router models,wireless
@@ -2759,10 +2757,10 @@ its best to copy the config file to the working directory or .proxychains in the
 2747,wlan2eth,,Re-writes 802.11 captures into standard Ethernet frames.,wireless
 2748,wmat,,Automatic tool for testing webmail accounts.,cracker
 2749,wmd,,Python framework for IT security tools.,automation
-2750,wmiexec.py,Windows,"A semi-interactive shell, used through Windows Management Instrumentation. It does not require to install any service/agent at the target server. Runs as Administrator. Highly stealthy.",
+2750,wmiexec.py,Windows,"A semi-interactive shell, used through Windows Management Instrumentation. It does not require to install any service/agent at the target server. Runs as Administrator. Highly stealthy.",exploitation
 2751,wmi-forensics,,Scripts used to find evidence in WMI repositories.,forensics
-2752,wmipersist.py,Windows,This script creates/removes a WMI Event Consumer/Filter and link between both to execute Visual Basic based on the WQL filter or timer specified.,
-2753,wmiquery.py,Windows,It allows to issue WQL queries and get description of WMI objects at the target system (e.g. select name from win32_account).,
+2752,wmipersist.py,Windows,This script creates/removes a WMI Event Consumer/Filter and link between both to execute Visual Basic based on the WQL filter or timer specified.,windows
+2753,wmiquery.py,Windows,It allows to issue WQL queries and get description of WMI objects at the target system (e.g. select name from win32_account).,windows
 2754,wnmap,,A shell script written with the purpose to automate and chain scans via nmap. You can run nmap with a custom mode written by user and create directories for every mode with the xml/nmap files inside.,automation
 2755,wol-e,,"WOL-E is a suite of tools for the Wake on LAN feature of network attached computers, this is now enabled by default on many Apple computers. These tools include:",recon
 2756,wolpertinger,,A distributed portscanner.,scanner
@@ -2782,7 +2780,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2770,wpbullet,,A static code analysis for WordPress (and PHP).,code-audit
 2771,wpforce,,Wordpress Attack Suite.,web-app
 2772,wpintel,,Chrome extension designed for WordPress Vulnerability Scanning and information gathering.,web-app
-2773,WPScan,Web,Look for vulnerabilities in wordpress site (can be used to brute),
+2773,WPScan,Web,Look for vulnerabilities in wordpress site (can be used to brute),recon
 2774,wpseku,,Simple Wordpress Security Scanner.,web-app
 2775,wpsik,,WPS scan and pwn tool.,wireless
 2776,wpsweep,,"A simple ping sweeper, that is, it pings a range of IP addresses and lists the ones that reply.",windows
@@ -2817,10 +2815,10 @@ its best to copy the config file to the working directory or .proxychains in the
 2804,x-scan,,"A general network vulnerabilities scanner for scanning network vulnerabilities for specific IP address scope or stand-alone computer by multi-threading method, plug-ins are supportable.",windows
 2805,xspear,,Powerful XSS Scanning and Parameter analysis tool&gem.,web-app
 2806,xspy,,Sniffs keystrokes on remote or local X-Windows servers.,network
-2807,xsrfprobe,Web,CSRF Probe,
+2807,xsrfprobe,Web,CSRF Probe,recon
 2808,xsscon,,Simple XSS Scanner tool.,web-app
 2809,xsscrapy,,XSS spider - 66/66 wavsep XSS detected.,web-app
-2810,XSSer,Web,"To detect, exploit and report XSS vulnerabilities in web-based applications",
+2810,XSSer,Web,"To detect, exploit and report XSS vulnerabilities in web-based applications",recon
 2811,xss-freak,,An XSS scanner fully written in Python3 from scratch.,web-app
 2812,xssless,,An automated XSS payload generator written in python.,web-app
 2813,xsspy,,Web Application XSS Scanner.,web-app
@@ -2845,7 +2843,7 @@ its best to copy the config file to the working directory or .proxychains in the
 2832,yawast,,The YAWAST Antecedent Web Application Security Toolkit.,web-app
 2833,yay,,Yet another yogurt. Pacman wrapper and AUR helper written in go.,misc
 2834,ycrawler,,A web crawler that is useful for grabbing all user supplied input related to a given website and will save the output. It has proxy and log file support.,web-app
-2835,yersinia,,to exploid dynamic trunking,
+2835,yersinia,,to exploid dynamic trunking,networking
 2836,yeti,,"A platform meant to organize observables, indicators of compromise, TTPs, and knowledge on threats in a single, unified repository.",defensive
 2837,yinjector,,"A MySQL injection penetration tool. It has multiple features, proxy support, and multiple exploitation methods.",exploitation
 2838,ypcat,,,
