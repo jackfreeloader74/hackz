@@ -831,7 +831,7 @@ Dradis is a self-contained web application that provides a centralized repositor
 825,galleta,,Galleta is a forensic tool that examines the content of cookie files produced by Microsofts Internet Explorer. It parses the file and outputs a field separated that can be loaded in a spreadsheet.,forensics
 826,gasmask,,All in one Information gathering tool - OSINT.,recon
 827,gatecrasher,,Network auditing and analysis tool developed in Python.,recon
-828,gateway-finder,,,
+828,gateway-finder,,Gateway-finder is a scapy script that will help you determine which of the systems on the local LAN has IP forwarding enabled and which can reach the Internet.,network
 829,gau,,"Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.",web-app
 830,gcat,,A fully featured backdoor that uses Gmail as a C&C server.,malware
 831,gcpbucketbrute,,"A script to enumerate Google Storage buckets, determine what access you have to them, and determine if they can be privilege escalated.",scanner
@@ -1272,7 +1272,7 @@ import their own features, among other new functionality. ",persistence
 1264,ldapdomaindump,,Active Directory information dumper via LDAP.,scanner
 1265,ldapenum,,Enumerate domain controllers using LDAP.,recon
 1266,ldapscripts,,Simple shell scripts to handle POSIX entries in an LDAP directory.,automation
-1267,ldapsearch,,,
+1267,ldapsearch,,"ldapsearch opens a connection to an LDAP server, binds, and performs a search using specified parameters.",recon
 1268,ldeep,,In-depth ldap enumeration utility.,recon
 1269,ld-shatner,,ld-linux code injector.,backdoor
 1270,leaklooker,,Find open databases with Shodan.,scanner
@@ -1333,7 +1333,7 @@ import their own features, among other new functionality. ",persistence
 1325,log-file-parser,,Parser for $LogFile on NTFS.,forensics
 1326,logkeys,,A GNU/Linux keylogger that worked.,keylogger
 1327,loic,,An open source network stress tool for Windows.,networking
-1328,Loki,,,
+1328,Loki,,LOKI offers a simple way to scan your systems for known IOCs,forensics
 1329,loki-scanner,,Simple IOC and Incident Response Scanner.,forensics
 1330,lolbas,,Living Off The Land Binaries And Scripts - (LOLBins and LOLScripts).,windows
 1331,lookupsid.py,SMB,"A Windows SID brute forcer example through [MS-LSAT] MSRPC Interface, aiming at finding remote users/groups.",cracker
@@ -1386,7 +1386,6 @@ import their own features, among other new functionality. ",persistence
 1378,manul,,"A coverage-guided parallel fuzzer for open-source and blackbox binaries on Windows, Linux and MacOS.",fuzzer
 1379,mara-framework,,A Mobile Application Reverse engineering and Analysis Framework.,mobile
 1380,marc4dasm,,This python-based tool is a disassembler for the Atmel MARC4 (a 4 bit Harvard micro).,disassembler
-1381,Marvin,,,
 1382,maryam,,Full-featured Web Identification framework written in Python.,scanner
 1383,maskprocessor,,Maskprocessor is a High-Performance word generator with a per-position configureable charset packed into a single stand-alone binary. Maskprocessor is a High-Performance word generator with a per-position configureable charset packed into a single stand-alone binary.,cracker
 1384,massbleed,,SSL Vulnerability Scanner.,recon
@@ -1534,7 +1533,7 @@ This program allow to recover authentication keys from MIFARE Classic card.",wir
 1525,needle,,The iOS Security Testing Framework.,mobile
 1526,neglected,,Facebook CDN Photo Resolver.,recon
 1527,neighbor-cache-fingerprinter,,An ARP based Operating System version scanner.,fingerprint
-1528,Nemesis,,,
+1528,Nemesis,,"Nemesis is a command-line network packet crafting and injection utility for UNIX-like and Windows systems. Nemesis, is well suited for testing Network Intrusion Detection Systems, firewalls, IP stacks and a variety of other tasks. As a command-line driven utility, Nemesis is perfect for automation and scripting.",network
 1529,neo-regeorg,,"Improved version of reGeorg, HTTP tunneling pivot tool",tunnel
 1530,Nessus,Web,Extensive vulnerability scanner,recon
 1531,netactview,,A graphical network connections viewer similar in functionality to netstat.,networking
@@ -1844,7 +1843,7 @@ Some of p0fâ€™s capabilities include:",recon
 1834,preeny,,Some helpful preload libraries for pwning stuff.,exploitation
 1835,pret,,Printer Exploitation Toolkit - The tool that made dumpster diving obsolete.,exploitation
 1836,princeprocessor,,Standalone password candidate generator using the PRINCE algorithm.,misc
-1837,ProcDump,Windows,ProcDump is a command-line utility whose primary purpose is monitoring an application for CPU spikes and generating crash dumps during a spike that an administrator or developer can use to determine the cause of the spike.,
+1837,ProcDump,Windows,ProcDump is a command-line utility whose primary purpose is monitoring an application for CPU spikes and generating crash dumps during a spike that an administrator or developer can use to determine the cause of the spike.,debugger
 1838,proctal,,Provides a command line interface and a C library to manipulate the address space of a running program on Linux.,binary
 1839,procyon,,A suite of Java metaprogramming tools focused on code generation and analysis.,decompiler
 1840,profuzz,,Simple PROFINET fuzzer based on Scapy.,fuzzer
@@ -2073,7 +2072,7 @@ Some of p0fâ€™s capabilities include:",recon
 2063,rshack,,"Python tool which allows to carry out some attacks on RSA, and offer a few tools to manipulate RSA keys.",crypto
 2064,rsmangler,,RSMangler will take a wordlist and perform various manipulations on it similar to those done by John the Ripper the main difference being that it will first take the input words and generate all permutations and the acronym of the words (in order they appear in the file) before it applies the rest of the mangles.,cracker
 2065,rspet,,A Python based reverse shell equipped with functionalities that assist in a post exploitation scenario.,exploitation
-2066,rstat-client,,,
+2066,rstat-client,,,windows
 2067,rtfm,,"A database of common, interesting or useful commands, in one handy referable form.",misc
 2068,rtlamr,,An rtl-sdr receiver for smart meters operating in the 900MHz ISM band.,radio
 2069,rtlizer,,Simple spectrum analyzer.,scanner
@@ -2088,7 +2087,7 @@ Some of p0fâ€™s capabilities include:",recon
 2078,ruler,,A tool to abuse Exchange services.,web-app
 2079,rulesfinder,,Machine-learn password mangling rules.,misc
 2080,rupture,,A framework for BREACH and other compression-based crypto attacks.,crypto
-2081,rusers,,,
+2081,rusers,,enumersation of RPC users,recon
 2082,rustbuster,,DirBuster for Rust.,web-app
 2083,rustscan,,Faster Nmap Scanning with Rust.,scanner
 2084,rvi-capture,,Capture packets sent or received by iOS devices.,sniffer
@@ -2125,7 +2124,7 @@ Some of p0fâ€™s capabilities include:",recon
 2115,scanssh,,Fast SSH server and open proxy scanner.,scanner
 2116,scap-security-guide,,"Security compliance content in SCAP, Bash, Ansible, and other formats.",automation
 2117,scap-workbench,,SCAP Scanner And Tailoring Graphical User Interface.,automation
-2118,scapy,,,
+2118,scapy,,python based packet manipulation program for use in local or remote network,network
 2119,scavenger,,Crawler (Bot) searching for credential leaks on different paste sites.,recon
 2120,schnappi-dhcp,,Can fuck network with no DHCP.,misc
 2121,sc-make,,Tool for automating shellcode creation.,exploitation
@@ -2284,7 +2283,7 @@ Some of p0fâ€™s capabilities include:",recon
 2274,sniffer,,"Packet Trace Parser for TCP, SMTP Emails, and HTTP Cookies.",networking
 2275,sniffer.py,Windows,Simple packet sniffer that uses a raw socket to listen for packets in transit corresponding to the specified protocols.,sniffer
 2276,sniffglue,,Secure multithreaded packet sniffer,sniffer
-2277,sniffjoke,,IDS and IPS evasion,
+2277,sniffjoke,,"SniffJoke is an application for Linux that handle transparently your TCP connection, delaying, modifyng and inject fake packets inside your transmission, make them almost impossible to be correctly read by a passive wiretapping technology (IDS or sniffer).",evasion
 2278,sniffles,,A Packet Capture Generator for IDS and Regular Expression Evaluation.,networking
 2279,sniff-probe-req,,Wi-Fi Probe Requests Sniffer.,wireless
 2280,snitch,,Turn back the asterisks in password fields to plaintext passwords.,windows
@@ -2828,7 +2827,7 @@ Some of p0fâ€™s capabilities include:",recon
 2817,xsstracer,,"Python script that checks remote web servers for Clickjacking, Cross-Frame Scripting, Cross-Site Tracing and Host Header Injection.",scanner
 2818,xsstrike,,An advanced XSS detection and exploitation suite.,web-app
 2819,xssya,,A Cross Site Scripting Scanner & Vulnerability Confirmation.,web-app
-2820,Xtest,,,
+2820,Xtest,,XTest is A 802.1x Supplicant Test Tool for Wired VoIP Networks based on RFC 3847 EAP-MD5 Authentication.,voip
 2821,xwaf,,Automatic WAF bypass tool.,web-app
 2822,xxeinjector,,Tool for automatic exploitation of XXE vulnerability using direct and different out of band methods.,exploitation
 2823,xxeserv,,A mini webserver with FTP support for XXE payloads.,networking
@@ -2846,8 +2845,8 @@ Some of p0fâ€™s capabilities include:",recon
 2835,yersinia,,to exploid dynamic trunking,networking
 2836,yeti,,"A platform meant to organize observables, indicators of compromise, TTPs, and knowledge on threats in a single, unified repository.",defensive
 2837,yinjector,,"A MySQL injection penetration tool. It has multiple features, proxy support, and multiple exploitation methods.",exploitation
-2838,ypcat,,,
-2839,ypwhich,,,
+2838,ypcat,,print values of all keys in a NIS database,database
+2839,ypwhich,,return name of NIS server or map master,recon
 2840,ysoserial,,A proof-of-concept tool for generating payloads that exploit unsafe Java object deserialization.,web-app
 2841,zackattack,,A new tool set to do NTLM Authentication relaying unlike any other tool currently out there.,networking
 2842,zaproxy,,The OWASP Zed Attack Proxy (ZAP) is an easy to use integrated penetration testing tool for finding vulnerabilities in web applications. It is designed to be used by people with a wide range of security experience and as such is ideal for developers and functional testers who are new to penetration testing as well as being a useful addition to an experienced pen testers toolbox.,web-app
