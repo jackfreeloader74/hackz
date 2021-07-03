@@ -1,4 +1,5 @@
 Tag
+anti-forensics
 automation
 automobile
 backdoor
@@ -14,6 +15,7 @@ defensive
 disassembler
 dos
 drone
+evasion
 exploitation
 fingerprint
 firmware
@@ -21,7 +23,7 @@ forensics
 fuzzer
 hardware
 honeypot
-ids
+kerberos
 keylogger
 malware
 misc
@@ -31,6 +33,7 @@ networking
 nfc
 packer
 persistence
+post-recon
 proxy
 radio
 recon
@@ -42,10 +45,12 @@ social
 spoof
 stego
 stress-testing
-anti-forensics
 tunnel
 voip
 vulnerability-analysis
 web-app
+wev
+widows
+wifi
 windows
 wireless
